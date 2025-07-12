@@ -1,0 +1,353 @@
+% CSU Fullerton Accessible Syllabus Template
+% Based on Office of Undergraduate Studies and General Education Template
+% With accessibility features for PDF/UA compliance
+
+\documentclass[12pt]{article}
+
+% Language and accessibility
+\usepackage[english]{babel}
+\usepackage[tagged, highstructure]{accessibility}
+\usepackage[pdfusetitle, pdflang=en-US]{hyperref}
+
+% Layout and fonts
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{geometry}
+\geometry{margin=1in}
+\usepackage{lmodern}
+\usepackage{setspace}
+\onehalfspacing
+
+% For Helvetica-like font (similar to Calibri)
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+
+% Colors for the template annotations
+\usepackage{xcolor}
+\definecolor{annotationblue}{RGB}{0,0,255}
+\definecolor{suggestionred}{RGB}{255,0,0}
+
+% Lists and sections
+\usepackage{enumitem}
+\usepackage{titlesec}
+
+% Tables and figures
+\usepackage{graphicx}
+\usepackage{array, booktabs, longtable}
+\usepackage{caption}
+
+% Underline
+\usepackage{ulem}
+
+% Hyperlinks with accessibility
+\hypersetup{
+  unicode=true,
+  colorlinks=true,
+  linkcolor=blue,
+  urlcolor=blue,
+  citecolor=blue,
+  pdfauthor={Instructor Name},
+  pdftitle={PREFIX \& Number: Title},
+  pdfsubject={California State University, Fullerton Course Syllabus},
+  pdfkeywords={CSUF, Syllabus, Accessibility}
+}
+
+% Document begins
+\begin{document}
+
+% Header with CSUF logo (if available)
+\begin{center}
+\includegraphics[width=2.75in, alt={Cal State Fullerton wordmark}]{csuf_logo.png}\\
+\vspace{0.5em}
+{\large Office of Undergraduate Studies and General Education}\\
+\vspace{1em}
+{\Large \textbf{Annotated Syllabus}}
+\end{center}
+
+\vspace{1em}
+
+A syllabus serves as the contract between you and your students. Your syllabus should inform students of the expectations and educational outcomes of your course. As a contract, the syllabus establishes the criteria to be used in assessing student performance and any rules that apply to student behavior. \uline{Any changes to the syllabus after distribution to the students must be announced in a timely manner}. Given the importance of the syllabus in guiding students through a course, it is critical that all syllabi conform to the set of minimum standards established in UPS 300.004 \emph{Policy on Syllabi}.
+
+The purpose of this \emph{Annotated Syllabus Template} is to help you ensure that your syllabus meets all CSUF standards -- including the requirement that syllabi are ADA compliant (accessible) as well as providing suggestions for format and language. \textbf{Required elements of a syllabus are noted in BLACK font. Annotations are in BLUE font and suggested language for various sections are noted in RED font.} Please note that the Colleges of Business and Economics, Education, and Health and Human Development have their own approved syllabus templates which supersede this template. A separate \textbf{\emph{Syllabus Shell}} document has been provided as a starting scaffold that you can customize as appropriate for your course. We encourage you to copy and paste material from this template into the shell to build your syllabus. The \textbf{\emph{Syllabus Checklist}} is a resource that you can use to confirm that your syllabus meets the minimum requirements. You are encouraged to use the checklist each semester, especially if you are re-using a syllabus from a previous term, to ensure that your syllabus remains in compliance with changes to the UPS.
+
+\textbf{\uline{Accessibility}}. All syllabi must be fully accessible. Specifically, your syllabus must be formatted to be compatible with assistive technology such as screen readers. The \href{https://oet.fullerton.edu/}{Online Education and Training (OET)} center on campus can help you in creating accessible learning materials. Another great resource to create accessible documents is the New York State Education Department's \href{http://www.nysed.gov/webaccess}{web accessibility} site. At a minimum, you should check for accessibility in documents by selecting "Review" from the top menu bar in MS Word and then "Check Accessibility." This opens a window that shows you any issues. Click on each issue to see the problem and how fix it.
+
+\textbf{\uline{Helpful hints for accessibility}}:
+
+\textbf{Font}: This template uses the Calibri font, which is accessible. This font is not required, but whatever font you choose should be accessible in contrast and style.
+
+\textbf{Headings}: The title below ("PREFIX...") uses the "Title" font, and the headings (e.g., "1. Faculty Information") use a "Heading" font (edited for stylistic consistency). All other text is "Normal" font.
+
+\textbf{Images}: The CSUF wordmark above is accessible with alternate text for screen readers (right-click, then "edit alt text"). While images are NOT required in syllabi, if they are used, "alt text" must be applied.
+
+\textbf{Tables}: The tables in this template meet accessibility requirements. Tables are NOT required; however, if you choose to use them, follow the accompanying guide for "Creating an Accessible Table" (download from \href{http://www.fullerton.edu/academicprograms/curriculum/courses.php}{course development} website.
+
+\textbf{Hyperlinks}: Consult the NY State Ed. Dept. site to create \href{http://www.nysed.gov/webaccess/create-accessible-hypertext-links}{accessible hypertext links}.
+
+\vspace{2em}
+
+% Course Title
+\begin{center}
+{\LARGE \textbf{PREFIX \& Number, \emph{Title}}}\\
+\vspace{0.5em}
+{\Large \textbf{Term and Year, Instructor Name}}
+\end{center}
+
+\vspace{2em}
+
+% Section 1: Faculty Information
+\section{Faculty Information}
+
+\textbf{\uline{Instructor}}: Your name
+
+\textbf{\uline{Office}}: Building and Room
+
+\textbf{\uline{Phone}}: ???-???-????
+
+\textbf{\uline{Email}}: ????@???.???
+
+\textbf{\uline{Office hours}}: {\color{suggestionred}Day(s) and time(s), by appointment, by email, by Zoom if available} {\color{annotationblue}-- normally at least three (3) office hours per week are required for faculty with full-time appointments. Faculty with part-time appointments are required to hold a minimum of one (1) hour per week, on a pro-rated scale (see \href{https://www.fullerton.edu/senate/publications_policies_resolutions/ups/UPS\%20200/UPS\%20230.020.pdf}{UPS 230.020})}
+
+% Section 2: Course Communication
+\section{Course Communication}
+
+{\color{annotationblue}Customize your statement to indicate your preferred method of communication.} {\color{suggestionred}Consider: All course announcements and individual emails are sent through CANVAS which only uses CSUF email accounts. Therefore, you MUST check your CSUF email on a regular basis (several times a week) for the duration of the course.}
+
+% Section 3: Technical Problems
+\section{Technical Problems}
+
+{\color{suggestionred}If you encounter any technical difficulties, contact the instructor immediately to document the problem. Then, contact: \href{http://www.fullerton.edu/it/students/helpdesk/index.php}{student IT help desk}, \href{mailto:StudentITHelpDesk@fullerton.edu}{email}, phone = 657-278-8888, walk-in \href{http://www.fullerton.edu/it/students/sgc/index.php}{student genius center}, online chat - log into \href{http://my.fullerton.edu}{portal}; click ``Online IT Help''; click ``Live Chat.''}
+
+\textbf{\uline{For issues with Canvas}}: {\color{suggestionred}Canvas Support Hotline = 855-302-7528, \href{https://cases.canvaslms.com/liveagentchat?chattype=student&sfid=001A000000YzcwQIAR}{student support chat}}
+
+{\color{suggestionred}In case of technical difficulties with CANVAS or other online resources, your instructor will communicate with students directly through their CSUF email. The instructor will provide directions on alternative methods for submitting work and/or may extend submission deadlines. If email is not available, students may contact the department office for guidance.}
+
+\textbf{Response time:} {\color{annotationblue}Customize your statement.} {\color{suggestionred}Consider: I will strive to respond to email questions or LMS chat in one-to-two business days (excludes weekends or holidays).}
+
+% Section 4: Course Information
+\section{Course Information}
+
+\textbf{\uline{Name, number, title}}: PREFIX and Number (e.g., ACCT 100), \emph{Title (e.g., Introduction to Accounting)}
+
+\textbf{\uline{Other (recommended)}}: Units (1, 2, 3, more), Section \# (01, 02, etc.), Schedule Code (e.g., 12345), Term (e.g., Fall or Spring, Year), Canvas URL
+
+\textbf{\uline{Meeting times with modality, day(s), time(s), and location (if synchronous)}}:
+
+{\color{annotationblue}Per \href{https://www.fullerton.edu/senate/publications_policies_resolutions/ups/UPS\%20400/UPS\%20411.104.pdf}{UPS 411.104}, list the ONE course modality that best fits from the following:}
+
+\begin{itemize}
+\item In-Person (0-20\% online): list class meeting day(s), time(s), building-room
+\item Hybrid (mostly in-person, 21\%-49\% online); list in-person class meeting day(s), time(s), building-room, and if in-person is synchronous on those day(s) and time(s), or asynchronous
+\item Hybrid (mostly online, 50\%-99\% online): list in-person class meeting day(s), time(s), building-room, and if online is synchronous on those day(s) and time(s), or asynchronous
+\item Fully online (100\% online): list if synchronous with day(s) and time(s), or asynchronous (``TBA'' instead of days, times, or locations)
+\end{itemize}
+
+\textbf{\uline{Zoom}}: Zoom link if using Zoom for synchronous hybrid or fully online courses. {\color{annotationblue}You may wish to include a Zoom link even for an ``in-person'' course given that up to 20\% (3 weeks in a 15 week semester) of an in-person course can be moved to an online synchronous or asynchronous modality (UPS 411.104).}
+
+\textbf{\uline{Course requisite(s)}}: pre- and/or corequisites; if none, write ``none.''
+
+\textbf{\uline{Catalog description}}: copy and paste catalog course description verbatim (40 words max).
+
+\textbf{\uline{Additional description}}: {\color{annotationblue}Optional -- write additional description, if any. Consider addressing the population served by this course (e.g. GE, majors', non-majors, minors, career objectives) and how this course contributes to a student's degree or future career.}
+
+\textbf{\uline{Policy on the use of generative AI or other technology}}: {\color{annotationblue}Optional - for suggestions please refer to https://fdc.fullerton.edu/teaching/ai.html}
+
+\textbf{\uline{Course materials and equipment}}:
+
+\textbf{\uline{Required text(s)}}: List required text(s), if any; if none, write ``none.'' {\color{suggestionred}Consider this statement: All required materials are posted on the Canvas course website, accessible via your portal.}
+
+\textbf{\uline{Recommended text(s)}}: {\color{annotationblue}List recommended text(s), if any; delete this line if none.}
+
+\textbf{\uline{Other course materials and equipment}}: List other materials, if any; if none, write ``none.'' {\color{annotationblue}Examples: a specific software app used in the class, a journal for a class that uses journaling, required clothing in a performance or laboratory class, and so on.}
+
+\textbf{\uline{Zero cost}}: {\color{annotationblue}Optional -- if zero cost consider:} {\color{suggestionred}This section of this course is designated as ``zero cost.'' There are no materials to purchase; all materials are Open Access Resources (OER).}
+
+\textbf{Student Learning Outcomes} {\color{annotationblue}Your course likely has established Student Learning Outcomes. All General Education courses will have an additional set of learning outcomes specific to their GE category. Please check with your department if you are unsure. You should consider these learning outcomes as you plan the content and assessments for your course. The goal is to have provided opportunities for your students to demonstrate their achievement of these outcomes.}
+
+% Section 5: Grading Policies and Standards
+\section{Grading Policies and Standards}
+
+\subsection*{a. Grading scale:} 
+{\color{annotationblue}Provide students with a scale that correlates course performance to a letter grade. Indicate whether you will be using a +/- grade scale and what grade is required to pass the course. RECALL THAT THE GE ``GOLDEN FOUR'' (A.1, A.2, A.3, AND B.4) REQUIRE A GRADE OF ``C-'' OR HIGHER -- ALL OTHER GE COURSES CAN BE PASSED WITH A GRADE OF ``D'' OR HIGHER.}
+
+{\color{suggestionred}See below for one example:}
+
+\begin{center}
+Table 1: Grading Scale
+\end{center}
+
+% Note: In a real implementation, you would create proper tables here
+% For now, showing the structure
+
+\subsection*{b. Required Course Assignments:}
+{\color{annotationblue}List the graded assignments/exams and corresponding percentages or point values that determine the final grade. Include information about due dates and whether these are individual or group assignments.} {\color{suggestionred}For example: As part of this class, you will be expected to complete X individual writing assignments, Y group projects and Z exams. Specific instructions for these assignments and the rubrics that will be used to evaluate your work will be provided on the course Canvas site. Assignments and their due dates are listed in the class schedule section of this syllabus. Your overall course grade will be determined as shown below:}
+
+\begin{center}
+Table 2: Grade Breakdown
+\end{center}
+
+{\color{annotationblue}Alternatively, you may choose to list all required assignments as illustrated below:}
+
+\section{Required Course Assignments}
+
+\textbf{\uline{Assignment 1}}: \emph{description} Points = ??; \% of grade; due date = ??
+
+\textbf{\uline{Assignment 2}}: \emph{description} Points = ??; \% of grade; due date = ??
+
+\textbf{\uline{Assignment 3}}: \emph{description} Points = ??; \% of grade; due date = ??
+
+\subsection*{c. Attendance and Participation policy:} {\color{annotationblue}(recommended but not required)}
+
+{\color{annotationblue}State your expectations for attendance and participation in your course; criteria may vary depending on the modality of your course. Include information about \emph{how} attendance and participation will be assessed.} {\color{suggestionred}For in-person courses consider: Regular attendance and participation is required for this course. Your attendance and participation will be determined based on in-class activities and assignments. Please contact your instructor by email if you miss a class meeting. Extended absences will have a negative impact on your ability to succeed in this class. Please contact your instructor if you have concerns about your ability to participate in this course.}
+
+{\color{suggestionred}For hybrid or fully online courses consider: Regular attendance and participation is an important way for you to be successful in this course. Attendance in an online course requires that you access the resources provided through your course website in a timely manner and engage with/contribute to synchronous or asynchronous activities and discussions as instructed. Your participation and engagement will be determined through activities, discussion boards, and data log reports. By fully participating in the class meetings and activities you will be more likely to learn the material. Please contact your instructor by email if you miss a class meeting or encounter recurring technical challenges. Extended absences/lack of participation will have a negative impact on your ability to succeed in this class. Please contact your instructor if you have concerns about your ability to participate in this course.}
+
+\subsection*{d. Examination dates:}
+{\color{annotationblue}If applicable, state the number of exams and the dates they will be given. Every effort should be made \emph{not} to change the dates of exams once scheduled. Consult the \href{https://www.fullerton.edu/scheduling/final_exam_schedule/}{final exam schedule} prior to the semester and include the date in your syllabus calendar (week 16). The final exam schedule \textbf{cannot} be changed. \textbf{No major exam can be administered in week 15 unless there will also be a final exam.} Note that a final exam or final assessment of some kind must be administered for lecture, discussion, and seminar classes. For lab, supervisory, and other activity classes, a final activity is recommended but not required in that final week. Take-home finals or other papers/projects shall be due no earlier than the day scheduled for the final exam (UPS 300.005). Final exams for online courses must be completed no later than 5:00PM on the last day of finals week; independent of the whether the course is synchronous or asynchronous. In-person testing for online courses must be coordinated with your department chair and the Scheduling office.}
+
+{\color{suggestionred}Consider the following language: Exams will be administered on the days indicated in the class schedule. These dates are fixed and will not be changed. All work on any exam or quiz must reflect your individual effort. Students are expected to follow University policies for Academic Integrity. \emph{If you have other rules about proctoring add them here.}}
+
+{\color{suggestionred}Requests for re-evaluation of graded material must be made within one week of the return the assignment. All requests must be accompanied by a written explanation of your dispute. It is your responsibility to consult with any posted rubrics or keys prior to making a re-grade request.}
+
+\subsection*{e. Make-up and late submission policy:}
+{\color{annotationblue}Establish a written policy that provides students with a process for remediation of missed or late work. Removing or limiting the negative impact of missed work may reduce student motivation to engage in academic dishonesty.}
+
+{\color{suggestionred}Consider one or more of these alternatives: Make-up exams will only be offered under very limited circumstances. It is your responsibility to notify your instructor either in advance or within 24hrs of missing an exam.}
+
+{\color{suggestionred}An assignment is considered late if it is posted/received past the due date and/or time. You are encouraged to set personal deadlines ahead of required due dates to allow for unforeseen events that prevent you from submitting your work on time. \textbf{Communicate immediately with your instructor if you encounter a problem that may impact your ability to submit work on time}.}
+
+{\color{suggestionred}Work may only receive a maximum of 70\% of the point total for the assignments submitted after the original due date and time \uline{unless approval for late work is given in advance.}}
+
+{\color{suggestionred}Late assignments are not accepted. Late assignments are defined as any assignment posted/received past the due date and/or time. All written assignments will be submitted through Canvas. You are encouraged not to procrastinate to avoid technological problems.}
+
+\subsection*{f. Authentication of student work:}
+{\color{annotationblue}Include a statement if relevant for your course.} {\color{suggestionred}Consider: All assignments submitted for a grade in this class must be your individual work unless otherwise indicated. Student work will be authenticated by submission in class for in-person instruction and through Canvas for online instruction.}
+
+\subsection*{g. Extra credit:}
+{\color{annotationblue}Include a statement that establishes your policy, whether you offer extra credit or not.} {\color{suggestionred}Example 1: There are no extra credit options in this course. Example 2: Extra credit will only be offered under extraordinary circumstances as determined by the instructor. Any opportunity for extra credit must be equally available to all students. Example 3: If you already know your extra credit options at the start of the semester, list them here.}
+
+\subsection*{h. Retention of student work:} {\color{annotationblue}(recommended but not required)}
+{\color{suggestionred}Consider: Work submitted for a grade in this course, either as a hardcopy or through the CANVAS course site, shall be retained for a reasonable time after the semester is completed not to exceed the last day of the subsequent semester. Exam material is exempt from this policy; however, students have the right to review their work in the presence of the faculty member. [UPS 320.005]}
+
+\textbf{\uline{IF YOUR COURSE CAN BE USED FOR GRADUATE CREDIT}} {\color{annotationblue}(delete this section if it does not apply)}
+
+\textbf{Additional assignments for graduate students:} {\color{annotationblue}If this is a 400-level course approved for graduate credit you are required to provide ``at least one additional assignment'' for graduate students (\href{https://www.fullerton.edu/senate/publications_policies_resolutions/ups/UPS\%20400/UPS\%20411.100.pdf}{UPS 411.100}). It is recommended that this assignment be subsumed into one of the grading categories to keep the grading scale and percentages the same for both graduate students and undergraduates. If you add additional points to the scale for this assignment for graduate students, then you will need a separate grading scale.}
+
+% Section 7: Academic Integrity
+\section{Academic Integrity}
+
+{\color{annotationblue}Establish the expectations for your course. Clearly define when and if students may collaborate. Address the resources students are allowed to use. Outline the consequences for failure to meet these expectations.} {\color{suggestionred}Consider: It is expected that any work submitted for a grade in this course will be the sole product of the individual student, unless otherwise permitted. Presenting work from other sources as your own is unacceptable and will result in a notification to the Dean of Students of a violation of campus standards. Behaviors that seek to gain an unfair advantage or negatively impact the ability of others to learn will also result in a report to the Dean of Students.}
+
+{\color{suggestionred}The consequences for cheating or other actions contrary to CSUF student conduct polices can be severe. Communicate with your instructor if you find yourself in a situation that might lead to a poor decision.}
+
+{\color{suggestionred}You are encouraged to use the resources provided by your instructor. Discuss the use of other online resources with your instructor. The use of sites, including but not limited to Chegg and Course Hero, which require subscriptions and provide solutions to homework problems, exam questions, etc., is explicitly prohibited in this course and is considered academic dishonesty.}
+
+{\color{suggestionred}Collaborating has been made easier by the many tools available to use on the internet (e.g. Discord, Zoom, Microsoft Teams). I encourage you to use these tools to work together, to form study groups, etc. However, any sharing of assignments (even if only intended to help) or using these communication tools for unauthorized collaboration is considered academic dishonesty. Unless otherwise explicitly stated by the instructor, assignments, and examinations must be completed on your own.}
+
+% Section 8: Technical Competencies (optional)
+\section{Technical Competencies} {\color{annotationblue}(delete this section if it does not apply)}
+
+{\color{annotationblue}Describe any technical competencies that are more than those expected of all students.}
+
+% Section 9: Student Resources Website
+\section{Student Resources Website}
+
+It is the student's responsibility to read and understand the required and important \href{https://fdc.fullerton.edu/teaching/student-info-syllabi.html}{student information for course syllabi}. Included is information about:
+
+\begin{itemize}
+\item University learning goals
+\item General Education learning objectives
+\item Netiquette/appropriate online behavior
+\item Students' rights to accommodations
+\item Campus student support resources
+\item Academic integrity
+\item Emergency preparedness/what to do
+\item Library services
+\item Student IT services and competencies
+\item Software privacy and accessibility
+\item Accessibility statement
+\item Diversity statement
+\item Land acknowledgement
+\item Final exam schedule
+\item Semester calendar
+\end{itemize}
+
+% Section 10: Classroom Management (optional)
+\section{Classroom Management} {\color{annotationblue}(recommended but not required)}
+
+{\color{annotationblue}List any additional policies or ``rules of the class'' you might have. Here are some examples: not required, but offered for consideration and thought-generation.}
+
+\textbf{\uline{Cell phones}}. {\color{suggestionred}Out of courtesy and respect for others, you should turn off or silence your cell phone during class.}
+
+\textbf{\uline{In-class Recording}}. {\color{suggestionred}Requests to record class meetings (outside of accommodation requirements) will be decided on a case-by-case basis by the instructor. If permitted, any approved recordings are for private use during the semester for the purposes of studying and ``shall not be made publicly accessible without the written consent of the instructor and any students recorded in the class'' (\href{https://www.fullerton.edu/senate/publications_policies_resolutions/ups/UPS\%20300/UPS\%20330.230.pdf}{UPS 330.230}). Any approved recordings must be deleted at the end of the semester.}
+
+\textbf{\uline{Technology}}. {\color{suggestionred}If you need any assistance with technology, including checking out a laptop computer for the semester, obtaining ancillaries (e.g., webcam, microphone), accessing mi-fi, downloading free software for class or personal use, or other help, you can find what you need at the \href{https://www.fullerton.edu/IT/students/}{student technology services} website. Another useful website is \href{http://www.fullerton.edu/it/essential-resources/}{IT essential resources}.}
+
+% Section 11: General Education Requirements (if applicable)
+\textbf{\uline{IF YOUR COURSE IS A GENERAL EDUCATION COURSE}} {\color{annotationblue}(delete this section if it does not apply)}
+
+\section{General Education Requirements}
+
+{\color{annotationblue}This section is required only if this course is a \uline{certified} GE course (refer to \href{https://www.fullerton.edu/senate/publications_policies_resolutions/ups/UPS\%20400/UPS\%20411.201.pdf}{UPS 411.201}).}
+
+\textbf{a.} {\color{annotationblue}Statement of specific GE requirement(s) this course meets.} {\color{suggestionred}For example: This course meets GE requirement A.1 Oral Communication. The learning objectives for this and all GE areas are listed in \href{https://www.fullerton.edu/senate/publications_policies_resolutions/ups/UPS\%20400/UPS\%20411.201.pdf}{UPS 411.201}. Alternatively, you could list the GE learning objectives.}
+
+\textbf{b.} {\color{annotationblue}Statement of the way in which the course meets the GE writing requirement.} {\color{suggestionred}Consider: This course meets the GE writing requirement with multiple writing assignments that will be assessed using an approved rubric. Assignments will be returned in a timely manner, with feedback, to allow students to demonstrate improvement in writing.}
+
+\textbf{c.} {\color{annotationblue}For the Golden Four GE categories (A.1, A.2, A.3, B.4), \href{https://www.fullerton.edu/senate/publications_policies_resolutions/ups/UPS\%20400/UPS\%20411.202.pdf}{UPS 411.202} requires the following statement:} A grade of ``C-'' (1.7) or higher is required to meet this General Education requirement. A grade of ``D+'' (1.3) or below will not satisfy this General Education requirement.
+
+\textbf{d.} {\color{annotationblue}For courses in all other GE categories (including overlay Z), this statement is required:} A grade of ``D'' (1.0) or higher is required to meet this General Education requirement. A grade of ``D-'' (0.7) or below will not satisfy this General Education requirement.
+
+% Section 12: Upper-Division Writing Course Requirements (if applicable)
+\textbf{\uline{IF YOUR COURSE IS AN UPPER DIVISION WRITING COURSE}} {\color{annotationblue}(delete this section if it does not apply)}
+
+\section{Upper-Division Writing Course Requirements}
+
+{\color{annotationblue}A statement is required only if this course is \uline{certified} as an upper-division writing course. The statement must describe how this course satisfies the intensive or complementary writing requirements listed \href{https://www.fullerton.edu/senate/publications_policies_resolutions/ups/UPS\%20300/UPS\%20320.020.pdf}{UPS 320.020}.} {\color{suggestionred}For a writing intensive course, consider: By the end of this course, you will demonstrate the ability to actively read a variety of materials, apply various writing processes, analyze, organize, and synthesize ideas, evaluate sources, write for specific audiences, and apply proper editing conventions. These goals will be achieved through the feedback you will receive from multiple written assignments.}
+
+{\color{suggestionred}For a complementary writing course, consider: By the end of this course, you will demonstrate the ability to analyze, organize, and synthesize ideas, evaluate sources, write for specific audiences, and apply proper editing conventions. These goals will be achieved through the feedback you will receive from multiple written assignments.}
+
+% Section 13: Calendar of Topics / Schedule of Classes
+\section{Calendar of Topics / Schedule of Classes}
+
+{\color{annotationblue}List each instructional week's topic(s), reading(s), screening(s), assignment(s), exam(s), and/or other relevant information, as appropriate. Consult the \href{https://apps.fullerton.edu/AcademicCalendar/}{academic calendar} to determine beginning and end dates for the term, holidays, fall or spring recess, and final exam week.}
+
+{\color{annotationblue}The calendar for fall or spring semesters should cover a total of \uline{16 numbered weeks}; 15 weeks of instruction and one week for finals. Do not number the week of fall or spring break. Final exams can only be administered during week 16 (\href{https://www.fullerton.edu/senate/publications_policies_resolutions/ups/UPS\%20300/UPS\%20300.005.pdf}{UPS 300.005}). If a final is a take-home exam, paper, project, presentation, etc., it may not be due earlier than the day/time of the scheduled final exam for that class. Faculty are allowed to deviate from the syllabus calendar if needed but should make every effort to follow the published calendar as closely as possible.}
+
+{\color{annotationblue}For the winter and summer terms, the equivalent contact minutes are required; \href{https://extension.fullerton.edu/}{Extension and International Programs (EIP)} provides the scheduling options.}
+
+{\color{annotationblue}Your calendar may be formatted as a series of modules or units. For example:}
+
+\textbf{\uline{Week 1, MM/DD}}
+
+Topic(s):
+
+Reading(s):
+
+Screenings:
+
+Assignment(s) Due:
+
+Other information as applicable
+
+\textbf{\uline{Week 2, MM/DD}}
+
+Topic(s):
+
+Reading(s):
+
+Screenings:
+
+Assignment(s) Due:
+
+Other information as applicable
+
+{\color{annotationblue}Alternatively, you may format the calendar as a table. Follow the instructions on the guide ``Creating an Accessible Table'' (linked from the Course Development Resources tab).}
+
+\begin{center}
+Table 3: Schedule of Classes for a Spring semester
+\end{center}
+
+% Note: In a real implementation, you would create the full table here
+
+\end{document}
