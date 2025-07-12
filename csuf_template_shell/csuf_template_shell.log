@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.7.4)  12 JUL 2025 16:53
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.7.4)  12 JUL 2025 16:54
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**/home/dadams/Repos/syllabi/csuf_template/csuf_template.tex
-(/home/dadams/Repos/syllabi/csuf_template/csuf_template.tex
+**/home/dadams/Repos/syllabi/csuf_template_shell/csuf_template_shell.tex
+(/home/dadams/Repos/syllabi/csuf_template_shell/csuf_template_shell.tex
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2025-06-09>
 (/usr/local/texlive/2025/texmf-dist/tex/latex/base/article.cls
@@ -316,22 +316,6 @@ Package: longtable 2024-12-18 v4.23 Multi-page Table package (DPC)
 \c@LT@tables=\count331
 \c@LT@chunks=\count332
 \LT@p@ftn=\toks27
-) (/usr/local/texlive/2025/texmf-dist/tex/latex/xcolor/xcolor.sty
-Package: xcolor 2024/09/29 v3.02 LaTeX color extensions (UK)
- (/usr/local/texlive/2025/texmf-dist/tex/latex/graphics-cfg/color.cfg
-File: color.cfg 2016/01/02 v1.6 sample color configuration
-)
-Package xcolor Info: Driver file: pdftex.def on input line 274.
- (/usr/local/texlive/2025/texmf-dist/tex/latex/graphics/mathcolor.ltx)
-Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1349.
-Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1353.
-Package xcolor Info: Model `RGB' extended on input line 1365.
-Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1367.
-Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1368.
-Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1369.
-Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1370.
-Package xcolor Info: Model `Gray' substituted by `gray' on input line 1371.
-Package xcolor Info: Model `wave' substituted by `hsb' on input line 1372.
 ) (/usr/local/texlive/2025/texmf-dist/tex/latex/caption/caption.sty
 Package: caption 2023/08/05 v3.6o Customizing captions (AR)
  (/usr/local/texlive/2025/texmf-dist/tex/latex/caption/caption3.sty
@@ -360,39 +344,46 @@ Package caption Info: longtable package is loaded.
 (/usr/local/texlive/2025/texmf-dist/tex/latex/caption/ltcaption.sty
 Package: ltcaption 2021/01/08 v1.4c longtable captions (AR)
 ))
-Package hyperref Info: Option `unicode' set `true' on input line 71.
-Package hyperref Info: Option `colorlinks' set `true' on input line 71.
-LaTeX Font Info:    Trying to load font information for T1+phv on input line 77.
+Package hyperref Info: Option `unicode' set `true' on input line 54.
+Package hyperref Info: Option `colorlinks' set `true' on input line 54.
+LaTeX Font Info:    Trying to load font information for T1+phv on input line 62.
  (/usr/local/texlive/2025/texmf-dist/tex/latex/psnfss/t1phv.fd
 File: t1phv.fd 2020/03/25 scalable font definitions for T1/phv.
 ) (/usr/local/texlive/2025/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2025-06-09 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count335
-) (./csuf_template.aux)
-\openout1 = `csuf_template.aux'.
+) (./csuf_template_shell.aux)
+\openout1 = `csuf_template_shell.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 77.
-LaTeX Font Info:    ... okay on input line 77.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 77.
-LaTeX Font Info:    ... okay on input line 77.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 77.
-LaTeX Font Info:    ... okay on input line 77.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 77.
-LaTeX Font Info:    ... okay on input line 77.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 77.
-LaTeX Font Info:    ... okay on input line 77.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 77.
-LaTeX Font Info:    ... okay on input line 77.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 77.
-LaTeX Font Info:    ... okay on input line 77.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 77.
-LaTeX Font Info:    ... okay on input line 77.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 77.
-LaTeX Font Info:    ... okay on input line 77.
-Package hyperref Info: Link coloring ON on input line 77.
- (./csuf_template.out) (./csuf_template.out)
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
+ (/usr/local/texlive/2025/texmf-dist/tex/latex/graphics/color.sty
+Package: color 2025/01/14 v1.3e Standard LaTeX Color (DPC)
+ (/usr/local/texlive/2025/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package color Info: Driver file: pdftex.def on input line 149.
+ (/usr/local/texlive/2025/texmf-dist/tex/latex/graphics/mathcolor.ltx))
+Package hyperref Info: Link coloring ON on input line 62.
+ (./csuf_template_shell.out) (./csuf_template_shell.out)
 \@outlinefile=\write3
-\openout3 = `csuf_template.out'.
+\openout3 = `csuf_template_shell.out'.
 
 
 *geometry* driver: auto-detecting
@@ -450,151 +441,89 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
-<csuf_logo.png, id=7, 513.41812pt x 83.31125pt>
-File: csuf_logo.png Graphic file (type png)
-<use csuf_logo.png>
-Package pdftex.def Info: csuf_logo.png  used on input line 82.
-(pdftex.def)             Requested size: 198.7425pt x 32.24971pt.
-LaTeX Font Info:    Font shape `T1/phv/m/it' in size <12> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 90.
-LaTeX Font Info:    Font shape `T1/phv/b/it' in size <12> not available
-(Font)              Font shape `T1/phv/b/sl' tried instead on input line 94.
-LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 98.
+LaTeX Font Info:    Font shape `T1/phv/m/it' in size <20.74> not available
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 71.
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 71.
  (/usr/local/texlive/2025/texmf-dist/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OML+lmm on input line 98.
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 71.
  (/usr/local/texlive/2025/texmf-dist/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 98.
+LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 71.
  (/usr/local/texlive/2025/texmf-dist/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 98.
+LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 71.
  (/usr/local/texlive/2025/texmf-dist/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 98.
+(Font)              <14.4> on input line 71.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 98.
+(Font)              <10> on input line 71.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 98.
+(Font)              <7> on input line 71.
+LaTeX Font Info:    Font shape `T1/phv/m/it' in size <12> not available
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 102.
 
 
 [1
 
-{/usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/base/8r.enc} <./csuf_logo.png>]
+{/usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/base/8r.enc}]
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <14.4> on input line 103.
+(Font)              <12> on input line 141.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 103.
+(Font)              <8> on input line 141.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 103.
+(Font)              <6> on input line 141.
 
 
 [2]
-LaTeX Font Info:    Trying to load font information for TS1+phv on input line 153.
- (/usr/local/texlive/2025/texmf-dist/tex/latex/psnfss/ts1phv.fd
+pdfTeX warning (\pdfobj): invalid object number being ignored
+LaTeX Font Info:    Trying to load font information for TS1+phv on input line 234.
+(/usr/local/texlive/2025/texmf-dist/tex/latex/psnfss/ts1phv.fd
 File: ts1phv.fd 2020/03/25 scalable font definitions for TS1/phv.
 )
-Overfull \hbox (16.67111pt too wide) in paragraph at lines 160--179
-[]$\T1/phv/m/n/12 : []Op-tional - for sug-ges-tions please
- []
-
-
-Overfull \hbox (1.97568pt too wide) in paragraph at lines 160--179
-[]$\T1/phv/m/n/12 : List other ma-te-ri-als, if any; if none, write ``none.''
- []
-
-
 
 [3]
+Underfull \hbox (badness 10000) in paragraph at lines 280--284
 
-[4]
-
-[5]
-
-[6]
-
-[7]
-Overfull \hbox (11.71591pt too wide) in paragraph at lines 316--317
-[][][]$[]$ []\T1/phv/m/n/12 (delete this sec-tion if it does
  []
 
 
+Underfull \hbox (badness 10000) in paragraph at lines 285--289
 
-[8]
-pdfTeX warning (\pdfobj): invalid object number being ignored
-
-
-[9]
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <17.28> on input line 385.
-
-
-[10]
-Overfull \hbox (32.13658pt too wide) in paragraph at lines 408--408
-[][][]$[]$ 
- []
-
-
-
-[11]
-
-[12]
-Overfull \hbox (14.22638pt too wide) in paragraph at lines 489--490
-[]|[][][][]| 
- []
-
-
-Underfull \hbox (badness 5802) in paragraph at lines 505--505
-[]|[][][]\T1/phv/m/n/12 Midterm Exam
- []
-
-
-Underfull \hbox (badness 2302) in paragraph at lines 523--523
-[]|[][][]\T1/phv/m/n/12 Final Exam or
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 523--523
-\T1/phv/m/n/12 other as-sess-
- []
-
-
-Underfull \hbox (badness 1496) in paragraph at lines 523--524
-[]|[][][]\T1/phv/m/n/12 Due no ear-lier
  []
 
 \c@ClassMap=\count342
 
 
-[13] (./csuf_template.aux)
+[4] (./csuf_template_shell.aux)
  ***********
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2025-06-09>
  ***********
-Package rerunfilecheck Info: File `csuf_template.out' has not changed.
+Package rerunfilecheck Info: File `csuf_template_shell.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 13614 strings out of 467888
- 218977 string characters out of 5434062
- 662616 words of memory out of 5000000
- 41956 multiletter control sequences out of 15000+600000
- 675401 words of font info for 80 fonts, out of 8000000 for 9000
+ 13178 strings out of 467888
+ 213463 string characters out of 5434062
+ 638887 words of memory out of 5000000
+ 41535 multiletter control sequences out of 15000+600000
+ 671937 words of font info for 77 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,10n,117p,1286b,582s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,6n,117p,574b,582s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-pdfTeX warning (dest): Page 14 has been referenced but does not exist!
+pdfTeX warning (dest): Page 5 has been referenced but does not exist!
 
-</usr/local/texlive/2025/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/urw/helvetic/uhvbo8a.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on csuf_template.pdf (13 pages, 889309 bytes).
+</usr/local/texlive/2025/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb>
+Output written on csuf_template_shell.pdf (4 pages, 82595 bytes).
 PDF statistics:
- 369 PDF objects out of 1000 (max. 8388607)
- 337 compressed objects within 4 object streams
- 29 named destinations out of 1000 (max. 500000)
- 906 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 175 PDF objects out of 1000 (max. 8388607)
+ 158 compressed objects within 2 object streams
+ 18 named destinations out of 1000 (max. 500000)
+ 425 words of extra memory for PDF output out of 10000 (max. 10000000)
 

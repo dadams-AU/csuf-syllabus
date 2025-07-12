@@ -1,0 +1,309 @@
+% CSUF Accessible Syllabus Shell
+% This is a template for creating an accessible syllabus that meets
+% CSU Fullerton requirements and ADA/PDF-UA accessibility standards
+% 
+% Instructions:
+% 1. Replace all CAPS placeholders with your course information
+% 2. Delete sections marked as optional if they don't apply
+% 3. Compile with LuaLaTeX for best accessibility support
+% 4. Check accessibility using Adobe Acrobat's accessibility checker
+%
+% Created by: David P. Adams, Ph.D.
+% License: CC BY-NC-SA 4.0
+
+\documentclass[12pt]{article}
+
+% ========== PACKAGES FOR ACCESSIBILITY ==========
+% These packages enable PDF tagging for screen readers
+\usepackage[english]{babel}
+\usepackage[tagged, highstructure]{accessibility}
+\usepackage[pdfusetitle, pdflang=en-US]{hyperref}
+
+% ========== LAYOUT AND FONTS ==========
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{geometry}
+\geometry{margin=1in}
+\usepackage{lmodern}
+\usepackage{setspace}
+\onehalfspacing
+
+% Use Helvetica font (similar to Calibri in Word)
+\renewcommand{\rmdefault}{phv} % Helvetica
+\renewcommand{\sfdefault}{phv} % Helvetica
+\renewcommand{\ttdefault}{pcr} % Courier
+
+% ========== OTHER PACKAGES ==========
+\usepackage{enumitem}      % Better list formatting
+\usepackage{graphicx}      % For including images
+\usepackage{array, booktabs, longtable}  % For tables
+\usepackage{caption}       % For table/figure captions
+
+% ========== PDF METADATA ==========
+% Update these fields with your course information
+\hypersetup{
+  unicode=true,
+  colorlinks=true,
+  linkcolor=blue,
+  urlcolor=blue,
+  citecolor=blue,
+  pdfauthor={YOUR NAME},
+  pdftitle={COURSE PREFIX \& NUMBER: COURSE TITLE},
+  pdfsubject={California State University, Fullerton Course Syllabus},
+  pdfkeywords={CSUF, Syllabus, YOUR DEPARTMENT}
+}
+
+% ========== DOCUMENT INFORMATION ==========
+% Replace these with your course information
+\title{PREFIX \& Number, \textit{Course Title}}
+\author{}  % Leave empty - instructor info goes in Faculty Information section
+\date{Term and Year}
+
+\begin{document}
+
+% ========== CSUF HEADER (OPTIONAL) ==========
+% If you have the CSUF logo file, uncomment the following lines
+% \begin{center}
+% \includegraphics[width=2.75in, alt={Cal State Fullerton wordmark}]{csuf_logo.png}
+% \end{center}
+
+\maketitle
+
+% ========== SECTION 1: FACULTY INFORMATION ==========
+\section*{Faculty Information}
+% Replace placeholders with your information
+\noindent \textbf{Instructor:} YOUR NAME \\
+\noindent \textbf{Office:} BUILDING AND ROOM \\
+\noindent \textbf{Phone:} (657) 278-XXXX \\
+\noindent \textbf{Email:} youremail@fullerton.edu \\
+\noindent \textbf{Office hours:} DAYS AND TIMES, by appointment
+
+% ========== SECTION 2: COURSE COMMUNICATION ==========
+\section*{Course Communication}
+% Describe how students should contact you and your response time
+YOUR PREFERRED COMMUNICATION METHOD AND POLICY HERE
+
+% ========== SECTION 3: TECHNICAL PROBLEMS ==========
+\section*{Technical Problems}
+If you encounter any technical difficulties, contact the instructor immediately to document the problem. Then, contact: \href{http://www.fullerton.edu/it/students/helpdesk/index.php}{student IT help desk}, \href{mailto:StudentITHelpDesk@fullerton.edu}{email}, phone (657) 278-8888, walk-in \href{http://www.fullerton.edu/it/students/sgc/index.php}{student genius center}, online chat - log into \href{http://my.fullerton.edu}{portal}; click ``Online IT Help''; click ``Live Chat.''
+
+\vspace{0.5em}
+\noindent \textbf{For issues with Canvas:} Canvas Support Hotline (855) 302-7528, \href{https://cases.canvaslms.com/liveagentchat?chattype=student&sfid=001A000000YzcwQIAR}{student support chat}
+
+\vspace{0.5em}
+\noindent \textbf{Alternative plan for submitting work:} DESCRIBE YOUR BACKUP PLAN
+
+\vspace{0.5em}
+\noindent \textbf{Response time:} YOUR RESPONSE TIME POLICY
+
+% ========== SECTION 4: COURSE INFORMATION ==========
+\section*{Course Information}
+% Fill in all course details
+\noindent \textbf{Prefix, number, title:} PREFIX \#\#\#, \textit{Course Title} \\
+\noindent \textbf{Meeting times with modality, day(s), time(s), and location (if synchronous):} 
+% Choose ONE modality from UPS 411.104:
+% - In-Person (0-20% online)
+% - Hybrid (mostly in-person, 21%-49% online)
+% - Hybrid (mostly online, 50%-99% online)  
+% - Fully online (100% online)
+YOUR MODALITY, DAYS, TIMES, LOCATION
+
+\vspace{0.5em}
+\noindent \textbf{Zoom:} YOUR ZOOM LINK IF APPLICABLE \\
+\noindent \textbf{Course requisite(s):} LIST PREREQUISITES/COREQUISITES OR "none" \\
+\noindent \textbf{Catalog description:} COPY CATALOG DESCRIPTION VERBATIM (40 words max) \\
+\noindent \textbf{Additional description:} OPTIONAL EXPANDED DESCRIPTION \\
+\noindent \textbf{Policy regarding the use of generative AI:} YOUR AI POLICY \\
+\noindent \textbf{Course materials and equipment:} ~ \\
+\noindent \textbf{Required text(s):} LIST REQUIRED TEXTS OR "none" \\
+\noindent \textbf{Recommended text(s):} LIST RECOMMENDED TEXTS OR DELETE THIS LINE \\
+\noindent \textbf{Other course materials and equipment:} LIST OTHER MATERIALS OR "none" \\
+\noindent \textbf{Zero cost:} IF APPLICABLE, NOTE THAT THIS IS A ZERO-COST COURSE
+
+\vspace{1em}
+\noindent \textbf{Student Learning Outcomes:}
+% List your course learning outcomes
+\begin{enumerate}
+\item LEARNING OUTCOME 1
+\item LEARNING OUTCOME 2
+\item LEARNING OUTCOME 3
+\item ADD MORE AS NEEDED
+\end{enumerate}
+
+% ========== SECTION 5: GRADING POLICIES AND STANDARDS ==========
+\section*{Grading Policies and Standards}
+
+% Part a: Grading Scale
+\noindent \textbf{a. Grading scale:}
+
+% Example grading scale - modify as needed
+\begin{center}
+\begin{tabular}{|l|c||l|c|}
+\hline
+\textbf{Grade} & \textbf{Percent} & \textbf{Grade} & \textbf{Percent} \\
+\hline
+A+ & 98.0--100.0 & C+ & 77.0--79.9 \\
+A  & 93.0--97.9  & C  & 73.0--76.9 \\
+A- & 90.0--92.9  & C- & 70.0--72.9 \\
+B+ & 87.0--89.9  & D+ & 67.0--69.9 \\
+B  & 83.0--86.9  & D  & 63.0--66.9 \\
+B- & 80.0--82.9  & D- & 60.0--62.9 \\
+   &             & F  & 0.0--59.9 \\
+\hline
+\end{tabular}
+\end{center}
+
+% Part b: Required Course Assignments
+\vspace{1em}
+\noindent \textbf{b. Required Course Assignments:}
+
+% Option 1: Use a table
+\begin{center}
+\begin{tabular}{|l|c|}
+\hline
+\textbf{Assignment} & \textbf{Percentage} \\
+\hline
+ASSIGNMENT TYPE 1 & XX\% \\
+ASSIGNMENT TYPE 2 & XX\% \\
+ASSIGNMENT TYPE 3 & XX\% \\
+ASSIGNMENT TYPE 4 & XX\% \\
+\hline
+\textbf{Total} & 100\% \\
+\hline
+\end{tabular}
+\end{center}
+
+% Option 2: Or list assignments individually (uncomment if preferred)
+% \noindent \textbf{Assignment 1:} Description, XX\% of grade, due date \\
+% \noindent \textbf{Assignment 2:} Description, XX\% of grade, due date \\
+% \noindent \textbf{Assignment 3:} Description, XX\% of grade, due date
+
+% Part c: Attendance and Participation
+\vspace{1em}
+\noindent \textbf{c. Attendance and Participation policy:}
+YOUR ATTENDANCE AND PARTICIPATION EXPECTATIONS
+
+% Part d: Examination dates
+\vspace{1em}
+\noindent \textbf{d. Examination dates:}
+% Remember: No major exams in week 15 unless there's also a final
+% Finals must be in week 16 only
+LIST EXAM DATES OR ``No exams in this course''
+
+% Part e: Make-up and late submission policy
+\vspace{1em}
+\noindent \textbf{e. Make-up and late submission policy:}
+YOUR POLICY FOR LATE WORK AND MAKE-UP EXAMS
+
+% Part f: Authentication of student work
+\vspace{1em}
+\noindent \textbf{f. Authentication of student work:}
+YOUR POLICY FOR VERIFYING STUDENT WORK
+
+% Part g: Extra credit
+\vspace{1em}
+\noindent \textbf{g. Extra credit:}
+YOUR EXTRA CREDIT POLICY OR "No extra credit offered"
+
+% Part h: Retention of student work
+\vspace{1em}
+\noindent \textbf{h. Retention of student work:}
+YOUR POLICY FOR KEEPING STUDENT WORK
+
+% ========== GRADUATE CREDIT (DELETE IF NOT APPLICABLE) ==========
+% \vspace{1em}
+% \noindent \textbf{i. Additional assignments for graduate students:}
+% If this is a 400-level course available for graduate credit,
+% describe the additional assignment(s) required for graduate students
+
+% ========== SECTION 7: ACADEMIC INTEGRITY ==========
+\section*{Academic Integrity}
+% Describe your expectations for academic honesty
+YOUR ACADEMIC INTEGRITY POLICY AND CONSEQUENCES FOR VIOLATIONS
+
+% ========== SECTION 8: TECHNICAL COMPETENCIES (DELETE IF NOT APPLICABLE) ==========
+% \section*{Technical Competencies}
+% List any technical skills beyond those expected of all students
+% YOUR SPECIAL TECHNICAL REQUIREMENTS
+
+% ========== SECTION 9: STUDENT RESOURCES WEBSITE ==========
+\section*{Student Resources Website}
+It is the student's responsibility to read and understand the required and important \href{https://fdc.fullerton.edu/teaching/student-info-syllabi.html}{student information for course syllabi}. Included is information about:
+
+\begin{itemize}[noitemsep]
+\item University learning goals
+\item General Education learning objectives
+\item Netiquette/appropriate online behavior
+\item Students' rights to accommodations
+\item Campus student support resources
+\item Academic integrity
+\item Emergency preparedness/what to do
+\item Library services
+\item Student IT services and competencies
+\item Software privacy and accessibility
+\item Accessibility statement
+\item Diversity statement
+\item Land acknowledgement
+\item Final exam schedule
+\item Semester calendar
+\end{itemize}
+
+% ========== SECTION 10: CLASSROOM MANAGEMENT ==========
+\section*{Classroom Management}
+% Add any additional classroom policies or "rules"
+YOUR CLASSROOM POLICIES (cell phones, recording, etc.)
+
+% ========== SECTION 11: GE REQUIREMENTS (DELETE IF NOT A GE COURSE) ==========
+% \section*{General Education Requirements}
+% \noindent \textbf{GE requirement(s) that this course meets:} GE CATEGORY
+% 
+% \noindent \textbf{How the GE writing requirement will be met and assessed:}
+% DESCRIBE HOW WRITING WILL BE INCORPORATED AND ASSESSED
+% 
+% \noindent \textbf{GE grading standard:}
+% % For Golden Four (A.1, A.2, A.3, B.4):
+% A grade of ``C-'' (1.7) or higher is required to meet this General Education requirement. A grade of ``D+'' (1.3) or below will not satisfy this General Education requirement.
+% 
+% % For all other GE courses:
+% % A grade of ``D'' (1.0) or higher is required to meet this General Education requirement. A grade of ``D-'' (0.7) or below will not satisfy this General Education requirement.
+
+% ========== SECTION 12: UPPER-DIVISION WRITING (DELETE IF NOT APPLICABLE) ==========
+% \section*{Upper-Division Writing Course Requirements}
+% DESCRIBE HOW THIS COURSE MEETS UPPER-DIVISION WRITING REQUIREMENTS
+
+% ========== SECTION 13: CALENDAR/SCHEDULE ==========
+\section*{Calendar of Topics / Schedule of Classes}
+% Remember: 16 weeks total (15 instruction + 1 finals)
+% Don't number spring/fall break week
+
+% Option 1: Weekly list format
+\noindent \textbf{Week 1, MM/DD}\\
+Topic(s): \\
+Reading(s): \\
+Assignment(s) Due: \\
+
+\noindent \textbf{Week 2, MM/DD}\\
+Topic(s): \\
+Reading(s): \\
+Assignment(s) Due: \\
+
+% Continue for all 16 weeks...
+
+% Option 2: Table format (uncomment if preferred)
+% \begin{center}
+% \begin{tabular}{|c|c|l|l|l|}
+% \hline
+% \textbf{Week} & \textbf{Date} & \textbf{Topic} & \textbf{Readings} & \textbf{Assignments Due} \\
+% \hline
+% 1 & MM/DD & & & \\
+% \hline
+% 2 & MM/DD & & & \\
+% \hline
+% % ... continue for all weeks
+% \hline
+% 16 & MM/DD & Final Exam & & \\
+% \hline
+% \end{tabular}
+% \end{center}
+
+\end{document}
