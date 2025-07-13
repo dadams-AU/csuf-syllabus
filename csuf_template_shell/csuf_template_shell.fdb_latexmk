@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1752365042.58798 "/home/dadams/Repos/syllabi/csuf_template_shell/csuf_template_shell.tex" "csuf_template_shell.pdf" "csuf_template_shell" 1752365043.09758 0
-  "/home/dadams/Repos/syllabi/csuf_template_shell/csuf_template_shell.tex" 1752365042.3718 12091 08b6e69aae9249039efb85fbff400c6a ""
+["pdflatex"] 1752366102.66469 "/home/dadams/Repos/syllabi/csuf_template_shell/csuf_template_shell.tex" "csuf_template_shell.pdf" "csuf_template_shell" 1752366103.16673 0
+  "/home/dadams/Repos/syllabi/csuf_template_shell/csuf_template_shell.tex" 1752366101.947 12081 1d2fa1642e0af869a3b0a4b44695084d ""
   "/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/local/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/adobe/helvetic/phvb8r.tfm" 1136768653 4484 b828043cbd581d289d955903c1339981 ""
@@ -107,9 +107,9 @@
   "/usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1751650628 5523539 cbe340ff87ac4cfddcdc6361a84e52ac ""
   "/usr/local/texlive/2025/texmf-var/web2c/pdftex/pdflatex.fmt" 1751650717 3599647 6f5b5fa18efed646169321a22eaf44df ""
   "/usr/local/texlive/2025/texmf.cnf" 1751650624.68062 455 5b996dcaa0eb4ef14a83b026bc0a008c ""
-  "csuf_template_shell.aux" 1752365043.05433 1266 336be2b2822401237c2e85c112f52202 "pdflatex"
-  "csuf_template_shell.out" 1752365042.93802 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "csuf_template_shell.tex" 1752365042.3718 12091 08b6e69aae9249039efb85fbff400c6a ""
+  "csuf_template_shell.aux" 1752366103.12502 1266 e1e445110d2cdc19ffc748ce0db9ce2b "pdflatex"
+  "csuf_template_shell.out" 1752366103.01002 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "csuf_template_shell.tex" 1752366101.947 12081 1d2fa1642e0af869a3b0a4b44695084d ""
   (generated)
   "csuf_template_shell.aux"
   "csuf_template_shell.log"

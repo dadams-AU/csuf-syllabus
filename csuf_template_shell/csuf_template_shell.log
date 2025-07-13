@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.7.4)  12 JUL 2025 17:04
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.7.4)  12 JUL 2025 17:21
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -474,34 +474,37 @@ LaTeX Font Info:    Font shape `T1/phv/m/it' in size <12> not available
 
 {/usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/base/8r.enc}]
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 165.
+(Font)              <12> on input line 167.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 165.
+(Font)              <8> on input line 167.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 165.
+(Font)              <6> on input line 167.
 
 
 [2]
+
+[3]
 pdfTeX warning (\pdfobj): invalid object number being ignored
-LaTeX Font Info:    Trying to load font information for TS1+phv on input line 258.
+LaTeX Font Info:    Trying to load font information for TS1+phv on input line 260.
 (/usr/local/texlive/2025/texmf-dist/tex/latex/psnfss/ts1phv.fd
 File: ts1phv.fd 2020/03/25 scalable font definitions for TS1/phv.
 )
-
-[3]
-Underfull \hbox (badness 10000) in paragraph at lines 304--308
+Underfull \hbox (badness 10000) in paragraph at lines 306--310
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 309--313
+Underfull \hbox (badness 10000) in paragraph at lines 311--315
 
  []
 
+
+
+[4]
 \c@ClassMap=\count342
 
 
-[4] (./csuf_template_shell.aux)
+[5] (./csuf_template_shell.aux)
  ***********
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2025-06-09>
@@ -510,21 +513,21 @@ Package rerunfilecheck Info: File `csuf_template_shell.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 13178 strings out of 467888
- 213463 string characters out of 5434062
- 639038 words of memory out of 5000000
- 41535 multiletter control sequences out of 15000+600000
+ 13183 strings out of 467888
+ 213543 string characters out of 5434062
+ 639067 words of memory out of 5000000
+ 41539 multiletter control sequences out of 15000+600000
  671937 words of font info for 77 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,6n,117p,574b,582s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,6n,117p,574b,541s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-pdfTeX warning (dest): Page 5 has been referenced but does not exist!
+pdfTeX warning (dest): Page 6 has been referenced but does not exist!
 
 </usr/local/texlive/2025/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on csuf_template_shell.pdf (4 pages, 82685 bytes).
+Output written on csuf_template_shell.pdf (5 pages, 85483 bytes).
 PDF statistics:
- 175 PDF objects out of 1000 (max. 8388607)
- 158 compressed objects within 2 object streams
- 18 named destinations out of 1000 (max. 500000)
- 425 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 189 PDF objects out of 1000 (max. 8388607)
+ 171 compressed objects within 2 object streams
+ 19 named destinations out of 1000 (max. 500000)
+ 461 words of extra memory for PDF output out of 10000 (max. 10000000)
 
