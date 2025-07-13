@@ -8,6 +8,15 @@
 % 3. Compile with LuaLaTeX for best accessibility support
 % 4. Check accessibility using Adobe Acrobat's accessibility checker
 %
+% ACCESSIBILITY NOTES:
+% - This template addresses common PDF accessibility issues:
+%   * Proper document title in PDF properties
+%   * Tagged annotations for links
+%   * Correct list structure tagging
+%   * Logical reading order (tab order)
+% - After compiling, run Adobe Acrobat's accessibility checker
+% - Fix any remaining issues using Acrobat's accessibility tools
+%
 % Created by: David P. Adams, Ph.D.
 % License: CC BY-NC-SA 4.0
 
@@ -17,7 +26,11 @@
 % These packages enable PDF tagging for screen readers
 \usepackage[english]{babel}
 \usepackage[tagged, highstructure]{accessibility}
-\usepackage[pdfusetitle, pdflang=en-US]{hyperref}
+% Load hyperref with proper options for accessibility
+\usepackage[pdfusetitle, 
+            pdflang=en-US,
+            pdfstartview=FitH,
+            pdfdisplaydoctitle=true]{hyperref}
 
 % ========== LAYOUT AND FONTS ==========
 \usepackage[T1]{fontenc}
@@ -59,7 +72,18 @@
 \author{}  % Leave empty - instructor info goes in Faculty Information section
 \date{Term and Year}
 
+% ========== ACCESSIBILITY FIXES ==========
+% Set list depth for proper tagging
+\setlistdepth{3}
+% Enable proper link annotations
+\hypersetup{pdfborderstyle={/S/U/W 1}}
+
 \begin{document}
+
+% Set the PDF document title properly
+\pdfinfo{
+  /Title (PREFIX & Number: Course Title - Term Year)
+}
 
 % ========== CSUF HEADER (OPTIONAL) ==========
 % If you have the CSUF logo file, uncomment the following lines
@@ -188,7 +212,7 @@ YOUR ATTENDANCE AND PARTICIPATION EXPECTATIONS
 \noindent \textbf{d. Examination dates:}
 % Remember: No major exams in week 15 unless there's also a final
 % Finals must be in week 16 only
-LIST EXAM DATES OR ``No exams in this course''
+LIST EXAM DATES OR "No exams in this course"
 
 % Part e: Make-up and late submission policy
 \vspace{1em}
@@ -212,7 +236,7 @@ YOUR POLICY FOR KEEPING STUDENT WORK
 
 % ========== GRADUATE CREDIT (DELETE IF NOT APPLICABLE) ==========
 % \vspace{1em}
-% \noindent \textbf{i. Additional assignments for graduate students:}
+% \noindent \textbf{Additional assignments for graduate students:}
 % If this is a 400-level course available for graduate credit,
 % describe the additional assignment(s) required for graduate students
 
