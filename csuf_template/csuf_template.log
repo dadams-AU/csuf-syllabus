@@ -1,11 +1,11 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.7.4)  12 JUL 2025 16:53
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.7.26)  11 AUG 2025 19:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **/home/dadams/Repos/syllabi/csuf_template/csuf_template.tex
 (/home/dadams/Repos/syllabi/csuf_template/csuf_template.tex
 LaTeX2e <2025-06-01> patch level 1
-L3 programming layer <2025-06-09>
+L3 programming layer <2025-07-19>
 (/usr/local/texlive/2025/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2025/01/22 v1.4n Standard LaTeX document class
 (/usr/local/texlive/2025/texmf-dist/tex/latex/base/size12.clo
@@ -23,15 +23,15 @@ File: size12.clo 2025/01/22 v1.4n Standard LaTeX file (size option)
 \belowcaptionskip=\skip50
 \bibindent=\dimen148
 ) (/usr/local/texlive/2025/texmf-dist/tex/generic/babel/babel.sty
-Package: babel 2025/06/10 v25.10 The multilingual framework for pdfLaTeX, LuaLaTeX and XeLaTeX
+Package: babel 2025/07/13 v25.11 The multilingual framework for LuaLaTeX, pdfLaTeX and XeLaTeX
 \babel@savecnt=\count283
-LaTeX Encoding Info:    Redeclaring text command \ij (encoding OT1) on input line 2043.
-LaTeX Encoding Info:    Redeclaring text command \IJ (encoding OT1) on input line 2045.
-LaTeX Encoding Info:    Redeclaring text command \ij (encoding T1) on input line 2047.
-LaTeX Encoding Info:    Redeclaring text command \IJ (encoding T1) on input line 2048.
-LaTeX Encoding Info:    Ignoring declaration for text command \ij (encoding ?) on input line 2049.
-LaTeX Encoding Info:    Ignoring declaration for text command \IJ (encoding ?) on input line 2051.
-LaTeX Encoding Info:    Ignoring declaration for text command \SS (encoding ?) on input line 2076.
+LaTeX Encoding Info:    Redeclaring text command \ij (encoding OT1) on input line 2045.
+LaTeX Encoding Info:    Redeclaring text command \IJ (encoding OT1) on input line 2047.
+LaTeX Encoding Info:    Redeclaring text command \ij (encoding T1) on input line 2049.
+LaTeX Encoding Info:    Redeclaring text command \IJ (encoding T1) on input line 2050.
+LaTeX Encoding Info:    Ignoring declaration for text command \ij (encoding ?) on input line 2051.
+LaTeX Encoding Info:    Ignoring declaration for text command \IJ (encoding ?) on input line 2053.
+LaTeX Encoding Info:    Ignoring declaration for text command \SS (encoding ?) on input line 2078.
 \U@D=\dimen149
 \l@unhyphenated=\language90
  (/usr/local/texlive/2025/texmf-dist/tex/generic/babel/txtbabel.def)
@@ -41,7 +41,7 @@ LaTeX Encoding Info:    Ignoring declaration for text command \SS (encoding ?) o
 Language: english 2017/06/06 v3.3r English support from the babel system
  (/usr/local/texlive/2025/texmf-dist/tex/generic/babel/locale/en/babel-english.tex
 Package babel Info: Importing font and identification data for english
-(babel)             from babel-en.ini. Reported on input line 11.
+(babel)             from babel-en.ini. Reported on input line 12.
 )
 Package babel Info: Hyphen rules for 'canadian' set to \l@english
 (babel)             (\language0). Reported on input line 102.
@@ -87,7 +87,7 @@ Package accessibility Info: Standardklasse on input line 133.
 \c@PDFFootnotetext=\count305
 \c@ObjNum=\count306
 ) (/usr/local/texlive/2025/texmf-dist/tex/latex/hyperref/hyperref.sty
-Package: hyperref 2025-06-21 v7.01n Hypertext links for LaTeX
+Package: hyperref 2025-07-12 v7.01o Hypertext links for LaTeX
  (/usr/local/texlive/2025/texmf-dist/tex/generic/iftex/iftex.sty
 Package: iftex 2024/12/12 v1.0g TeX engine tests
 ) (/usr/local/texlive/2025/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty
@@ -128,7 +128,7 @@ Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO)
 \Hy@linkcounter=\count309
 \Hy@pagecounter=\count310
  (/usr/local/texlive/2025/texmf-dist/tex/latex/hyperref/pd1enc.def
-File: pd1enc.def 2025-06-21 v7.01n Hyperref: PDFDocEncoding definition (HO)
+File: pd1enc.def 2025-07-12 v7.01o Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
 ) (/usr/local/texlive/2025/texmf-dist/tex/generic/intcalc/intcalc.sty
@@ -136,24 +136,24 @@ Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 )
 \Hy@SavedSpaceFactor=\count311
  (/usr/local/texlive/2025/texmf-dist/tex/latex/hyperref/puenc.def
-File: puenc.def 2025-06-21 v7.01n Hyperref: PDF Unicode definition (HO)
+File: puenc.def 2025-07-12 v7.01o Hyperref: PDF Unicode definition (HO)
 Now handling font encoding PU ...
 ... no UTF-8 mapping file for font encoding PU
 )
-Package hyperref Info: Option `pdfusetitle' set `true' on input line 4052.
-Package hyperref Info: Hyper figures OFF on input line 4181.
-Package hyperref Info: Link nesting OFF on input line 4186.
-Package hyperref Info: Hyper index ON on input line 4189.
-Package hyperref Info: Plain pages OFF on input line 4196.
-Package hyperref Info: Backreferencing OFF on input line 4201.
+Package hyperref Info: Option `pdfusetitle' set `true' on input line 4066.
+Package hyperref Info: Hyper figures OFF on input line 4195.
+Package hyperref Info: Link nesting OFF on input line 4200.
+Package hyperref Info: Hyper index ON on input line 4203.
+Package hyperref Info: Plain pages OFF on input line 4210.
+Package hyperref Info: Backreferencing OFF on input line 4215.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
-Package hyperref Info: Bookmarks ON on input line 4448.
+Package hyperref Info: Bookmarks ON on input line 4462.
 \c@Hy@tempcnt=\count312
  (/usr/local/texlive/2025/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip17
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
-LaTeX Info: Redefining \url on input line 4787.
+LaTeX Info: Redefining \url on input line 4801.
 \XeTeXLinkMargin=\dimen151
  (/usr/local/texlive/2025/texmf-dist/tex/generic/bitset/bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
@@ -163,20 +163,20 @@ Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO)
 \Fld@menulength=\count313
 \Field@Width=\dimen152
 \Fld@charsize=\dimen153
-Package hyperref Info: Hyper figures OFF on input line 6066.
-Package hyperref Info: Link nesting OFF on input line 6071.
-Package hyperref Info: Hyper index ON on input line 6074.
-Package hyperref Info: backreferencing OFF on input line 6081.
-Package hyperref Info: Link coloring OFF on input line 6086.
-Package hyperref Info: Link coloring with OCG OFF on input line 6091.
-Package hyperref Info: PDF/A mode OFF on input line 6096.
+Package hyperref Info: Hyper figures OFF on input line 6078.
+Package hyperref Info: Link nesting OFF on input line 6083.
+Package hyperref Info: Hyper index ON on input line 6086.
+Package hyperref Info: backreferencing OFF on input line 6093.
+Package hyperref Info: Link coloring OFF on input line 6098.
+Package hyperref Info: Link coloring with OCG OFF on input line 6103.
+Package hyperref Info: PDF/A mode OFF on input line 6108.
 \Hy@abspage=\count314
 \c@Item=\count315
 \c@Hfootnote=\count316
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
  (/usr/local/texlive/2025/texmf-dist/tex/latex/hyperref/hpdftex.def
-File: hpdftex.def 2025-06-21 v7.01n Hyperref driver for pdfTeX
+File: hpdftex.def 2025-07-12 v7.01o Hyperref driver for pdfTeX
 \Fld@listcount=\count317
 \c@bookmark@seq@number=\count318
  (/usr/local/texlive/2025/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
@@ -495,16 +495,16 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 
 
 [2]
-LaTeX Font Info:    Trying to load font information for TS1+phv on input line 153.
+LaTeX Font Info:    Trying to load font information for TS1+phv on input line 151.
  (/usr/local/texlive/2025/texmf-dist/tex/latex/psnfss/ts1phv.fd
 File: ts1phv.fd 2020/03/25 scalable font definitions for TS1/phv.
 )
-Overfull \hbox (16.67111pt too wide) in paragraph at lines 160--179
+Overfull \hbox (16.67111pt too wide) in paragraph at lines 158--177
 []$\T1/phv/m/n/12 : []Op-tional - for sug-ges-tions please
  []
 
 
-Overfull \hbox (1.97568pt too wide) in paragraph at lines 160--179
+Overfull \hbox (1.97568pt too wide) in paragraph at lines 158--177
 []$\T1/phv/m/n/12 : List other ma-te-ri-als, if any; if none, write ``none.''
  []
 
@@ -519,7 +519,7 @@ Overfull \hbox (1.97568pt too wide) in paragraph at lines 160--179
 [6]
 
 [7]
-Overfull \hbox (11.71591pt too wide) in paragraph at lines 316--317
+Overfull \hbox (11.71591pt too wide) in paragraph at lines 314--315
 [][][]$[]$ []\T1/phv/m/n/12 (delete this sec-tion if it does
  []
 
@@ -531,11 +531,11 @@ pdfTeX warning (\pdfobj): invalid object number being ignored
 
 [9]
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <17.28> on input line 385.
+(Font)              <17.28> on input line 383.
 
 
 [10]
-Overfull \hbox (32.13658pt too wide) in paragraph at lines 408--408
+Overfull \hbox (32.13658pt too wide) in paragraph at lines 406--406
 [][][]$[]$ 
  []
 
@@ -544,27 +544,27 @@ Overfull \hbox (32.13658pt too wide) in paragraph at lines 408--408
 [11]
 
 [12]
-Overfull \hbox (14.22638pt too wide) in paragraph at lines 489--490
+Overfull \hbox (14.22638pt too wide) in paragraph at lines 487--488
 []|[][][][]| 
  []
 
 
-Underfull \hbox (badness 5802) in paragraph at lines 505--505
+Underfull \hbox (badness 5802) in paragraph at lines 503--503
 []|[][][]\T1/phv/m/n/12 Midterm Exam
  []
 
 
-Underfull \hbox (badness 2302) in paragraph at lines 523--523
+Underfull \hbox (badness 2302) in paragraph at lines 521--521
 []|[][][]\T1/phv/m/n/12 Final Exam or
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 523--523
+Underfull \hbox (badness 10000) in paragraph at lines 521--521
 \T1/phv/m/n/12 other as-sess-
  []
 
 
-Underfull \hbox (badness 1496) in paragraph at lines 523--524
+Underfull \hbox (badness 1496) in paragraph at lines 521--522
 []|[][][]\T1/phv/m/n/12 Due no ear-lier
  []
 
@@ -574,16 +574,16 @@ Underfull \hbox (badness 1496) in paragraph at lines 523--524
 [13] (./csuf_template.aux)
  ***********
 LaTeX2e <2025-06-01> patch level 1
-L3 programming layer <2025-06-09>
+L3 programming layer <2025-07-19>
  ***********
 Package rerunfilecheck Info: File `csuf_template.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 13614 strings out of 467888
- 218977 string characters out of 5434062
- 662616 words of memory out of 5000000
- 41956 multiletter control sequences out of 15000+600000
+ 13621 strings out of 467816
+ 219106 string characters out of 5432252
+ 665540 words of memory out of 5000000
+ 42035 multiletter control sequences out of 15000+600000
  675401 words of font info for 80 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,10n,117p,1286b,582s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -591,10 +591,10 @@ Here is how much of TeX's memory you used:
 pdfTeX warning (dest): Page 14 has been referenced but does not exist!
 
 </usr/local/texlive/2025/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/urw/helvetic/uhvbo8a.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on csuf_template.pdf (13 pages, 889309 bytes).
+Output written on csuf_template.pdf (13 pages, 889821 bytes).
 PDF statistics:
- 369 PDF objects out of 1000 (max. 8388607)
- 337 compressed objects within 4 object streams
+ 372 PDF objects out of 1000 (max. 8388607)
+ 340 compressed objects within 4 object streams
  29 named destinations out of 1000 (max. 500000)
  906 words of extra memory for PDF output out of 10000 (max. 10000000)
 
