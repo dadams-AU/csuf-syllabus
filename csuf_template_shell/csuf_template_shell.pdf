@@ -13,7 +13,7 @@ stream
 /P <</MCID 0>> BDC
 1 0 0 1 -158.177 -653.225 cm
 BT
-/F69 20.6625 Tf 158.177 653.225 Td [(PREFIX)-278(&)-278(Number)50(,)]TJ/F70 20.6625 Tf [-278(Course)-278(Title)]TJ
+/F65 20.6625 Tf 158.177 653.225 Td [(PREFIX)-278(&)-278(Number)50(,)]TJ/F66 20.6625 Tf [-278(Course)-278(Title)]TJ
 0 g 0 G
 0 g 0 G
 ET
@@ -27,7 +27,7 @@ EMC
 /P <</MCID 2>> BDC
 1 0 0 1 -259.849 -583.156 cm
 BT
-/F69 14.3462 Tf 259.849 583.156 Td [(T)120(er)-25(m)-278(and)-278(Y)140(ear)]TJ
+/F65 14.3462 Tf 259.849 583.156 Td [(T)120(er)-25(m)-278(and)-278(Y)140(ear)]TJ
 0 g 0 G
 0 g 0 G
 ET
@@ -37,7 +37,7 @@ EMC
 /H <</MCID 3>> BDC
 1 0 0 1 -72 -503.188 cm
 BT
-/F72 17.2154 Tf 72 503.188 Td [(F)20(aculty)-278(Inf)20(ormation)]TJ
+/F68 17.2154 Tf 72 503.188 Td [(F)20(aculty)-278(Inf)20(ormation)]TJ
 0 g 0 G
 0 g 0 G
 ET
@@ -47,19 +47,19 @@ EMC
 /P <</MCID 4>> BDC
 1 0 0 1 -72 -470.88 cm
 BT
-/F72 11.9552 Tf 72 470.88 Td [(Instructor:)]TJ/F69 11.9552 Tf [-344(Y)85(OUR)-278(NAME)]TJ
+/F68 11.9552 Tf 72 470.88 Td [(Instructor:)]TJ/F65 11.9552 Tf [-344(Y)85(OUR)-278(NAME)]TJ
 0 g 0 G
 0 g 0 G
-/F72 11.9552 Tf 0 -17.927 Td [(Of\002ce:)]TJ/F69 11.9552 Tf [-344(B)10(UILDING)-278(AND)-278(R)20(OOM)]TJ
+/F68 11.9552 Tf 0 -17.927 Td [(Of\002ce:)]TJ/F65 11.9552 Tf [-344(B)10(UILDING)-278(AND)-278(R)20(OOM)]TJ
 0 g 0 G
 0 g 0 G
-/F72 11.9552 Tf 0 -17.928 Td [(Phone:)]TJ/F69 11.9552 Tf [-344(\050657\051)-278(278-XXXX)]TJ
+/F68 11.9552 Tf 0 -17.928 Td [(Phone:)]TJ/F65 11.9552 Tf [-344(\050657\051)-278(278-XXXX)]TJ
 0 g 0 G
 0 g 0 G
-/F72 11.9552 Tf 0 -17.927 Td [(Email:)]TJ/F69 11.9552 Tf [-344(y)20(ouremail@fuller)-40(ton.edu)]TJ
+/F68 11.9552 Tf 0 -17.927 Td [(Email:)]TJ/F65 11.9552 Tf [-344(y)20(ouremail@fuller)-40(ton.edu)]TJ
 0 g 0 G
 0 g 0 G
-/F72 11.9552 Tf 0 -17.927 Td [(Of\002ce)-278(hour)15(s:)]TJ/F69 11.9552 Tf [-344(D)40(A)100(YS)-278(AND)-278(TIMES)20(,)-278(b)20(y)-278(appointment)]TJ
+/F68 11.9552 Tf 0 -17.927 Td [(Of\002ce)-278(hour)15(s:)]TJ/F65 11.9552 Tf [-344(D)40(A)100(YS)-278(AND)-278(TIMES)20(,)-278(b)20(y)-278(appointment)]TJ
 0 g 0 G
 0 g 0 G
 ET
@@ -69,7 +69,7 @@ EMC
 /H <</MCID 5>> BDC
 1 0 0 1 -72 -350.087 cm
 BT
-/F72 17.2154 Tf 72 350.087 Td [(Cour)15(se)-278(Comm)20(unication)]TJ
+/F68 17.2154 Tf 72 350.087 Td [(Cour)15(se)-278(Comm)20(unication)]TJ
 0 g 0 G
 0 g 0 G
 ET
@@ -79,7 +79,7 @@ EMC
 /P <</MCID 6>> BDC
 1 0 0 1 -72 -317.779 cm
 BT
-/F69 11.9552 Tf 72 317.779 Td [(Y)85(OUR)-278(PREFERRED)-278(COMMUNICA)120(TION)-278(METHOD)-278(AND)-278(POLICY)-278(HERE)]TJ
+/F65 11.9552 Tf 72 317.779 Td [(Y)85(OUR)-278(PREFERRED)-278(COMMUNICA)120(TION)-278(METHOD)-278(AND)-278(POLICY)-278(HERE)]TJ
 0 g 0 G
 0 g 0 G
 ET
@@ -89,7 +89,7 @@ EMC
 /H <</MCID 7>> BDC
 1 0 0 1 -72 -268.695 cm
 BT
-/F72 17.2154 Tf 72 268.695 Td [(T)60(ec)10(hnical)-278(Pr)20(ob)10(lems)]TJ
+/F68 17.2154 Tf 72 268.695 Td [(T)60(ec)10(hnical)-278(Pr)20(ob)10(lems)]TJ
 0 g 0 G
 0 g 0 G
 ET
@@ -99,7 +99,7 @@ EMC
 /P <</MCID 8>> BDC
 1 0 0 1 -72 -236.387 cm
 BT
-/F69 11.9552 Tf 72 236.387 Td [(If)-278(y)20(ou)-278(encount)1(er)-278(an)15(y)-278(technical)-278(dif\002culties)15(,)-278(contact)-277(the)-278(instr)-15(uctor)-278(immediately)-277(to)-278(document)]TJ
+/F65 11.9552 Tf 72 236.387 Td [(If)-278(y)20(ou)-278(encount)1(er)-278(an)15(y)-278(technical)-278(dif\002culties)15(,)-278(contact)-277(the)-278(instr)-15(uctor)-278(immediately)-277(to)-278(document)]TJ
 0 g 0 G
 0 g 0 G
  0 -17.927 Td [(the)-311(prob)20(lem.)-444(Then,)-319(contact:)]TJ
@@ -129,14 +129,14 @@ EMC
 /P <</MCID 9>> BDC
 1 0 0 1 -72 -176.628 cm
 BT
-/F72 11.9552 Tf 72 176.628 Td [(For)-278(issues)-278(with)-278(Can)40(v)20(as)]TJ
+/F68 11.9552 Tf 72 176.628 Td [(For)-278(issues)-278(with)-278(Can)40(v)20(as)]TJ
 ET
 q
 1 0 0 1 72 175.084 cm
 []0 d 0 J 0.398 w 0 0 m 132.163 0 l S
 Q
 BT
-/F69 11.9552 Tf 204.163 176.628 Td [(:)-483(Can)20(v)25(as)-348(Suppo)1(r)-40(t)-348(Hotline)-347(=)-348(\050657\051)-347(278-8888,)]TJ
+/F65 11.9552 Tf 204.163 176.628 Td [(:)-483(Can)20(v)25(as)-348(Suppo)1(r)-40(t)-348(Hotline)-347(=)-348(\050657\051)-347(278-8888,)]TJ
 0 0 1 rg 0 0 1 RG
  [-365(search)-348(the)-347(CSUF)]TJ
 0 g 0 G
@@ -155,7 +155,7 @@ EMC
 /P <</MCID 10>> BDC
 1 0 0 1 -72 -134.796 cm
 BT
-/F72 11.9552 Tf 72 134.796 Td [(Alternative)-278(plan)-278(f)20(or)-278(submitting)-278(w)20(ork:)]TJ/F69 11.9552 Tf [-344(DESCRIBE)-278(Y)85(OUR)-278(BA)30(CKUP)-278(PLAN)]TJ
+/F68 11.9552 Tf 72 134.796 Td [(Alternative)-278(plan)-278(f)20(or)-278(submitting)-278(w)20(ork:)]TJ/F65 11.9552 Tf [-344(DESCRIBE)-278(Y)85(OUR)-278(BA)30(CKUP)-278(PLAN)]TJ
 0 g 0 G
 0 g 0 G
 ET
@@ -164,7 +164,7 @@ EMC
 /P <</MCID 11>> BDC
 1 0 0 1 -72 -110.891 cm
 BT
-/F72 11.9552 Tf 72 110.891 Td [(Response)-278(time:)]TJ/F69 11.9552 Tf [-344(Y)85(OUR)-278(RESPONSE)-278(TIME)-278(POLICY)]TJ
+/F68 11.9552 Tf 72 110.891 Td [(Response)-278(time:)]TJ/F65 11.9552 Tf [-344(Y)85(OUR)-278(RESPONSE)-278(TIME)-278(POLICY)]TJ
 0 g 0 G
 ET
 1 0 0 1 72 110.891 cm
@@ -175,7 +175,7 @@ EMC
 /Artifact <</Type /Pagination>> BDC
 1 0 0 1 -72 -42.112 cm
 BT
-/F69 11.9552 Tf 302.677 42.112 Td [(1)]TJ
+/F65 11.9552 Tf 302.677 42.112 Td [(1)]TJ
 ET
 1 0 0 1 540 42.112 cm
 EMC
@@ -194,7 +194,7 @@ stream
 /H <</MCID 12>> BDC
 1 0 0 1 -72 -707.441 cm
 BT
-/F72 17.2154 Tf 72 707.441 Td [(Cour)15(se)-278(Inf)20(ormation)]TJ
+/F68 17.2154 Tf 72 707.441 Td [(Cour)15(se)-278(Inf)20(ormation)]TJ
 0 g 0 G
 0 g 0 G
 ET
@@ -204,10 +204,10 @@ EMC
 /P <</MCID 13>> BDC
 1 0 0 1 -72 -675.133 cm
 BT
-/F72 11.9552 Tf 72 675.133 Td [(Pre\002x,)-278(n)10(umber)60(,)-278(title:)]TJ/F69 11.9552 Tf [-344(PREFIX)-278(###,)]TJ/F70 11.9552 Tf [-278(Course)-278(Title)]TJ
+/F68 11.9552 Tf 72 675.133 Td [(Pre\002x,)-278(n)10(umber)60(,)-278(title:)]TJ/F65 11.9552 Tf [-344(PREFIX)-278(###,)]TJ/F66 11.9552 Tf [-278(Course)-278(Title)]TJ
 0 g 0 G
 0 g 0 G
-/F72 11.9552 Tf 0 -17.927 Td [(Meeting)-326(times)-326(with)-327(modality)80(,)-338(da)20(y\050s\051,)-338(time\050s\051,)-338(and)-326(location)-327(\050if)-326(sync)10(hr)20(onous\051:)]TJ/F69 11.9552 Tf [-440(Y)85(OUR)]TJ
+/F68 11.9552 Tf 0 -17.927 Td [(Meeting)-326(times)-326(with)-327(modality)80(,)-338(da)20(y\050s\051,)-338(time\050s\051,)-338(and)-326(location)-327(\050if)-326(sync)10(hr)20(onous\051:)]TJ/F65 11.9552 Tf [-440(Y)85(OUR)]TJ
 0 g 0 G
 0 g 0 G
  0 -17.927 Td [(MOD)40(ALITY)140(,)-278(D)40(A)100(YS)20(,)-278(TIMES)20(,)-278(LOCA)120(TION)]TJ
@@ -221,7 +221,7 @@ EMC
 /P <</MCID 14>> BDC
 1 0 0 1 -72 -602.423 cm
 BT
-/F72 11.9552 Tf 72 602.423 Td [(Zoom:)]TJ/F69 11.9552 Tf [-344(Y)85(OUR)-278(ZOOM)-278(LINK)-278(IF)-278(APPLICABLE)]TJ
+/F68 11.9552 Tf 72 602.423 Td [(Zoom:)]TJ/F65 11.9552 Tf [-344(Y)85(OUR)-278(ZOOM)-278(LINK)-278(IF)-278(APPLICABLE)]TJ
 0 g 0 G
 0 g 0 G
 0 g 0 G
@@ -232,7 +232,7 @@ EMC
 /P <</MCID 15>> BDC
 1 0 0 1 -72 -574.533 cm
 BT
-/F72 11.9552 Tf 72 574.533 Td [(Cour)15(se)-278(requisite\050s\051:)]TJ/F69 11.9552 Tf [-344(LIST)-278(PREREQ)10(UISITES/COREQ)10(UISITES)-278(OR)-278("none")]TJ
+/F68 11.9552 Tf 72 574.533 Td [(Cour)15(se)-278(requisite\050s\051:)]TJ/F65 11.9552 Tf [-344(LIST)-278(PREREQ)10(UISITES/COREQ)10(UISITES)-278(OR)-278("none")]TJ
 0 g 0 G
 0 g 0 G
 0 g 0 G
@@ -243,7 +243,7 @@ EMC
 /P <</MCID 16>> BDC
 1 0 0 1 -72 -546.643 cm
 BT
-/F72 11.9552 Tf 72 546.643 Td [(Catalog)-278(description:)]TJ/F69 11.9552 Tf [-344(COPY)-278(CA)120(T)120(ALOG)-278(DESCRIPTION)-278(VERBA)120(TIM)-278(\05040)-278(w)10(ords)-278(max\051)]TJ
+/F68 11.9552 Tf 72 546.643 Td [(Catalog)-278(description:)]TJ/F65 11.9552 Tf [-344(COPY)-278(CA)120(T)120(ALOG)-278(DESCRIPTION)-278(VERBA)120(TIM)-278(\05040)-278(w)10(ords)-278(max\051)]TJ
 0 g 0 G
 0 g 0 G
 0 g 0 G
@@ -254,7 +254,7 @@ EMC
 /P <</MCID 17>> BDC
 1 0 0 1 -72 -518.753 cm
 BT
-/F72 11.9552 Tf 72 518.753 Td [(Ad)10(ditional)-278(description:)]TJ/F69 11.9552 Tf [-344(OPTIONAL)-278(EXP)120(ANDED)-278(DESCRIPTION)]TJ
+/F68 11.9552 Tf 72 518.753 Td [(Ad)10(ditional)-278(description:)]TJ/F65 11.9552 Tf [-344(OPTIONAL)-278(EXP)120(ANDED)-278(DESCRIPTION)]TJ
 0 g 0 G
 0 g 0 G
 0 g 0 G
@@ -265,7 +265,7 @@ EMC
 /P <</MCID 18>> BDC
 1 0 0 1 -72 -490.863 cm
 BT
-/F72 11.9552 Tf 72 490.863 Td [(P)40(olic)10(y)-278(regar)20(ding)-278(the)-278(use)-278(of)-278(g)-10(enerative)-278(AI:)]TJ/F69 11.9552 Tf [-278(Y)85(OUR)-278(AI)-278(POLICY)]TJ
+/F68 11.9552 Tf 72 490.863 Td [(P)40(olic)10(y)-278(regar)20(ding)-278(the)-278(use)-278(of)-278(g)-10(enerative)-278(AI:)]TJ/F65 11.9552 Tf [-278(Y)85(OUR)-278(AI)-278(POLICY)]TJ
 0 g 0 G
 0 g 0 G
 0 g 0 G
@@ -276,7 +276,7 @@ EMC
 /P <</MCID 19>> BDC
 1 0 0 1 -72 -462.973 cm
 BT
-/F72 11.9552 Tf 72 462.973 Td [(Cour)15(se)-278(materials)-278(and)-278(equipment:)]TJ
+/F68 11.9552 Tf 72 462.973 Td [(Cour)15(se)-278(materials)-278(and)-278(equipment:)]TJ
 0 g 0 G
 0 g 0 G
 0 g 0 G
@@ -287,7 +287,7 @@ EMC
 /P <</MCID 20>> BDC
 1 0 0 1 -72 -435.083 cm
 BT
-/F72 11.9552 Tf 72 435.083 Td [(Required)-278(te)15(xt\050s\051:)]TJ/F69 11.9552 Tf [-344(LIST)-278(REQ)10(UIRED)-278(TEXTS)-278(OR)-278("none")]TJ
+/F68 11.9552 Tf 72 435.083 Td [(Required)-278(te)15(xt\050s\051:)]TJ/F65 11.9552 Tf [-344(LIST)-278(REQ)10(UIRED)-278(TEXTS)-278(OR)-278("none")]TJ
 0 g 0 G
 0 g 0 G
 0 g 0 G
@@ -298,7 +298,7 @@ EMC
 /P <</MCID 21>> BDC
 1 0 0 1 -72 -407.193 cm
 BT
-/F72 11.9552 Tf 72 407.193 Td [(Recommended)-278(te)15(xt\050s\051:)]TJ/F69 11.9552 Tf [-344(LIST)-278(RECOMMENDED)-278(TEXTS)-278(OR)-278(DELETE)-278(THIS)-278(LINE)]TJ
+/F68 11.9552 Tf 72 407.193 Td [(Recommended)-278(te)15(xt\050s\051:)]TJ/F65 11.9552 Tf [-344(LIST)-278(RECOMMENDED)-278(TEXTS)-278(OR)-278(DELETE)-278(THIS)-278(LINE)]TJ
 0 g 0 G
 0 g 0 G
 0 g 0 G
@@ -309,7 +309,7 @@ EMC
 /P <</MCID 22>> BDC
 1 0 0 1 -72 -379.304 cm
 BT
-/F72 11.9552 Tf 72 379.304 Td [(Other)-278(cour)15(se)-278(materials)-278(and)-278(equipment:)]TJ/F69 11.9552 Tf [-344(LIST)-278(O)40(THER)-278(MA)120(TERIALS)-278(OR)-278("none")]TJ
+/F68 11.9552 Tf 72 379.304 Td [(Other)-278(cour)15(se)-278(materials)-278(and)-278(equipment:)]TJ/F65 11.9552 Tf [-344(LIST)-278(O)40(THER)-278(MA)120(TERIALS)-278(OR)-278("none")]TJ
 0 g 0 G
 0 g 0 G
 0 g 0 G
@@ -320,7 +320,7 @@ EMC
 /P <</MCID 23>> BDC
 1 0 0 1 -72 -351.414 cm
 BT
-/F72 11.9552 Tf 72 351.414 Td [(Zer)20(o)-278(cost:)]TJ/F69 11.9552 Tf [-344(IF)-278(APPLICABLE,)-278(NO)40(TE)-278(THA)120(T)-278(THIS)-278(IS)-278(A)-278(ZER)20(O-COST)-278(COURSE)]TJ
+/F68 11.9552 Tf 72 351.414 Td [(Zer)20(o)-278(cost:)]TJ/F65 11.9552 Tf [-344(IF)-278(APPLICABLE,)-278(NO)40(TE)-278(THA)120(T)-278(THIS)-278(IS)-278(A)-278(ZER)20(O-COST)-278(COURSE)]TJ
 0 g 0 G
 0 g 0 G
 ET
@@ -329,7 +329,7 @@ EMC
 /P <</MCID 24>> BDC
 1 0 0 1 -72 -308.58 cm
 BT
-/F72 11.9552 Tf 72 308.58 Td [(Student)-278(Learning)-278(Outcomes:)]TJ
+/F68 11.9552 Tf 72 308.58 Td [(Student)-278(Learning)-278(Outcomes:)]TJ
 0 g 0 G
 0 g 0 G
 0 g 0 G
@@ -339,7 +339,7 @@ EMC
 /Lbl <</MCID 25>> BDC
 1 0 0 1 -82.118 -280.69 cm
 BT
-/F69 11.9552 Tf 85.442 280.69 Td [(1.)]TJ
+/F65 11.9552 Tf 85.442 280.69 Td [(1.)]TJ
 ET
 1 0 0 1 95.412 280.69 cm
 EMC
@@ -348,7 +348,7 @@ EMC
 /LBody <</MCID 26>> BDC
 1 0 0 1 -101.265 -280.69 cm
 BT
-/F69 11.9552 Tf 101.265 280.69 Td [(LEARNING)-278(OUTCOME)-278(1)]TJ
+/F65 11.9552 Tf 101.265 280.69 Td [(LEARNING)-278(OUTCOME)-278(1)]TJ
 0 g 0 G
 0 g 0 G
 0 g 0 G
@@ -358,7 +358,7 @@ EMC
 /Lbl <</MCID 27>> BDC
 1 0 0 1 -82.118 -252.8 cm
 BT
-/F69 11.9552 Tf 85.442 252.8 Td [(2.)]TJ
+/F65 11.9552 Tf 85.442 252.8 Td [(2.)]TJ
 ET
 1 0 0 1 95.412 252.8 cm
 EMC
@@ -367,7 +367,7 @@ EMC
 /LBody <</MCID 28>> BDC
 1 0 0 1 -101.265 -252.8 cm
 BT
-/F69 11.9552 Tf 101.265 252.8 Td [(LEARNING)-278(OUTCOME)-278(2)]TJ
+/F65 11.9552 Tf 101.265 252.8 Td [(LEARNING)-278(OUTCOME)-278(2)]TJ
 0 g 0 G
 0 g 0 G
 0 g 0 G
@@ -377,7 +377,7 @@ EMC
 /Lbl <</MCID 29>> BDC
 1 0 0 1 -82.118 -224.91 cm
 BT
-/F69 11.9552 Tf 85.442 224.91 Td [(3.)]TJ
+/F65 11.9552 Tf 85.442 224.91 Td [(3.)]TJ
 ET
 1 0 0 1 95.412 224.91 cm
 EMC
@@ -386,7 +386,7 @@ EMC
 /LBody <</MCID 30>> BDC
 1 0 0 1 -101.265 -224.91 cm
 BT
-/F69 11.9552 Tf 101.265 224.91 Td [(LEARNING)-278(OUTCOME)-278(3)]TJ
+/F65 11.9552 Tf 101.265 224.91 Td [(LEARNING)-278(OUTCOME)-278(3)]TJ
 0 g 0 G
 0 g 0 G
 0 g 0 G
@@ -396,7 +396,7 @@ EMC
 /Lbl <</MCID 31>> BDC
 1 0 0 1 -82.118 -197.02 cm
 BT
-/F69 11.9552 Tf 85.442 197.02 Td [(4.)]TJ
+/F65 11.9552 Tf 85.442 197.02 Td [(4.)]TJ
 ET
 1 0 0 1 95.412 197.02 cm
 EMC
@@ -405,7 +405,7 @@ EMC
 /LBody <</MCID 32>> BDC
 1 0 0 1 -101.265 -197.02 cm
 BT
-/F69 11.9552 Tf 101.265 197.02 Td [(ADD)-278(MORE)-278(AS)-278(NEEDED)]TJ
+/F65 11.9552 Tf 101.265 197.02 Td [(ADD)-278(MORE)-278(AS)-278(NEEDED)]TJ
 0 g 0 G
 ET
 1 0 0 1 72 197.02 cm
@@ -416,7 +416,7 @@ EMC
 /Artifact <</Type /Pagination>> BDC
 1 0 0 1 -72 -42.112 cm
 BT
-/F69 11.9552 Tf 302.677 42.112 Td [(2)]TJ
+/F65 11.9552 Tf 302.677 42.112 Td [(2)]TJ
 ET
 1 0 0 1 540 42.112 cm
 EMC
@@ -435,7 +435,7 @@ stream
 /H <</MCID 33>> BDC
 1 0 0 1 -72 -707.441 cm
 BT
-/F72 17.2154 Tf 72 707.441 Td [(Grading)-278(P)40(olicies)-278(and)-278(Standar)20(ds)]TJ
+/F68 17.2154 Tf 72 707.441 Td [(Grading)-278(P)40(olicies)-278(and)-278(Standar)20(ds)]TJ
 0 g 0 G
 0 g 0 G
 ET
@@ -445,7 +445,7 @@ EMC
 /P <</MCID 34>> BDC
 1 0 0 1 -72 -675.133 cm
 BT
-/F72 11.9552 Tf 72 675.133 Td [(a.)-344(Grading)-278(scale:)]TJ
+/F68 11.9552 Tf 72 675.133 Td [(a.)-344(Grading)-278(scale:)]TJ
 0 g 0 G
 0 g 0 G
 0 g 0 G
@@ -468,14 +468,14 @@ q
 Q
 1 0 0 1 -188.849 -662.898 cm
 BT
-/F72 11.9552 Tf 195.225 650.349 Td [(Grade)]TJ
+/F68 11.9552 Tf 195.225 650.349 Td [(Grade)]TJ
 ET
 q
 1 0 0 1 235.952 644.971 cm
 []0 d 0 J 0.398 w 0 0 m 0 17.927 l S
 Q
 BT
-/F72 11.9552 Tf 250.413 650.349 Td [(P)30(er)20(cent)]TJ
+/F68 11.9552 Tf 250.413 650.349 Td [(P)30(er)20(cent)]TJ
 ET
 q
 1 0 0 1 308.128 644.971 cm
@@ -486,14 +486,14 @@ q
 []0 d 0 J 0.398 w 0 0 m 0 17.927 l S
 Q
 BT
-/F72 11.9552 Tf 316.696 650.349 Td [(Grade)]TJ
+/F68 11.9552 Tf 316.696 650.349 Td [(Grade)]TJ
 ET
 q
 1 0 0 1 357.423 644.971 cm
 []0 d 0 J 0.398 w 0 0 m 0 17.927 l S
 Q
 BT
-/F72 11.9552 Tf 368.561 650.349 Td [(P)30(er)20(cent)]TJ
+/F68 11.9552 Tf 368.561 650.349 Td [(P)30(er)20(cent)]TJ
 ET
 q
 1 0 0 1 422.952 644.971 cm
@@ -513,14 +513,14 @@ q
 Q
 1 0 0 1 -188.849 -644.572 cm
 BT
-/F69 11.9552 Tf 195.225 632.023 Td [(A+)]TJ
+/F65 11.9552 Tf 195.225 632.023 Td [(A+)]TJ
 ET
 q
 1 0 0 1 235.952 626.645 cm
 []0 d 0 J 0.398 w 0 0 m 0 17.927 l S
 Q
 BT
-/F69 11.9552 Tf 242.128 632.023 Td [(98.0\226100.0)]TJ
+/F65 11.9552 Tf 242.128 632.023 Td [(98.0\226100.0)]TJ
 ET
 q
 1 0 0 1 308.128 626.645 cm
@@ -531,14 +531,14 @@ q
 []0 d 0 J 0.398 w 0 0 m 0 17.927 l S
 Q
 BT
-/F69 11.9552 Tf 316.696 632.023 Td [(C+)]TJ
+/F65 11.9552 Tf 316.696 632.023 Td [(C+)]TJ
 ET
 q
 1 0 0 1 357.423 626.645 cm
 []0 d 0 J 0.398 w 0 0 m 0 17.927 l S
 Q
 BT
-/F69 11.9552 Tf 363.6 632.023 Td [(77.0\22679.9)]TJ
+/F65 11.9552 Tf 363.6 632.023 Td [(77.0\22679.9)]TJ
 ET
 q
 1 0 0 1 422.952 626.645 cm
@@ -549,14 +549,14 @@ q
 []0 d 0 J 0.398 w 0 0 m 0 17.927 l S
 Q
 BT
-/F69 11.9552 Tf 195.225 614.096 Td [(A)]TJ
+/F65 11.9552 Tf 195.225 614.096 Td [(A)]TJ
 ET
 q
 1 0 0 1 235.952 608.718 cm
 []0 d 0 J 0.398 w 0 0 m 0 17.927 l S
 Q
 BT
-/F69 11.9552 Tf 245.452 614.096 Td [(93.0\22697.9)]TJ
+/F65 11.9552 Tf 245.452 614.096 Td [(93.0\22697.9)]TJ
 ET
 q
 1 0 0 1 308.128 608.718 cm
@@ -567,14 +567,14 @@ q
 []0 d 0 J 0.398 w 0 0 m 0 17.927 l S
 Q
 BT
-/F69 11.9552 Tf 316.696 614.096 Td [(C)]TJ
+/F65 11.9552 Tf 316.696 614.096 Td [(C)]TJ
 ET
 q
 1 0 0 1 357.423 608.718 cm
 []0 d 0 J 0.398 w 0 0 m 0 17.927 l S
 Q
 BT
-/F69 11.9552 Tf 363.6 614.096 Td [(73.0\22676.9)]TJ
+/F65 11.9552 Tf 363.6 614.096 Td [(73.0\22676.9)]TJ
 ET
 q
 1 0 0 1 422.952 608.718 cm
@@ -585,14 +585,14 @@ q
 []0 d 0 J 0.398 w 0 0 m 0 17.927 l S
 Q
 BT
-/F69 11.9552 Tf 195.225 596.169 Td [(A-)]TJ
+/F65 11.9552 Tf 195.225 596.169 Td [(A-)]TJ
 ET
 q
 1 0 0 1 235.952 590.79 cm
 []0 d 0 J 0.398 w 0 0 m 0 17.927 l S
 Q
 BT
-/F69 11.9552 Tf 245.452 596.169 Td [(90.0\22692.9)]TJ
+/F65 11.9552 Tf 245.452 596.169 Td [(90.0\22692.9)]TJ
 ET
 q
 1 0 0 1 308.128 590.79 cm
@@ -603,14 +603,14 @@ q
 []0 d 0 J 0.398 w 0 0 m 0 17.927 l S
 Q
 BT
-/F69 11.9552 Tf 316.696 596.169 Td [(C-)]TJ
+/F65 11.9552 Tf 316.696 596.169 Td [(C-)]TJ
 ET
 q
 1 0 0 1 357.423 590.79 cm
 []0 d 0 J 0.398 w 0 0 m 0 17.927 l S
 Q
 BT
-/F69 11.9552 Tf 363.6 596.169 Td [(70.0\22672.9)]TJ
+/F65 11.9552 Tf 363.6 596.169 Td [(70.0\22672.9)]TJ
 ET
 q
 1 0 0 1 422.952 590.79 cm
@@ -621,14 +621,14 @@ q
 []0 d 0 J 0.398 w 0 0 m 0 17.927 l S
 Q
 BT
-/F69 11.9552 Tf 195.225 578.241 Td [(B+)]TJ
+/F65 11.9552 Tf 195.225 578.241 Td [(B+)]TJ
 ET
 q
 1 0 0 1 235.952 572.863 cm
 []0 d 0 J 0.398 w 0 0 m 0 17.927 l S
 Q
 BT
-/F69 11.9552 Tf 245.452 578.241 Td [(87.0\22689.9)]TJ
+/F65 11.9552 Tf 245.452 578.241 Td [(87.0\22689.9)]TJ
 ET
 q
 1 0 0 1 308.128 572.863 cm
@@ -639,14 +639,14 @@ q
 []0 d 0 J 0.398 w 0 0 m 0 17.927 l S
 Q
 BT
-/F69 11.9552 Tf 316.696 578.241 Td [(D+)]TJ
+/F65 11.9552 Tf 316.696 578.241 Td [(D+)]TJ
 ET
 q
 1 0 0 1 357.423 572.863 cm
 []0 d 0 J 0.398 w 0 0 m 0 17.927 l S
 Q
 BT
-/F69 11.9552 Tf 363.6 578.241 Td [(67.0\22669.9)]TJ
+/F65 11.9552 Tf 363.6 578.241 Td [(67.0\22669.9)]TJ
 ET
 q
 1 0 0 1 422.952 572.863 cm
@@ -657,14 +657,14 @@ q
 []0 d 0 J 0.398 w 0 0 m 0 17.927 l S
 Q
 BT
-/F69 11.9552 Tf 195.225 560.314 Td [(B)]TJ
+/F65 11.9552 Tf 195.225 560.314 Td [(B)]TJ
 ET
 q
 1 0 0 1 235.952 554.936 cm
 []0 d 0 J 0.398 w 0 0 m 0 17.927 l S
 Q
 BT
-/F69 11.9552 Tf 245.452 560.314 Td [(83.0\22686.9)]TJ
+/F65 11.9552 Tf 245.452 560.314 Td [(83.0\22686.9)]TJ
 ET
 q
 1 0 0 1 308.128 554.936 cm
@@ -675,14 +675,14 @@ q
 []0 d 0 J 0.398 w 0 0 m 0 17.927 l S
 Q
 BT
-/F69 11.9552 Tf 316.696 560.314 Td [(D)]TJ
+/F65 11.9552 Tf 316.696 560.314 Td [(D)]TJ
 ET
 q
 1 0 0 1 357.423 554.936 cm
 []0 d 0 J 0.398 w 0 0 m 0 17.927 l S
 Q
 BT
-/F69 11.9552 Tf 363.6 560.314 Td [(63.0\22666.9)]TJ
+/F65 11.9552 Tf 363.6 560.314 Td [(63.0\22666.9)]TJ
 ET
 q
 1 0 0 1 422.952 554.936 cm
@@ -693,14 +693,14 @@ q
 []0 d 0 J 0.398 w 0 0 m 0 17.927 l S
 Q
 BT
-/F69 11.9552 Tf 195.225 542.387 Td [(B-)]TJ
+/F65 11.9552 Tf 195.225 542.387 Td [(B-)]TJ
 ET
 q
 1 0 0 1 235.952 537.009 cm
 []0 d 0 J 0.398 w 0 0 m 0 17.927 l S
 Q
 BT
-/F69 11.9552 Tf 245.452 542.387 Td [(80.0\22682.9)]TJ
+/F65 11.9552 Tf 245.452 542.387 Td [(80.0\22682.9)]TJ
 ET
 q
 1 0 0 1 308.128 537.009 cm
@@ -711,14 +711,14 @@ q
 []0 d 0 J 0.398 w 0 0 m 0 17.927 l S
 Q
 BT
-/F69 11.9552 Tf 316.696 542.387 Td [(D-)]TJ
+/F65 11.9552 Tf 316.696 542.387 Td [(D-)]TJ
 ET
 q
 1 0 0 1 357.423 537.009 cm
 []0 d 0 J 0.398 w 0 0 m 0 17.927 l S
 Q
 BT
-/F69 11.9552 Tf 363.6 542.387 Td [(60.0\22662.9)]TJ
+/F65 11.9552 Tf 363.6 542.387 Td [(60.0\22662.9)]TJ
 ET
 q
 1 0 0 1 422.952 537.009 cm
@@ -741,14 +741,14 @@ q
 []0 d 0 J 0.398 w 0 0 m 0 17.927 l S
 Q
 BT
-/F69 11.9552 Tf 316.696 524.46 Td [(F)]TJ
+/F65 11.9552 Tf 316.696 524.46 Td [(F)]TJ
 ET
 q
 1 0 0 1 357.423 519.082 cm
 []0 d 0 J 0.398 w 0 0 m 0 17.927 l S
 Q
 BT
-/F69 11.9552 Tf 366.923 524.46 Td [(0.0\22659.9)]TJ
+/F65 11.9552 Tf 366.923 524.46 Td [(0.0\22659.9)]TJ
 ET
 q
 1 0 0 1 422.952 519.082 cm
@@ -769,7 +769,7 @@ EMC
 /P <</MCID 36>> BDC
 1 0 0 1 -72 -488.829 cm
 BT
-/F72 11.9552 Tf 72 488.829 Td [(b.)-344(Required)-278(Cour)15(se)-278(Assignments:)]TJ
+/F68 11.9552 Tf 72 488.829 Td [(b.)-344(Required)-278(Cour)15(se)-278(Assignments:)]TJ
 0 g 0 G
 0 g 0 G
 0 g 0 G
@@ -792,14 +792,14 @@ q
 Q
 1 0 0 1 -199.737 -476.594 cm
 BT
-/F72 11.9552 Tf 206.114 464.045 Td [(Assignment)]TJ
+/F68 11.9552 Tf 206.114 464.045 Td [(Assignment)]TJ
 ET
 q
 1 0 0 1 335.858 458.667 cm
 []0 d 0 J 0.398 w 0 0 m 0 17.927 l S
 Q
 BT
-/F72 11.9552 Tf 342.034 464.045 Td [(P)30(er)20(centa)10(g)-10(e)]TJ
+/F68 11.9552 Tf 342.034 464.045 Td [(P)30(er)20(centa)10(g)-10(e)]TJ
 ET
 q
 1 0 0 1 412.063 458.667 cm
@@ -819,14 +819,14 @@ q
 Q
 1 0 0 1 -199.737 -458.268 cm
 BT
-/F69 11.9552 Tf 206.114 445.719 Td [(ASSIGNMENT)-278(TYPE)-278(1)]TJ
+/F65 11.9552 Tf 206.114 445.719 Td [(ASSIGNMENT)-278(TYPE)-278(1)]TJ
 ET
 q
 1 0 0 1 335.858 440.341 cm
 []0 d 0 J 0.398 w 0 0 m 0 17.927 l S
 Q
 BT
-/F69 11.9552 Tf 360.672 445.719 Td [(XX%)]TJ
+/F65 11.9552 Tf 360.672 445.719 Td [(XX%)]TJ
 ET
 q
 1 0 0 1 412.063 440.341 cm
@@ -837,14 +837,14 @@ q
 []0 d 0 J 0.398 w 0 0 m 0 17.927 l S
 Q
 BT
-/F69 11.9552 Tf 206.114 427.792 Td [(ASSIGNMENT)-278(TYPE)-278(2)]TJ
+/F65 11.9552 Tf 206.114 427.792 Td [(ASSIGNMENT)-278(TYPE)-278(2)]TJ
 ET
 q
 1 0 0 1 335.858 422.414 cm
 []0 d 0 J 0.398 w 0 0 m 0 17.927 l S
 Q
 BT
-/F69 11.9552 Tf 360.672 427.792 Td [(XX%)]TJ
+/F65 11.9552 Tf 360.672 427.792 Td [(XX%)]TJ
 ET
 q
 1 0 0 1 412.063 422.414 cm
@@ -855,14 +855,14 @@ q
 []0 d 0 J 0.398 w 0 0 m 0 17.927 l S
 Q
 BT
-/F69 11.9552 Tf 206.114 409.865 Td [(ASSIGNMENT)-278(TYPE)-278(3)]TJ
+/F65 11.9552 Tf 206.114 409.865 Td [(ASSIGNMENT)-278(TYPE)-278(3)]TJ
 ET
 q
 1 0 0 1 335.858 404.487 cm
 []0 d 0 J 0.398 w 0 0 m 0 17.927 l S
 Q
 BT
-/F69 11.9552 Tf 360.672 409.865 Td [(XX%)]TJ
+/F65 11.9552 Tf 360.672 409.865 Td [(XX%)]TJ
 ET
 q
 1 0 0 1 412.063 404.487 cm
@@ -873,14 +873,14 @@ q
 []0 d 0 J 0.398 w 0 0 m 0 17.927 l S
 Q
 BT
-/F69 11.9552 Tf 206.114 391.938 Td [(ASSIGNMENT)-278(TYPE)-278(4)]TJ
+/F65 11.9552 Tf 206.114 391.938 Td [(ASSIGNMENT)-278(TYPE)-278(4)]TJ
 ET
 q
 1 0 0 1 335.858 386.559 cm
 []0 d 0 J 0.398 w 0 0 m 0 17.927 l S
 Q
 BT
-/F69 11.9552 Tf 360.672 391.938 Td [(XX%)]TJ
+/F65 11.9552 Tf 360.672 391.938 Td [(XX%)]TJ
 ET
 q
 1 0 0 1 412.063 386.559 cm
@@ -900,14 +900,14 @@ q
 Q
 1 0 0 1 -199.737 -386.161 cm
 BT
-/F72 11.9552 Tf 206.114 373.612 Td [(T)80(otal)]TJ
+/F68 11.9552 Tf 206.114 373.612 Td [(T)80(otal)]TJ
 ET
 q
 1 0 0 1 335.858 368.234 cm
 []0 d 0 J 0.398 w 0 0 m 0 17.927 l S
 Q
 BT
-/F69 11.9552 Tf 358.676 373.612 Td [(100%)]TJ
+/F65 11.9552 Tf 358.676 373.612 Td [(100%)]TJ
 ET
 q
 1 0 0 1 412.063 368.234 cm
@@ -928,7 +928,7 @@ EMC
 /P <</MCID 38>> BDC
 1 0 0 1 -72 -337.91 cm
 BT
-/F72 11.9552 Tf 72 337.91 Td [(c.)-525(Attendance)-338(and)-338(P)30(ar)-20(ticipation)-338(polic)10(y:)]TJ/F69 11.9552 Tf [-465(Y)85(OUR)-338(A)120(TTEND)40(ANCE)-338(AND)-338(P)120(AR)30(TICIP)120(A)120(TION)]TJ
+/F68 11.9552 Tf 72 337.91 Td [(c.)-525(Attendance)-338(and)-338(P)30(ar)-20(ticipation)-338(polic)10(y:)]TJ/F65 11.9552 Tf [-465(Y)85(OUR)-338(A)120(TTEND)40(ANCE)-338(AND)-338(P)120(AR)30(TICIP)120(A)120(TION)]TJ
 0 g 0 G
 0 g 0 G
  0 -17.927 Td [(EXPECT)120(A)120(TIONS)]TJ
@@ -940,7 +940,7 @@ EMC
 /P <</MCID 39>> BDC
 1 0 0 1 -72 -290.1 cm
 BT
-/F72 11.9552 Tf 72 290.1 Td [(d.)-344(Examination)-278(dates:)]TJ/F69 11.9552 Tf [-344(LIST)-278(EXAM)-278(D)40(A)120(TES)-278(OR)-278("No)-278(e)30(xams)-278(in)-278(this)-278(course")]TJ
+/F68 11.9552 Tf 72 290.1 Td [(d.)-344(Examination)-278(dates:)]TJ/F65 11.9552 Tf [-344(LIST)-278(EXAM)-278(D)40(A)120(TES)-278(OR)-278("No)-278(e)30(xams)-278(in)-278(this)-278(course")]TJ
 0 g 0 G
 0 g 0 G
 ET
@@ -949,7 +949,7 @@ EMC
 /P <</MCID 40>> BDC
 1 0 0 1 -72 -260.218 cm
 BT
-/F72 11.9552 Tf 72 260.218 Td [(e)-20(.)-903(Make-up)-465(and)-464(late)-465(submission)-464(polic)10(y:)]TJ/F69 11.9552 Tf [-717(Y)85(OUR)-464(POLICY)-464(FOR)-465(LA)120(TE)-464(W)20(ORK)-464(AND)]TJ
+/F68 11.9552 Tf 72 260.218 Td [(e)-20(.)-903(Make-up)-465(and)-464(late)-465(submission)-464(polic)10(y:)]TJ/F65 11.9552 Tf [-717(Y)85(OUR)-464(POLICY)-464(FOR)-465(LA)120(TE)-464(W)20(ORK)-464(AND)]TJ
 0 g 0 G
 0 g 0 G
  0 -17.927 Td [(MAKE-UP)-278(EXAMS)]TJ
@@ -961,7 +961,7 @@ EMC
 /P <</MCID 41>> BDC
 1 0 0 1 -72 -212.408 cm
 BT
-/F72 11.9552 Tf 72 212.408 Td [(f)10(.)-332(A)30(uthentication)-241(of)-241(student)-242(w)20(ork)1(:)]TJ/F69 11.9552 Tf [-326(Y)85(OUR)-241(POLICY)-242(FOR)-241(VERIFYING)-241(STUDENT)-241(W)20(ORK)]TJ
+/F68 11.9552 Tf 72 212.408 Td [(f)10(.)-332(A)30(uthentication)-241(of)-241(student)-242(w)20(ork)1(:)]TJ/F65 11.9552 Tf [-326(Y)85(OUR)-241(POLICY)-242(FOR)-241(VERIFYING)-241(STUDENT)-241(W)20(ORK)]TJ
 0 g 0 G
 0 g 0 G
 ET
@@ -970,7 +970,7 @@ EMC
 /P <</MCID 42>> BDC
 1 0 0 1 -72 -182.526 cm
 BT
-/F72 11.9552 Tf 72 182.526 Td [(g.)-344(Extra)-278(credit:)]TJ/F69 11.9552 Tf [-344(Y)85(OUR)-278(EXTRA)-278(CREDIT)-278(POLICY)-278(OR)-278("No)-278(e)30(xtr)10(a)-278(credit)-278(off)30(ered)1(")]TJ
+/F68 11.9552 Tf 72 182.526 Td [(g.)-344(Extra)-278(credit:)]TJ/F65 11.9552 Tf [-344(Y)85(OUR)-278(EXTRA)-278(CREDIT)-278(POLICY)-278(OR)-278("No)-278(e)30(xtr)10(a)-278(credit)-278(off)30(ered)1(")]TJ
 0 g 0 G
 0 g 0 G
 ET
@@ -979,7 +979,7 @@ EMC
 /P <</MCID 43>> BDC
 1 0 0 1 -72 -152.643 cm
 BT
-/F72 11.9552 Tf 72 152.643 Td [(h.)-344(Retention)-278(of)-278(student)-278(w)20(ork:)]TJ/F69 11.9552 Tf [-344(Y)85(OUR)-278(POLICY)-278(FOR)-278(KEEPING)-278(STUDENT)-278(W)20(ORK)]TJ
+/F68 11.9552 Tf 72 152.643 Td [(h.)-344(Retention)-278(of)-278(student)-278(w)20(ork:)]TJ/F65 11.9552 Tf [-344(Y)85(OUR)-278(POLICY)-278(FOR)-278(KEEPING)-278(STUDENT)-278(W)20(ORK)]TJ
 0 g 0 G
 0 g 0 G
 ET
@@ -989,7 +989,7 @@ EMC
 /H <</MCID 44>> BDC
 1 0 0 1 -72 -104.308 cm
 BT
-/F72 17.2154 Tf 72 104.308 Td [(Academic)-278(Integrity)]TJ
+/F68 17.2154 Tf 72 104.308 Td [(Academic)-278(Integrity)]TJ
 0 g 0 G
 0 g 0 G
 ET
@@ -999,7 +999,7 @@ EMC
 /P <</MCID 45>> BDC
 1 0 0 1 -72 -72 cm
 BT
-/F69 11.9552 Tf 72 72 Td [(Y)85(OUR)-278(A)30(CADEMIC)-278(INTEGRITY)-278(POLICY)-278(AND)-278(CONSEQ)10(UENCES)-278(FOR)-278(VIOLA)120(TIONS)]TJ
+/F65 11.9552 Tf 72 72 Td [(Y)85(OUR)-278(A)30(CADEMIC)-278(INTEGRITY)-278(POLICY)-278(AND)-278(CONSEQ)10(UENCES)-278(FOR)-278(VIOLA)120(TIONS)]TJ
 0 g 0 G
 ET
 1 0 0 1 72 72 cm
@@ -1010,7 +1010,7 @@ EMC
 /Artifact <</Type /Pagination>> BDC
 1 0 0 1 -72 -42.112 cm
 BT
-/F69 11.9552 Tf 302.677 42.112 Td [(3)]TJ
+/F65 11.9552 Tf 302.677 42.112 Td [(3)]TJ
 ET
 1 0 0 1 540 42.112 cm
 EMC
@@ -1159,7 +1159,7 @@ stream
 >>
 % 31 0 obj
 <<
-/Font << /F69 35 0 R /F70 36 0 R /F72 38 0 R >>
+/Font << /F65 35 0 R /F66 36 0 R /F68 38 0 R >>
 /ProcSet [ /PDF /Text ]
 >>
 % 44 0 obj
@@ -1248,7 +1248,7 @@ stream
 >>
 % 73 0 obj
 <<
-/Font << /F72 38 0 R /F69 35 0 R /F70 36 0 R >>
+/Font << /F68 38 0 R /F65 35 0 R /F66 36 0 R >>
 /ProcSet [ /PDF /Text ]
 >>
 % 72 0 obj
@@ -1299,7 +1299,7 @@ stream
 >>
 % 95 0 obj
 <<
-/Font << /F72 38 0 R /F69 35 0 R >>
+/Font << /F68 38 0 R /F65 35 0 R >>
 /ProcSet [ /PDF /Text ]
 >>
 % 93 0 obj
@@ -1346,7 +1346,7 @@ stream
 /H <</MCID 46>> BDC
 1 0 0 1 -72 -707.441 cm
 BT
-/F72 17.2154 Tf 72 707.441 Td [(Student)-278(Resour)20(ces)-278(W)35(ebsite)]TJ
+/F68 17.2154 Tf 72 707.441 Td [(Student)-278(Resour)20(ces)-278(W)35(ebsite)]TJ
 0 g 0 G
 0 g 0 G
 ET
@@ -1356,7 +1356,7 @@ EMC
 /P <</MCID 47>> BDC
 1 0 0 1 -72 -675.133 cm
 BT
-/F69 11.9552 Tf 72 675.133 Td [(It)-233(is)-233(the)-233(student')50(s)-233(r)1(esponsibility)-233(to)-233(read)-233(and)-233(understand)-233(the)-233(required)-233(and)-232(impor)-40(tant)]TJ
+/F65 11.9552 Tf 72 675.133 Td [(It)-233(is)-233(the)-233(student')50(s)-233(r)1(esponsibility)-233(to)-233(read)-233(and)-233(understand)-233(the)-233(required)-233(and)-232(impor)-40(tant)]TJ
 0 0 1 rg 0 0 1 RG
  [-233(student)]TJ
 0 g 0 G
@@ -1373,7 +1373,7 @@ EMC
 /Lbl <</MCID 48>> BDC
 1 0 0 1 -87.904 -626.327 cm
 BT
-/F69 11.9552 Tf 91.228 626.327 Td [(\225)]TJ
+/F65 11.9552 Tf 91.228 626.327 Td [(\225)]TJ
 ET
 1 0 0 1 95.412 626.327 cm
 EMC
@@ -1382,7 +1382,7 @@ EMC
 /LBody <</MCID 49>> BDC
 1 0 0 1 -101.265 -626.327 cm
 BT
-/F69 11.9552 Tf 101.265 626.327 Td [(Univ)25(ersity)-278(lear)-25(ning)-278(goals)]TJ
+/F65 11.9552 Tf 101.265 626.327 Td [(Univ)25(ersity)-278(lear)-25(ning)-278(goals)]TJ
 0 g 0 G
 0 g 0 G
 0 g 0 G
@@ -1392,7 +1392,7 @@ EMC
 /Lbl <</MCID 50>> BDC
 1 0 0 1 -87.904 -608.4 cm
 BT
-/F69 11.9552 Tf 91.228 608.4 Td [(\225)]TJ
+/F65 11.9552 Tf 91.228 608.4 Td [(\225)]TJ
 ET
 1 0 0 1 95.412 608.4 cm
 EMC
@@ -1401,7 +1401,7 @@ EMC
 /LBody <</MCID 51>> BDC
 1 0 0 1 -101.265 -608.4 cm
 BT
-/F69 11.9552 Tf 101.265 608.4 Td [(Gener)10(al)-278(Education)-278(lear)-25(ning)-278(objectiv)25(es)]TJ
+/F65 11.9552 Tf 101.265 608.4 Td [(Gener)10(al)-278(Education)-278(lear)-25(ning)-278(objectiv)25(es)]TJ
 0 g 0 G
 0 g 0 G
 0 g 0 G
@@ -1411,7 +1411,7 @@ EMC
 /Lbl <</MCID 52>> BDC
 1 0 0 1 -87.904 -590.473 cm
 BT
-/F69 11.9552 Tf 91.228 590.473 Td [(\225)]TJ
+/F65 11.9552 Tf 91.228 590.473 Td [(\225)]TJ
 ET
 1 0 0 1 95.412 590.473 cm
 EMC
@@ -1420,7 +1420,7 @@ EMC
 /LBody <</MCID 53>> BDC
 1 0 0 1 -101.265 -590.473 cm
 BT
-/F69 11.9552 Tf 101.265 590.473 Td [(Netiquette/appropr)-15(iate)-278(online)-278(beha)20(vior)]TJ
+/F65 11.9552 Tf 101.265 590.473 Td [(Netiquette/appropr)-15(iate)-278(online)-278(beha)20(vior)]TJ
 0 g 0 G
 0 g 0 G
 0 g 0 G
@@ -1430,7 +1430,7 @@ EMC
 /Lbl <</MCID 54>> BDC
 1 0 0 1 -87.904 -572.546 cm
 BT
-/F69 11.9552 Tf 91.228 572.546 Td [(\225)]TJ
+/F65 11.9552 Tf 91.228 572.546 Td [(\225)]TJ
 ET
 1 0 0 1 95.412 572.546 cm
 EMC
@@ -1439,7 +1439,7 @@ EMC
 /LBody <</MCID 55>> BDC
 1 0 0 1 -101.265 -572.546 cm
 BT
-/F69 11.9552 Tf 101.265 572.546 Td [(Students')-278(r)-15(ights)-278(to)-278(accommodations)]TJ
+/F65 11.9552 Tf 101.265 572.546 Td [(Students')-278(r)-15(ights)-278(to)-278(accommodations)]TJ
 0 g 0 G
 0 g 0 G
 0 g 0 G
@@ -1449,7 +1449,7 @@ EMC
 /Lbl <</MCID 56>> BDC
 1 0 0 1 -87.904 -554.618 cm
 BT
-/F69 11.9552 Tf 91.228 554.618 Td [(\225)]TJ
+/F65 11.9552 Tf 91.228 554.618 Td [(\225)]TJ
 ET
 1 0 0 1 95.412 554.618 cm
 EMC
@@ -1458,7 +1458,7 @@ EMC
 /LBody <</MCID 57>> BDC
 1 0 0 1 -101.265 -554.618 cm
 BT
-/F69 11.9552 Tf 101.265 554.618 Td [(Campus)-278(student)-278(suppor)-40(t)-278(resources)]TJ
+/F65 11.9552 Tf 101.265 554.618 Td [(Campus)-278(student)-278(suppor)-40(t)-278(resources)]TJ
 0 g 0 G
 0 g 0 G
 0 g 0 G
@@ -1468,7 +1468,7 @@ EMC
 /Lbl <</MCID 58>> BDC
 1 0 0 1 -87.904 -536.691 cm
 BT
-/F69 11.9552 Tf 91.228 536.691 Td [(\225)]TJ
+/F65 11.9552 Tf 91.228 536.691 Td [(\225)]TJ
 ET
 1 0 0 1 95.412 536.691 cm
 EMC
@@ -1477,7 +1477,7 @@ EMC
 /LBody <</MCID 59>> BDC
 1 0 0 1 -101.265 -536.691 cm
 BT
-/F69 11.9552 Tf 101.265 536.691 Td [(Academic)-278(integ)10(r)-15(ity)]TJ
+/F65 11.9552 Tf 101.265 536.691 Td [(Academic)-278(integ)10(r)-15(ity)]TJ
 0 g 0 G
 0 g 0 G
 0 g 0 G
@@ -1487,7 +1487,7 @@ EMC
 /Lbl <</MCID 60>> BDC
 1 0 0 1 -87.904 -518.764 cm
 BT
-/F69 11.9552 Tf 91.228 518.764 Td [(\225)]TJ
+/F65 11.9552 Tf 91.228 518.764 Td [(\225)]TJ
 ET
 1 0 0 1 95.412 518.764 cm
 EMC
@@ -1496,7 +1496,7 @@ EMC
 /LBody <</MCID 61>> BDC
 1 0 0 1 -101.265 -518.764 cm
 BT
-/F69 11.9552 Tf 101.265 518.764 Td [(Emergency)-278(preparedness/what)-278(to)-278(do)]TJ
+/F65 11.9552 Tf 101.265 518.764 Td [(Emergency)-278(preparedness/what)-278(to)-278(do)]TJ
 0 g 0 G
 0 g 0 G
 0 g 0 G
@@ -1506,7 +1506,7 @@ EMC
 /Lbl <</MCID 62>> BDC
 1 0 0 1 -87.904 -500.837 cm
 BT
-/F69 11.9552 Tf 91.228 500.837 Td [(\225)]TJ
+/F65 11.9552 Tf 91.228 500.837 Td [(\225)]TJ
 ET
 1 0 0 1 95.412 500.837 cm
 EMC
@@ -1515,7 +1515,7 @@ EMC
 /LBody <</MCID 63>> BDC
 1 0 0 1 -101.265 -500.837 cm
 BT
-/F69 11.9552 Tf 101.265 500.837 Td [(Libr)10(ar)-30(y)-278(ser)-30(vices)]TJ
+/F65 11.9552 Tf 101.265 500.837 Td [(Libr)10(ar)-30(y)-278(ser)-30(vices)]TJ
 0 g 0 G
 0 g 0 G
 0 g 0 G
@@ -1525,7 +1525,7 @@ EMC
 /Lbl <</MCID 64>> BDC
 1 0 0 1 -87.904 -482.91 cm
 BT
-/F69 11.9552 Tf 91.228 482.91 Td [(\225)]TJ
+/F65 11.9552 Tf 91.228 482.91 Td [(\225)]TJ
 ET
 1 0 0 1 95.412 482.91 cm
 EMC
@@ -1534,7 +1534,7 @@ EMC
 /LBody <</MCID 65>> BDC
 1 0 0 1 -101.265 -482.91 cm
 BT
-/F69 11.9552 Tf 101.265 482.91 Td [(Student)-278(IT)-278(ser)-30(vices)-278(and)-278(competencies)]TJ
+/F65 11.9552 Tf 101.265 482.91 Td [(Student)-278(IT)-278(ser)-30(vices)-278(and)-278(competencies)]TJ
 0 g 0 G
 0 g 0 G
 0 g 0 G
@@ -1544,7 +1544,7 @@ EMC
 /Lbl <</MCID 66>> BDC
 1 0 0 1 -87.904 -464.982 cm
 BT
-/F69 11.9552 Tf 91.228 464.982 Td [(\225)]TJ
+/F65 11.9552 Tf 91.228 464.982 Td [(\225)]TJ
 ET
 1 0 0 1 95.412 464.982 cm
 EMC
@@ -1553,7 +1553,7 @@ EMC
 /LBody <</MCID 67>> BDC
 1 0 0 1 -101.265 -464.982 cm
 BT
-/F69 11.9552 Tf 101.265 464.982 Td [(Softw)15(are)-278(pr)-15(iv)25(acy)-278(and)-278(accessibility)]TJ
+/F65 11.9552 Tf 101.265 464.982 Td [(Softw)15(are)-278(pr)-15(iv)25(acy)-278(and)-278(accessibility)]TJ
 0 g 0 G
 0 g 0 G
 0 g 0 G
@@ -1563,7 +1563,7 @@ EMC
 /Lbl <</MCID 68>> BDC
 1 0 0 1 -87.904 -447.055 cm
 BT
-/F69 11.9552 Tf 91.228 447.055 Td [(\225)]TJ
+/F65 11.9552 Tf 91.228 447.055 Td [(\225)]TJ
 ET
 1 0 0 1 95.412 447.055 cm
 EMC
@@ -1572,7 +1572,7 @@ EMC
 /LBody <</MCID 69>> BDC
 1 0 0 1 -101.265 -447.055 cm
 BT
-/F69 11.9552 Tf 101.265 447.055 Td [(Accessibility)-278(statement)]TJ
+/F65 11.9552 Tf 101.265 447.055 Td [(Accessibility)-278(statement)]TJ
 0 g 0 G
 0 g 0 G
 0 g 0 G
@@ -1582,7 +1582,7 @@ EMC
 /Lbl <</MCID 70>> BDC
 1 0 0 1 -87.904 -429.128 cm
 BT
-/F69 11.9552 Tf 91.228 429.128 Td [(\225)]TJ
+/F65 11.9552 Tf 91.228 429.128 Td [(\225)]TJ
 ET
 1 0 0 1 95.412 429.128 cm
 EMC
@@ -1591,7 +1591,7 @@ EMC
 /LBody <</MCID 71>> BDC
 1 0 0 1 -101.265 -429.128 cm
 BT
-/F69 11.9552 Tf 101.265 429.128 Td [(Div)25(ersity)-278(statement)]TJ
+/F65 11.9552 Tf 101.265 429.128 Td [(Div)25(ersity)-278(statement)]TJ
 0 g 0 G
 0 g 0 G
 0 g 0 G
@@ -1601,7 +1601,7 @@ EMC
 /Lbl <</MCID 72>> BDC
 1 0 0 1 -87.904 -411.201 cm
 BT
-/F69 11.9552 Tf 91.228 411.201 Td [(\225)]TJ
+/F65 11.9552 Tf 91.228 411.201 Td [(\225)]TJ
 ET
 1 0 0 1 95.412 411.201 cm
 EMC
@@ -1610,7 +1610,7 @@ EMC
 /LBody <</MCID 73>> BDC
 1 0 0 1 -101.265 -411.201 cm
 BT
-/F69 11.9552 Tf 101.265 411.201 Td [(Land)-278(ac)20(kno)15(wledgement)]TJ
+/F65 11.9552 Tf 101.265 411.201 Td [(Land)-278(ac)20(kno)15(wledgement)]TJ
 0 g 0 G
 0 g 0 G
 0 g 0 G
@@ -1620,7 +1620,7 @@ EMC
 /Lbl <</MCID 74>> BDC
 1 0 0 1 -87.904 -393.273 cm
 BT
-/F69 11.9552 Tf 91.228 393.273 Td [(\225)]TJ
+/F65 11.9552 Tf 91.228 393.273 Td [(\225)]TJ
 ET
 1 0 0 1 95.412 393.273 cm
 EMC
@@ -1629,7 +1629,7 @@ EMC
 /LBody <</MCID 75>> BDC
 1 0 0 1 -101.265 -393.273 cm
 BT
-/F69 11.9552 Tf 101.265 393.273 Td [(Final)-278(e)30(xam)-278(schedule)]TJ
+/F65 11.9552 Tf 101.265 393.273 Td [(Final)-278(e)30(xam)-278(schedule)]TJ
 0 g 0 G
 0 g 0 G
 0 g 0 G
@@ -1639,7 +1639,7 @@ EMC
 /Lbl <</MCID 76>> BDC
 1 0 0 1 -87.904 -375.346 cm
 BT
-/F69 11.9552 Tf 91.228 375.346 Td [(\225)]TJ
+/F65 11.9552 Tf 91.228 375.346 Td [(\225)]TJ
 ET
 1 0 0 1 95.412 375.346 cm
 EMC
@@ -1648,7 +1648,7 @@ EMC
 /LBody <</MCID 77>> BDC
 1 0 0 1 -101.265 -375.346 cm
 BT
-/F69 11.9552 Tf 101.265 375.346 Td [(Semester)-278(calendar)]TJ
+/F65 11.9552 Tf 101.265 375.346 Td [(Semester)-278(calendar)]TJ
 0 g 0 G
 0 g 0 G
 ET
@@ -1657,7 +1657,7 @@ EMC
 /H <</MCID 78>> BDC
 1 0 0 1 -72 -313.311 cm
 BT
-/F72 17.2154 Tf 72 313.311 Td [(Classr)20(oom)-278(Mana)10(g)-10(ement)]TJ
+/F68 17.2154 Tf 72 313.311 Td [(Classr)20(oom)-278(Mana)10(g)-10(ement)]TJ
 0 g 0 G
 0 g 0 G
 ET
@@ -1667,7 +1667,7 @@ EMC
 /P <</MCID 79>> BDC
 1 0 0 1 -72 -281.003 cm
 BT
-/F69 11.9552 Tf 72 281.003 Td [(Y)85(OUR)-278(CLASSR)20(OOM)-278(POLICIES)-278(\050cell)-278(phones)15(,)-278(recording,)-278(etc.\051)]TJ
+/F65 11.9552 Tf 72 281.003 Td [(Y)85(OUR)-278(CLASSR)20(OOM)-278(POLICIES)-278(\050cell)-278(phones)15(,)-278(recording,)-278(etc.\051)]TJ
 0 g 0 G
 0 g 0 G
 ET
@@ -1677,7 +1677,7 @@ EMC
 /H <</MCID 80>> BDC
 1 0 0 1 -72 -231.919 cm
 BT
-/F72 17.2154 Tf 72 231.919 Td [(Calendar)-278(of)-278(T)80(opics)-278(/)-278(Sc)10(hedule)-278(of)-278(Classes)]TJ
+/F68 17.2154 Tf 72 231.919 Td [(Calendar)-278(of)-278(T)80(opics)-278(/)-278(Sc)10(hedule)-278(of)-278(Classes)]TJ
 0 g 0 G
 0 g 0 G
 ET
@@ -1687,10 +1687,10 @@ EMC
 /P <</MCID 81>> BDC
 1 0 0 1 -72 -199.611 cm
 BT
-/F72 11.9552 Tf 72 199.611 Td [(W)35(eek)-278(1,)-278(MM/DD)]TJ
+/F68 11.9552 Tf 72 199.611 Td [(W)35(eek)-278(1,)-278(MM/DD)]TJ
 0 g 0 G
 0 g 0 G
-/F69 11.9552 Tf 0 -17.927 Td [(T)120(opic\050s\051:)]TJ
+/F65 11.9552 Tf 0 -17.927 Td [(T)120(opic\050s\051:)]TJ
 0 g 0 G
 0 g 0 G
  0 -17.927 Td [(Reading\050s\051:)]TJ
@@ -1707,10 +1707,10 @@ EMC
 /P <</MCID 82>> BDC
 1 0 0 1 -72 -109.975 cm
 BT
-/F72 11.9552 Tf 72 109.975 Td [(W)35(eek)-278(2,)-278(MM/DD)]TJ
+/F68 11.9552 Tf 72 109.975 Td [(W)35(eek)-278(2,)-278(MM/DD)]TJ
 0 g 0 G
 0 g 0 G
-/F69 11.9552 Tf 0 -17.927 Td [(T)120(opic\050s\051:)]TJ
+/F65 11.9552 Tf 0 -17.927 Td [(T)120(opic\050s\051:)]TJ
 0 g 0 G
 0 g 0 G
  0 -17.928 Td [(Reading\050s\051:)]TJ
@@ -1724,7 +1724,7 @@ EMC
 /Artifact <</Type /Pagination>> BDC
 1 0 0 1 -72 -42.112 cm
 BT
-/F69 11.9552 Tf 302.677 42.112 Td [(4)]TJ
+/F65 11.9552 Tf 302.677 42.112 Td [(4)]TJ
 ET
 1 0 0 1 540 42.112 cm
 EMC
@@ -1743,7 +1743,7 @@ stream
 /P <</MCID 83>> BDC
 1 0 0 1 -72 -720 cm
 BT
-/F69 11.9552 Tf 72 708.045 Td [(Assignment\050s\051)-278(Due:)]TJ
+/F65 11.9552 Tf 72 708.045 Td [(Assignment\050s\051)-278(Due:)]TJ
 0 g 0 G
 0 g 0 G
 0 g 0 G
@@ -1756,7 +1756,7 @@ EMC
 /Artifact <</Type /Pagination>> BDC
 1 0 0 1 -72 -42.112 cm
 BT
-/F69 11.9552 Tf 302.677 42.112 Td [(5)]TJ
+/F65 11.9552 Tf 302.677 42.112 Td [(5)]TJ
 ET
 1 0 0 1 540 42.112 cm
 EMC
@@ -2293,12 +2293,12 @@ endstream
 endobj
 191 0 obj
 <<
-/Producer (pdfTeX-1.40.28)
+/Producer (pdfTeX-1.40.27)
  /Title (PREFIX \& Number: Course Title - Term Year) /Author(\376\377\000Y\000O\000U\000R\000\040\000N\000A\000M\000E)/Title(\376\377\000C\000O\000U\000R\000S\000E\000\040\000P\000R\000E\000F\000I\000X\000\040\000\046\000\040\000N\000U\000M\000B\000E\000R\000:\000\040\000C\000O\000U\000R\000S\000E\000\040\000T\000I\000T\000L\000E)/Subject(\376\377\000C\000a\000l\000i\000f\000o\000r\000n\000i\000a\000\040\000S\000t\000a\000t\000e\000\040\000U\000n\000i\000v\000e\000r\000s\000i\000t\000y\000,\000\040\000F\000u\000l\000l\000e\000r\000t\000o\000n\000\040\000C\000o\000u\000r\000s\000e\000\040\000S\000y\000l\000l\000a\000b\000u\000s)/Creator(LaTeX with hyperref)/Keywords(\376\377\000C\000S\000U\000F\000,\000\040\000S\000y\000l\000l\000a\000b\000u\000s\000,\000\040\000Y\000O\000U\000R\000\040\000D\000E\000P\000A\000R\000T\000M\000E\000N\000T)
-/CreationDate (D:20250811200231-07'00')
-/ModDate (D:20250811200231-07'00')
+/CreationDate (D:20250813143248-07'00')
+/ModDate (D:20250813143248-07'00')
 /Trapped /False
-/PTEX.Fullbanner (This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) kpathsea version 6.4.1)
+/PTEX.Fullbanner (This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025/Homebrew) kpathsea version 6.4.1)
 >>
 endobj
 115 0 obj
@@ -2441,7 +2441,7 @@ stream
 >>
 % 156 0 obj
 <<
-/Font << /F72 38 0 R /F69 35 0 R >>
+/Font << /F68 38 0 R /F65 35 0 R >>
 /ProcSet [ /PDF /Text ]
 >>
 % 155 0 obj
@@ -2470,7 +2470,7 @@ stream
 >>
 % 167 0 obj
 <<
-/Font << /F69 35 0 R >>
+/Font << /F65 35 0 R >>
 /ProcSet [ /PDF /Text ]
 >>
 % 172 0 obj
@@ -2619,15 +2619,15 @@ endobj
 /W [1 3 1]
 /Root 190 0 R
 /Info 191 0 R
-/ID [<6C0A3E3E81238B4F6C82BB4342E5C1D4> <6C0A3E3E81238B4F6C82BB4342E5C1D4>]
+/ID [<4D662EFB024A43215140C5F6EA72A467> <4D662EFB024A43215140C5F6EA72A467>]
 /Length 965       
 >>
 stream
    Cÿ  s3  s1    Q                   
-    	                          8    ;            s@  sA    s?          sB  !  "  #  $  %  &  '  (  )  *  +  ,  /  -  .  2  0  1  5  3  4  7  6   ”ÿ  L  9  P  :  C  B Ó   <  =  >  ?  @  A  D  E  F  G  H  I  J  K  O  M  N  W  U  s&  T %!   Q  R  S  V  s'  X  [  Y  Z  ^  \  ]  a  _  `  s   b  c   s  s  s  s  s  s  s	  s  s  s  s
-  s  s  s  s  s  s  s  s  s  s  s  s  s  s  s  s  s  s  s  s   s   ªÿ  s#  s!  s"  s0  s$  s%  s/  s. A   s*  s+  s(  s)  s,  s-  s4  s2  s5  s7 œ÷   s6    ÿ  s>  s8  s9  s: žª   s; É‰   s< ÷Ô   s=A B C   sC  sD  sE  sF  sG  sH  sII M 
+    	                          8    ;            s@  sA    s?          sB  !  "  #  $  %  &  '  (  )  *  +  ,  /  -  .  2  0  1  5  3  4  7  6   ”ÿ  L  9  P  :  C  B Ó   <  =  >  ?  @  A  D  E  F  G  H  I  J  K  O  M  N  W  U  s&  T %!   Q  R  S  V  s'  X  [  Y  Z  ^  \  ]  a  _  `  s   b  c™   s  s  s  s  s  s  s	  s  s  s  s
+  s  s  s  s  s  s  s  s  s  s  s  s  s  s  s  s  s  s  s  s   s   ªÿ  s#  s!  s"  s0  s$  s%  s/  s. A   s*  s+  s(  s)  s,  s-  s4  s2  s5  s7 œ÷   s6    ÿ  s>  s8  s9  s: žª   s; É‰   s< ÷Ô   s=A B C   sC  sD  sE  sF  sG  sH  sII M 
 endstream
 endobj
 startxref
-85268
+85277
 %%EOF
