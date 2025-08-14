@@ -19,82 +19,91 @@
 %
 % Created by: David P. Adams, Ph.D.
 % License: CC BY-NC-SA 4.0
+% Document metadata for PDF accessibility and compliance
 \DocumentMetadata{
-  pdfstandard=UA-2,
-  pdfversion=2.0,
-  lang=en-US
+  pdfstandard=UA-2,               % PDF/UA-2 standard for accessibility
+  pdfversion=2.0,                 % PDF version 2.0
+  lang=en-US                      % Document language set to US English
 }
 
-\documentclass[12pt]{article}
+% Document class and font size
+\documentclass[12pt]{article}     % Standard article class with 12pt font size
 
-% Language
-\usepackage[american]{babel}
+% Language settings
+\usepackage[american]{babel}      % Set language to American English
 
-% Fonts (LuaLaTeX-native)
-\usepackage{fontspec}
-\setmainfont{TeX Gyre Heros}
-\setsansfont{TeX Gyre Heros}
-\setmonofont{TeX Gyre Cursor}
+% Fonts setup (requires LuaLaTeX)
+\usepackage{fontspec}             % Enables custom font selection
+\setmainfont{TeX Gyre Heros}      % Main font: TeX Gyre Heros (sans-serif)
+\setsansfont{TeX Gyre Heros}      % Sans-serif font: TeX Gyre Heros
+\setmonofont{TeX Gyre Cursor}     % Monospace font: TeX Gyre Cursor
 
-% Layout & spacing
-\usepackage{geometry}
-\geometry{margin=1in}
-\usepackage{setspace}
-\onehalfspacing
+% Page layout and spacing
+\usepackage{geometry}             % Adjust page margins
+\geometry{margin=1in}             % Set 1-inch margins
+\usepackage{setspace}             % Control line spacing
+\onehalfspacing                   % Set line spacing to 1.5
 
-% Lists, graphics, tables, captions
-\usepackage{enumitem}
-% Global, accessible list defaults
-\setlist[itemize]{itemsep=0pt, parsep=0pt, topsep=0.25\baselineskip}
-% A bulletless, flush-left variant for “meta” info lines
-\newlist{flatlist}{itemize}{1}
-\setlist[flatlist]{label={}, leftmargin=0pt, itemsep=0pt, parsep=0pt, topsep=0pt}
-\usepackage{graphicx}
-\usepackage{array, booktabs, longtable}
-\usepackage{caption}
-\usepackage{tabularray}
-\UseTblrLibrary{booktabs} % nice rules, no vertical bars
+% List, graphics, table, and caption settings
+\usepackage{enumitem}             % Enhanced list customization
+\setlist[itemize]{                % Default settings for itemized lists
+  itemsep=0pt,                    % No extra space between items
+  parsep=0pt,                     % No extra space between paragraphs
+  topsep=0.25\baselineskip        % Small space before the list
+}
+\newlist{flatlist}{itemize}{1}    % Define a bulletless, flush-left list
+\setlist[flatlist]{               % Settings for flatlist
+  label={},                       % No bullet or label
+  leftmargin=0pt,                 % No left margin
+  itemsep=0pt, parsep=0pt,        % No extra spacing
+  topsep=0pt                      % No space before the list
+}
+\usepackage{graphicx}             % Include graphics
+\usepackage{array, booktabs, longtable} % Enhanced table formatting
+\usepackage{caption}              % Customize captions
+\usepackage{tabularray}           % Modern table package
+\UseTblrLibrary{booktabs}         % Use booktabs for better table rules
 
-\usepackage{tagpdf}
+% Accessibility tagging
+\usepackage{tagpdf}               % Enable PDF tagging for accessibility
 \tagpdfsetup{
-  activate-all=true,                    % turn on tagging
-  interwordspace=true,                  % better word boundary info for AT
+  activate-all=true,              % Activate all tagging features
+  interwordspace=true             % Improve word boundary info for assistive tech
 }
 
-
-% Hyperlinks & PDF metadata
+% Hyperlinks and PDF metadata
 \usepackage[
-  pdfusetitle,
-  pdflang=en-US,
-  pdfstartview=FitH,
-  pdfdisplaydoctitle=true
+  pdfusetitle,                    % Use \title and \author for PDF metadata
+  pdflang=en-US,                  % Set PDF language to US English
+  pdfstartview=FitH,              % Open PDF with horizontal fit
+  pdfdisplaydoctitle=true         % Display document title in PDF viewer
 ]{hyperref}
 
 \hypersetup{
-  unicode=true,
-  colorlinks=true,
-  linkcolor=blue,
-  urlcolor=blue,
-  citecolor=blue,
-  pdftitle={COURSE PREFIX \& NUMBER: COURSE TITLE},
-  pdfauthor={YOUR NAME},
-  pdfsubject={California State University, Fullerton Course Syllabus},
-  pdfkeywords={CSUF, Syllabus, YOUR DEPARTMENT},
-  pdfborderstyle={/S/U/W 1} % underline links
+  unicode=true,                   % Enable Unicode support
+  colorlinks=true,                % Use colored links
+  linkcolor=blue,                 % Color for internal links
+  urlcolor=blue,                  % Color for URLs
+  citecolor=blue,                 % Color for citations
+  pdftitle={COURSE PREFIX \& NUMBER: COURSE TITLE}, % PDF title
+  pdfauthor={YOUR NAME},          % PDF author metadata
+  pdfsubject={California State University, Fullerton Course Syllabus}, % PDF subject
+  pdfkeywords={CSUF, Syllabus, YOUR DEPARTMENT}, % PDF keywords
+  pdfborderstyle={/S/U/W 1}       % Underline links in PDF
 }
-\urlstyle{same}
+\urlstyle{same}                   % Use the same font style for URLs
 
-% Document info
-\title{PREFIX \& Number, \textit{Course Title}}
-\author{}  % instructor info goes in the body
-\date{Term and Year}
+% Document title and metadata
+\title{PREFIX \& Number, \textit{Course Title}} % Course title
+\author{}                         % Leave author blank (info in body)
+\date{Term and Year}              % Term and year of the course
 
-% Accessibility niceties
-\setlistdepth{3}                 % consistent list tagging
-% Alt text example: \includegraphics[width=2.75in, alt={Cal State Fullerton wordmark}]{csuf_logo.png}
+% Accessibility enhancements
+\setlistdepth{3}                  % Ensure consistent list tagging depth
+% Example for alt text: \includegraphics[width=2.75in, alt={Cal State Fullerton wordmark}]{csuf_logo.png}
 
+% Begin the document
 \begin{document}
-
 
 
 % ========== CSUF HEADER (OPTIONAL) ==========

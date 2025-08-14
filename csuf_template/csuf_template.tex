@@ -22,89 +22,92 @@
 % Compile with LuaLaTeX for best results
 % Ensure you have the required packages installed in your LaTeX distribution
 % !TEX program = lualatex
-
+% Document metadata for accessibility and compliance
 \DocumentMetadata{
-  pdfstandard=UA-2,   % use UA-1 + pdfversion=1.7 if your validator requires it
-  pdfversion=2.0,
-  lang=en-US
+  pdfstandard=UA-2,   % Use UA-1 + pdfversion=1.7 if your validator requires it
+  pdfversion=2.0,     % PDF version 2.0 for modern accessibility features
+  lang=en-US          % Language set to US English
 }
 
-\documentclass[12pt]{article}
+% Document class declaration
+\documentclass[12pt]{article} % Use 12pt font size and article class
 
-% Language
-\usepackage[american]{babel}
+% Language settings
+\usepackage[american]{babel} % Set language to American English
 
-% Fonts (LuaLaTeX-native)
-\usepackage{fontspec}
-\setmainfont{TeX Gyre Heros}
-\setsansfont{TeX Gyre Heros}
-\setmonofont{TeX Gyre Cursor}
+% Font settings (LuaLaTeX-native fonts)
+\usepackage{fontspec} % Enable font customization
+\setmainfont{TeX Gyre Heros} % Set main font to TeX Gyre Heros
+\setsansfont{TeX Gyre Heros} % Set sans-serif font to TeX Gyre Heros
+\setmonofont{TeX Gyre Cursor} % Set monospaced font to TeX Gyre Cursor
 
-% Layout & spacing
-\usepackage{geometry}
-\geometry{margin=1in}
-\usepackage{setspace}
-\onehalfspacing
+% Page layout and spacing
+\usepackage{geometry} % Adjust page geometry
+\geometry{margin=1in} % Set 1-inch margins
+\usepackage{setspace} % Enable line spacing adjustments
+\onehalfspacing % Set line spacing to 1.5
 
-% Lists
-\usepackage{enumitem}
+% List customization
+\usepackage{enumitem} % Enhanced list customization
 % Global, accessible list defaults
 \setlist[itemize]{itemsep=0pt, parsep=0pt, topsep=0.25\baselineskip}
 % Bulletless, flush-left list for metadata lines
-\newlist{flatlist}{itemize}{1}
+\newlist{flatlist}{itemize}{1} % Define a new list type
 \setlist[flatlist]{label={}, leftmargin=0pt, itemsep=0pt, parsep=0pt, topsep=0pt}
 
-% Figures, tables, captions
-\usepackage{graphicx}
-\usepackage{array, booktabs, longtable}
-\usepackage{caption}
-\usepackage{tabularray}
-\UseTblrLibrary{booktabs} % nice rules, no vertical bars
+% Figures, tables, and captions
+\usepackage{graphicx} % Enable inclusion of graphics
+\usepackage{array, booktabs, longtable} % Table formatting packages
+\usepackage{caption} % Customize captions for figures and tables
+\usepackage{tabularray} % Enhanced table formatting
+\UseTblrLibrary{booktabs} % Enable booktabs-style rules for tables
 
-% Tagging (kernel-friendly)
-\usepackage{tagpdf}
+% Tagging for accessibility
+\usepackage{tagpdf} % Enable PDF tagging for accessibility
 \tagpdfsetup{
-  activate-all=true,   % turn on tagging
-  interwordspace=true  % better word boundary info for AT
+  activate-all=true,   % Activate tagging for all elements
+  interwordspace=true  % Improve word boundary information for assistive technology
 }
 
-% Colors (keep just one xcolor)
-\usepackage{xcolor}
-% High-contrast annotation colors (WCAG AA on white)
-\definecolor{annotationblue}{RGB}{0,77,153} % #004D99
-\definecolor{suggestionred}{RGB}{153,0,0}   % #990000
+% Color definitions
+\usepackage{xcolor} % Enable color customization
+% High-contrast annotation colors (WCAG AA compliant on white background)
+\definecolor{annotationblue}{RGB}{0,77,153} % Define annotation blue color (#004D99)
+\definecolor{suggestionred}{RGB}{153,0,0}   % Define suggestion red color (#990000)
 
-% Hyperlinks & PDF metadata
+% Hyperlinks and PDF metadata
 \usepackage[
-  pdfusetitle,
-  pdflang=en-US,
-  pdfstartview=FitH,
-  pdfdisplaydoctitle=true
+  pdfusetitle,           % Use title from \title command
+  pdflang=en-US,         % Set PDF language to US English
+  pdfstartview=FitH,     % Start PDF with full width view
+  pdfdisplaydoctitle=true % Display document title in PDF viewer
 ]{hyperref}
 
+% Hyperlink settings
 \hypersetup{
-  unicode=true,
-  colorlinks=true,
-  linkcolor=blue,
-  urlcolor=blue,
-  citecolor=blue,
-  pdftitle={PREFIX \& Number: Title},
-  pdfauthor={Instructor Name},
-  pdfsubject={California State University, Fullerton Course Syllabus},
-  pdfkeywords={CSUF, Syllabus, Accessibility},
-  pdfborderstyle={/S/U/W 1} % underline links
+  unicode=true,          % Enable Unicode support
+  colorlinks=true,       % Enable colored links
+  linkcolor=blue,        % Set link color to blue
+  urlcolor=blue,         % Set URL color to blue
+  citecolor=blue,        % Set citation link color to blue
+  pdftitle={PREFIX \& Number: Title}, % Set PDF title
+  pdfauthor={Instructor Name},        % Set PDF author
+  pdfsubject={California State University, Fullerton Course Syllabus}, % Set PDF subject
+  pdfkeywords={CSUF, Syllabus, Accessibility}, % Set PDF keywords
+  pdfborderstyle={/S/U/W 1} % Set link border style to underline
 }
-\urlstyle{same}
+\urlstyle{same} % Use the same font style for URLs
 
-% Document info
-\title{PREFIX \& Number: Title}
-\author{}
-\date{Semester, Year}
+% Document information
+\title{PREFIX \& Number: Title} % Placeholder for course title
+\author{} % Leave author blank
+\date{Semester, Year} % Placeholder for semester and year
 
-% Accessibility niceties
-\setlistdepth{3}
-% Example alt text: \includegraphics[width=2.75in, alt={Cal State Fullerton wordmark}]{csuf_logo.png}
+% Accessibility enhancements
+\setlistdepth{3} % Set maximum list depth for accessibility
+% Example alt text for images: \includegraphics[width=2.75in, alt={Cal State Fullerton wordmark}]{csuf_logo.png}
 
+% Begin document content
 \begin{document}
 
 
