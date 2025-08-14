@@ -19,71 +19,76 @@
 %
 % Created by: David P. Adams, Ph.D.
 % License: CC BY-NC-SA 4.0
+\DocumentMetadata{
+  tagging=on,
+  pdfstandard=UA-2,
+  pdfversion=2.0,
+  lang=en-US
+}
+\tagpdfsetup{math/mathml/luamml/load=false}
 
 \documentclass[12pt]{article}
 
-% ========== PACKAGES FOR ACCESSIBILITY ==========
-% These packages enable PDF tagging for screen readers
-\usepackage[english]{babel}
-\usepackage[tagged, highstructure]{accessibility}
-% Load hyperref with proper options for accessibility
-\usepackage[pdfusetitle, 
-            pdflang=en-US,
-            pdfstartview=FitH,
-            pdfdisplaydoctitle=true]{hyperref}
+% Language
+\usepackage[american]{babel}
 
-% ========== LAYOUT AND FONTS ==========
-\usepackage[T1]{fontenc}
-\usepackage[utf8]{inputenc}
+% Fonts (LuaLaTeX-native)
+\usepackage{fontspec}
+\setmainfont{TeX Gyre Heros}
+\setsansfont{TeX Gyre Heros}
+\setmonofont{TeX Gyre Cursor}
+
+% Layout & spacing
 \usepackage{geometry}
 \geometry{margin=1in}
-\usepackage{lmodern}
 \usepackage{setspace}
 \onehalfspacing
 
-% Use Helvetica font (similar to Calibri in Word)
-\renewcommand{\rmdefault}{phv} % Helvetica
-\renewcommand{\sfdefault}{phv} % Helvetica
-\renewcommand{\ttdefault}{pcr} % Courier
+% Lists, graphics, tables, captions
+\usepackage{enumitem}
+% Global, accessible list defaults
+\setlist[itemize]{itemsep=0pt, parsep=0pt, topsep=0.25\baselineskip}
+% A bulletless, flush-left variant for “meta” info lines
+\newlist{flatlist}{itemize}{1}
+\setlist[flatlist]{label={}, leftmargin=0pt, itemsep=0pt, parsep=0pt, topsep=0pt}
+\usepackage{graphicx}
+\usepackage{array, booktabs, longtable}
+\usepackage{caption}
 
-% ========== OTHER PACKAGES ==========
-\usepackage{enumitem}      % Better list formatting
-\usepackage{graphicx}      % For including images
-\usepackage{array, booktabs, longtable}  % For tables
-\usepackage{caption}       % For table/figure captions
+% Hyperlinks & PDF metadata
+\usepackage[
+  pdfusetitle,
+  pdflang=en-US,
+  pdfstartview=FitH,
+  pdfdisplaydoctitle=true
+]{hyperref}
 
-% ========== PDF METADATA ==========
-% Update these fields with your course information
 \hypersetup{
   unicode=true,
   colorlinks=true,
   linkcolor=blue,
   urlcolor=blue,
   citecolor=blue,
-  pdfauthor={YOUR NAME},
   pdftitle={COURSE PREFIX \& NUMBER: COURSE TITLE},
+  pdfauthor={YOUR NAME},
   pdfsubject={California State University, Fullerton Course Syllabus},
-  pdfkeywords={CSUF, Syllabus, YOUR DEPARTMENT}
+  pdfkeywords={CSUF, Syllabus, YOUR DEPARTMENT},
+  pdfborderstyle={/S/U/W 1} % underline links
 }
+\urlstyle{same}
 
-% ========== DOCUMENT INFORMATION ==========
-% Replace these with your course information
+% Document info
 \title{PREFIX \& Number, \textit{Course Title}}
-\author{}  % Leave empty - instructor info goes in Faculty Information section
+\author{}  % instructor info goes in the body
 \date{Term and Year}
 
-% ========== ACCESSIBILITY FIXES ==========
-% Set list depth for proper tagging
-\setlistdepth{3}
-% Enable proper link annotations
-\hypersetup{pdfborderstyle={/S/U/W 1}}
+% Accessibility niceties
+\setlistdepth{3}                 % consistent list tagging
+% Alt text example: \includegraphics[width=2.75in, alt={Cal State Fullerton wordmark}]{csuf_logo.png}
 
 \begin{document}
 
-% Set the PDF document title properly
-\pdfinfo{
-  /Title (PREFIX \& Number: Course Title - Term Year)
-}
+
 
 % ========== CSUF HEADER (OPTIONAL) ==========
 % If you have the CSUF logo file, uncomment the following lines
@@ -133,18 +138,18 @@ If you encounter any technical difficulties, contact the instructor immediately 
 YOUR MODALITY, DAYS, TIMES, LOCATION
 
 \vspace{0.5em}
-\begin{itemize}[label={}, leftmargin=0pt]
+\begin{flatlist}
 \item \textbf{Zoom:} YOUR ZOOM LINK IF APPLICABLE
-\item \textbf{Course requisite(s):} LIST PREREQUISITES/COREQUISITES OR "none"
+\item \textbf{Course requisite(s):} LIST PREREQUISITES/COREQUISITES OR ``none''
 \item \textbf{Catalog description:} COPY CATALOG DESCRIPTION VERBATIM (40 words max)
 \item \textbf{Additional description:} OPTIONAL EXPANDED DESCRIPTION
 \item \textbf{Policy regarding the use of generative AI:} YOUR AI POLICY
 \item \textbf{Course materials and equipment:} ~
-\item \textbf{Required text(s):} LIST REQUIRED TEXTS OR "none"
+\item \textbf{Required text(s):} LIST REQUIRED TEXTS OR ``none''
 \item \textbf{Recommended text(s):} LIST RECOMMENDED TEXTS OR DELETE THIS LINE
-\item \textbf{Other course materials and equipment:} LIST OTHER MATERIALS OR "none"
+\item \textbf{Other course materials and equipment:} LIST OTHER MATERIALS OR ``none''
 \item \textbf{Zero cost:} IF APPLICABLE, NOTE THAT THIS IS A ZERO-COST COURSE
-\end{itemize}
+\end{flatlist}
 
 \vspace{1em}
 \noindent \textbf{Student Learning Outcomes:}
@@ -256,7 +261,7 @@ YOUR ACADEMIC INTEGRITY POLICY AND CONSEQUENCES FOR VIOLATIONS
 \section*{Student Resources Website}
 It is the student's responsibility to read and understand the required and important \href{https://fdc.fullerton.edu/teaching/student-info-syllabi.html}{student information for course syllabi}. Included is information about:
 
-\begin{itemize}[noitemsep]
+\begin{itemize}
 \item University learning goals
 \item General Education learning objectives
 \item Netiquette/appropriate online behavior
