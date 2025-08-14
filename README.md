@@ -97,5 +97,5 @@ For questions, suggestions, or workshop materials, contact:
 
 **David P. Adams** – MPA Director, CSUF
 
-📧 [dpdams@fullerton.edu](mailto:dpadams@fullerton.edu)
+📧 [dpadams@fullerton.edu](mailto:dpadams@fullerton.edu)
 
