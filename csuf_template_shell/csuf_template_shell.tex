@@ -20,12 +20,10 @@
 % Created by: David P. Adams, Ph.D.
 % License: CC BY-NC-SA 4.0
 \DocumentMetadata{
-  tagging=on,
   pdfstandard=UA-2,
   pdfversion=2.0,
   lang=en-US
 }
-\tagpdfsetup{math/mathml/luamml/load=false}
 
 \documentclass[12pt]{article}
 
@@ -54,6 +52,15 @@
 \usepackage{graphicx}
 \usepackage{array, booktabs, longtable}
 \usepackage{caption}
+\usepackage{tabularray}
+\UseTblrLibrary{booktabs} % nice rules, no vertical bars
+
+\usepackage{tagpdf}
+\tagpdfsetup{
+  activate-all=true,                    % turn on tagging
+  interwordspace=true,                  % better word boundary info for AT
+}
+
 
 % Hyperlinks & PDF metadata
 \usepackage[
@@ -169,19 +176,25 @@ YOUR MODALITY, DAYS, TIMES, LOCATION
 
 % Example grading scale - modify as needed
 \begin{center}
-\begin{tabular}{|l|c||l|c|}
-\hline
-\textbf{Grade} & \textbf{Percent} & \textbf{Grade} & \textbf{Percent} \\
-\hline
-A+ & 98.0--100.0 & C+ & 77.0--79.9 \\
-A  & 93.0--97.9  & C  & 73.0--76.9 \\
-A- & 90.0--92.9  & C- & 70.0--72.9 \\
-B+ & 87.0--89.9  & D+ & 67.0--69.9 \\
-B  & 83.0--86.9  & D  & 63.0--66.9 \\
-B- & 80.0--82.9  & D- & 60.0--62.9 \\
-   &             & F  & 0.0--59.9 \\
-\hline
-\end{tabular}
+\begin{table}[h]
+  \caption{Grade scale}
+  \centering
+  \begin{tblr}{
+    colspec = {l c l c},
+    rowhead = 1,                 % ← marks first row as table header
+    row{1} = {font=\bfseries},   % bold header text
+  }
+  Grade & Percent    & Grade & Percent \\
+  A+    & 98.0--100.0& C+    & 77.0--79.9 \\
+  A     & 93.0--97.9 & C     & 73.0--76.9 \\
+  A-    & 90.0--92.9 & C-    & 70.0--72.9 \\
+  B+    & 87.0--89.9 & D+    & 67.0--69.9 \\
+  B     & 83.0--86.9 & D     & 63.0--66.9 \\
+  B-    & 80.0--82.9 & D-    & 60.0--62.9 \\
+        &            & F     & 0.0--59.9 \\
+  \end{tblr}
+\end{table}
+
 \end{center}
 
 % Part b: Required Course Assignments
@@ -190,18 +203,22 @@ B- & 80.0--82.9  & D- & 60.0--62.9 \\
 
 % Option 1: Use a table
 \begin{center}
-\begin{tabular}{|l|c|}
-\hline
-\textbf{Assignment} & \textbf{Percentage} \\
-\hline
-ASSIGNMENT TYPE 1 & XX\% \\
-ASSIGNMENT TYPE 2 & XX\% \\
-ASSIGNMENT TYPE 3 & XX\% \\
-ASSIGNMENT TYPE 4 & XX\% \\
-\hline
-\textbf{Total} & 100\% \\
-\hline
-\end{tabular}
+\begin{table}[h]
+  \caption{Assignment weighting}
+  \centering
+  \begin{tblr}{
+    colspec = {l c},
+    rowhead = 1,                 % marks first row as table header
+    row{1} = {font=\bfseries},   % bold header text
+  }
+  Assignment       & Percentage \\
+  ASSIGNMENT TYPE 1 & XX\%       \\
+  ASSIGNMENT TYPE 2 & XX\%       \\
+  ASSIGNMENT TYPE 3 & XX\%       \\
+  ASSIGNMENT TYPE 4 & XX\%       \\
+  Total            & 100\%      \\
+  \end{tblr}
+\end{table}
 \end{center}
 
 % Option 2: Or list assignments individually (uncomment if preferred)
