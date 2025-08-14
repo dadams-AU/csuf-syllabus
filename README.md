@@ -1,12 +1,24 @@
 # CSUF LaTeX Syllabus Templates
 
+[![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+
 This repository contains LaTeX syllabus templates for California State University, Fullerton (CSUF) faculty.  
-It includes two files:
+The templates are designed to be **university-compliant**, **accessible**, and easy to adapt for different courses.
 
-- **`csuf_template.tex`** – A complete, ready-to-use syllabus template.
-- **`csuf_template_shell.tex`** – A minimal “shell” version for those who want to add their own structure and content.
+---
 
-Both templates are designed to be **university-compliant**, **accessible**, and easy to adapt for different courses.
+## Repository Structure
+
+```
+
+csuf-syllabus/
+├── csuf\_template/         # Complete, ready-to-use syllabus template
+├── csuf\_template\_shell/   # Minimal “shell” template for customization
+├── .gitignore
+├── LICENSE
+└── README.md
+
+```
 
 ---
 
@@ -24,9 +36,9 @@ Both templates are designed to be **university-compliant**, **accessible**, and 
 
 To compile the templates, you’ll need:
 
-- **LaTeX distribution** (e.g., TeX Live or MikTeX)
+- **LaTeX distribution** (e.g., TeX Live or MiKTeX)
 - **LuaLaTeX** compiler
-- `csuf_logo.png` in the same directory as `csuf_template.tex`
+- `csuf_logo.png` in the template directory
 - Recommended editor: [TeXstudio](https://www.texstudio.org/) or [Overleaf](https://www.overleaf.com/)
 
 ---
@@ -36,16 +48,16 @@ To compile the templates, you’ll need:
 1. Clone this repository:
    ```bash
    git clone https://github.com/CSUF-MPA/csuf-syllabus.git
-   ```
+    ```
 
-
-2. Place `csuf_logo.png` in the same directory as the `.tex` files.
-3. Compile using:
+2. Open either `csuf_template/` or `csuf_template_shell/` in your LaTeX editor.
+3. Place `csuf_logo.png` in the same directory as the `.tex` file you are compiling.
+4. Compile using:
 
    ```bash
    lualatex csuf_template.tex
    ```
-4. For a stripped-down starting point, use:
+5. For a stripped-down starting point, use the shell version:
 
    ```bash
    lualatex csuf_template_shell.tex
@@ -63,8 +75,19 @@ To compile the templates, you’ll need:
 
 ## License
 
-These templates are shared for **educational and professional use** by CSUF faculty and staff.
-Please retain attribution when redistributing.
+This work is licensed under the
+**[Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](LICENSE)**.
+
+You are free to:
+
+* **Share** — copy and redistribute the material in any medium or format
+* **Adapt** — remix, transform, and build upon the material
+
+Under the following terms:
+
+* **Attribution** — Give appropriate credit, link to the license, and indicate if changes were made.
+* **NonCommercial** — You may not use the material for commercial purposes.
+* **ShareAlike** — If you remix, transform, or build upon the material, you must distribute your contributions under the same license.
 
 ---
 
@@ -72,5 +95,5 @@ Please retain attribution when redistributing.
 
 For questions, suggestions, or workshop materials, contact:
 **David P. Adams** – MPA Director, CSUF
-📧 [dpadams@fullerton.edu](mailto:dpadams@fullerton.edu)
+📧 [dpdams@fullerton.edu](mailto:dpadams@fullerton.edu)
 
