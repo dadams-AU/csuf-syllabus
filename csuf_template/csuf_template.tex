@@ -21,58 +21,89 @@
 % This template is designed for maximum accessibility and professional appearance
 % Compile with LuaLaTeX for best results
 % Ensure you have the required packages installed in your LaTeX distribution
+% !TEX program = lualatex
+
+\DocumentMetadata{
+  pdfstandard=UA-2,   % use UA-1 + pdfversion=1.7 if your validator requires it
+  pdfversion=2.0,
+  lang=en-US
+}
+
 \documentclass[12pt]{article}
 
-% Language and accessibility
-\usepackage[english]{babel}
-\usepackage[tagged, highstructure]{accessibility}
-\usepackage[pdfusetitle, pdflang=en-US]{hyperref}
+% Language
+\usepackage[american]{babel}
 
-% Layout and fonts
-\usepackage[T1]{fontenc}
-\usepackage[utf8]{inputenc}
+% Fonts (LuaLaTeX-native)
+\usepackage{fontspec}
+\setmainfont{TeX Gyre Heros}
+\setsansfont{TeX Gyre Heros}
+\setmonofont{TeX Gyre Cursor}
+
+% Layout & spacing
 \usepackage{geometry}
 \geometry{margin=1in}
-\usepackage{lmodern}
 \usepackage{setspace}
 \onehalfspacing
 
-% use helvetica font for all text
-\renewcommand{\rmdefault}{phv} % Helvetica
-\renewcommand{\sfdefault}{phv} % Helvetica
-\renewcommand{\ttdefault}{pcr} % Courier
-
-% Lists and sections
+% Lists
 \usepackage{enumitem}
+% Global, accessible list defaults
+\setlist[itemize]{itemsep=0pt, parsep=0pt, topsep=0.25\baselineskip}
+% Bulletless, flush-left list for metadata lines
+\newlist{flatlist}{itemize}{1}
+\setlist[flatlist]{label={}, leftmargin=0pt, itemsep=0pt, parsep=0pt, topsep=0pt}
 
-% Tables and figures
+% Figures, tables, captions
 \usepackage{graphicx}
 \usepackage{array, booktabs, longtable}
-\usepackage{xcolor}
 \usepackage{caption}
+\usepackage{tabularray}
+\UseTblrLibrary{booktabs} % nice rules, no vertical bars
 
-% Colors for the template annotations
+% Tagging (kernel-friendly)
+\usepackage{tagpdf}
+\tagpdfsetup{
+  activate-all=true,   % turn on tagging
+  interwordspace=true  % better word boundary info for AT
+}
+
+% Colors (keep just one xcolor)
 \usepackage{xcolor}
-% --- high‑contrast annotation colors (WCAG AA for body text) -----------
-\definecolor{annotationblue}{RGB}{0,77,153}   % #004D99  CR ≈ 8.3 : 1 on white
-\definecolor{suggestionred}{RGB}{153,0,0}     % #990000  CR ≈ 8.9 : 1 on white
+% High-contrast annotation colors (WCAG AA on white)
+\definecolor{annotationblue}{RGB}{0,77,153} % #004D99
+\definecolor{suggestionred}{RGB}{153,0,0}   % #990000
 
-% Hyperlinks with accessibility
+% Hyperlinks & PDF metadata
+\usepackage[
+  pdfusetitle,
+  pdflang=en-US,
+  pdfstartview=FitH,
+  pdfdisplaydoctitle=true
+]{hyperref}
+
 \hypersetup{
   unicode=true,
   colorlinks=true,
   linkcolor=blue,
   urlcolor=blue,
   citecolor=blue,
-  pdfauthor={Instructor Name},
   pdftitle={PREFIX \& Number: Title},
+  pdfauthor={Instructor Name},
   pdfsubject={California State University, Fullerton Course Syllabus},
-  pdfkeywords={CSUF, Syllabus, Accessibility}
+  pdfkeywords={CSUF, Syllabus, Accessibility},
+  pdfborderstyle={/S/U/W 1} % underline links
 }
+\urlstyle{same}
 
+% Document info
 \title{PREFIX \& Number: Title}
 \author{}
 \date{Semester, Year}
+
+% Accessibility niceties
+\setlistdepth{3}
+% Example alt text: \includegraphics[width=2.75in, alt={Cal State Fullerton wordmark}]{csuf_logo.png}
 
 \begin{document}
 
@@ -147,7 +178,7 @@
 
 \noindent {\color{annotationblue}Per \href{https://www.fullerton.edu/senate/publications_policies_resolutions/ups/UPS\%20400/UPS\%20411.104.pdf}{UPS 411.104}, list the ONE course modality that best fits from the following:}
 
-\begin{itemize}[noitemsep]
+\begin{itemize}
 \item In-Person (0-20\% online): list class meeting day(s), time(s), building-room
 \item Hybrid (mostly in-person, 21\%-49\% online); list in-person class meeting day(s), time(s), building-room, and if in-person is synchronous on those day(s) and time(s), or asynchronous
 \item Hybrid (mostly online, 50\%-99\% online): list in-person class meeting day(s), time(s), building-room, and if online is synchronous on those day(s) and time(s), or asynchronous
@@ -186,59 +217,54 @@
 
 \vspace{0.5em}
 
-\noindent {\color{suggestionred}See below for one example:}
+\noindent {\color{suggestionred}See Table \ref{tab:grading_scale} below for one example:}
 
 \vspace{0.5em}
 
 \begin{center}
-\textbf{Table 1: Grading Scale}
-\end{center}
-
-\begin{center}
-\begin{tabular}{|l|c|}
-\hline
-\textbf{Grade} & \textbf{Percent Range} \\
-\hline
-A+ (4.0) & 98.0--100.0 \\
-A  (4.0) & 93.0--97.9 \\
-A- (3.7) & 90.0--92.9 \\
-B+ (3.3) & 87.0--89.9 \\
-B  (3.0) & 83.0--86.9 \\
-B- (2.7) & 80.0--82.9 \\
-C+ (2.3) & 77.0--79.9 \\
-C  (2.0) & 73.0--76.9 \\
-C- (1.7) & 70.0--72.9 \\
-D+ (1.3) & 67.0--69.9 \\
-D  (1.0) & 63.0--66.9 \\
-D- (0.7) & 60.0--62.9 \\
-F  (0.0) & 0.0--59.9 \\
-\hline
-\end{tabular}
+\begin{table}[h]
+  \caption{Assignment Weighting Table}
+  \centering
+  \begin{tblr}{
+    colspec = {l c},
+    rowhead = 1,                 % first row = <TH> scope="column"
+    row{1} = {font=\bfseries},
+  }
+  Assignment        & Percentage \\
+  Assignment Type 1 & XX\%       \\
+  Assignment Type 2 & XX\%       \\
+  Assignment Type 3 & XX\%       \\
+  Assignment Type 4 & XX\%       \\
+  Total             & 100\%      \\
+  \end{tblr}
+  \label{tab:grading_scale}
+\end{table}
 \end{center}
 
 \vspace{1em}
 
-\noindent \textbf{b. Required Course Assignments:} {\color{annotationblue}List the graded assignments/exams and corresponding percentages or point values that determine the final grade. Include information about due dates and whether these are individual or group assignments.} {\color{suggestionred}For example: As part of this class, you will be expected to complete X individual writing assignments, Y group projects and Z exams. Specific instructions for these assignments and the rubrics that will be used to evaluate your work will be provided on the course Canvas site. Assignments and their due dates are listed in the class schedule section of this syllabus. Your overall course grade will be determined as shown below:}
+\noindent \textbf{b. Required Course Assignments:} {\color{annotationblue}List the graded assignments/exams and corresponding percentages or point values that determine the final grade. Include information about due dates and whether these are individual or group assignments.} {\color{suggestionred}For example: As part of this class, you will be expected to complete X individual writing assignments, Y group projects and Z exams. Specific instructions for these assignments and the rubrics that will be used to evaluate your work will be provided on the course Canvas site. Assignments and their due dates are listed in the class schedule section of this syllabus. Your overall course grade will be determined as shown in Table \ref{tab:assignment_points} below:}
 
 \vspace{0.5em}
 
 \begin{center}
-\textbf{Table 2: Grade Breakdown}
-\end{center}
-
-\begin{center}
-\begin{tabular}{|l|c|}
-\hline
-\textbf{Item} & \textbf{Points = \%} \\
-\hline
-Participation & 25 \\
-Presentation & 25 \\
-Midterm Essay or Exam & 25 \\
-Final Essay or Exam & 25 \\
-\hline
-\textbf{Total} & 100 \\
-\hline
-\end{tabular}
+\begin{table}[h]
+  \caption{Assignment Points and Percentages}
+  \centering
+  \begin{tblr}{
+    colspec = {l c},
+    rowhead = 1,                 % first row is header
+    row{1} = {font=\bfseries},   % bold header
+  }
+  Item & Points = \% \\
+  Participation & 25 \\
+  Presentation & 25 \\
+  Midterm Essay or Exam & 25 \\
+  Final Essay or Exam & 25 \\
+  \textbf{Total} & 100 \\
+  \end{tblr}
+  \label{tab:assignment_points}
+\end{table}
 \end{center}
 
 \vspace{0.5em}
@@ -344,7 +370,7 @@ Final Essay or Exam & 25 \\
 
 \noindent It is the student's responsibility to read and understand the required and important \href{https://fdc.fullerton.edu/teaching/student-info-syllabi.html}{student information for course syllabi}. Included is information about:
 
-\begin{itemize}[noitemsep]
+\begin{itemize}
 \item University learning goals
 \item General Education learning objectives
 \item Netiquette/appropriate online behavior
@@ -472,7 +498,7 @@ Other information as applicable
 
 \vspace{0.5em}
 
-\noindent {\color{annotationblue}Alternatively, you may format the calendar as a table. Follow the instructions on the guide ``Creating an Accessible Table'' (linked from the Course Development Resources tab).}
+\noindent {\color{annotationblue}Alternatively, you may format the calendar as a table, as shown in Table \ref{tab:schedule_of_classes}. Follow the instructions on the guide ``Creating an Accessible Table'' (linked from the Course Development Resources tab).}
 
 \vspace{0.5em}
 
@@ -482,45 +508,35 @@ Other information as applicable
 \end{center}
 
 \begin{center}
-\begin{tabular}{|c|c|p{3cm}|p{4cm}|p{3cm}|}
-\hline
-\textbf{Week} & \textbf{Date} & \textbf{Topic} & \parbox[t]{4cm}{\raggedright\textbf{Readings,\\Screenings}} & \parbox[t]{3.5cm}{\raggedright\textbf{Assignments\\Due}} \\
-\hline
-1 & 1/27 & Welcome, intro, overview & N/A &  \\
-\hline
-2 & 2/3 & & &  \\
-\hline
-3 & 2/10 & & &  \\
-\hline
-4 & 2/17 & & &  \\
-\hline
-5 & 2/24 & & &  \\
-\hline
-6 & 3/3 & & &  \\
-\hline
-7 & 3/10 & & &  \\
-\hline
-8 & 3/17 & Midterm Exam (if applicable) & ~ & ~ \\
-\hline
- & 3/24 & Spring Recess & No class &  \\
-\hline
-9 & 3/31 & & &  \\
-\hline
-10 & 4/7 & & &  \\
-\hline
-11 & 4/14 & & &  \\
-\hline
-12 & 4/21 & & &  \\
-\hline
-13 & 4/28 & & &  \\
-\hline
-14 & 5/5 & & &  \\
-\hline
-15 & 5/12 & & &  \\
-\hline
-16 & 5/19 & Final Exam or other assessment & & Due no earlier than scheduled exam time  \\
-\hline
-\end{tabular}
+\begin{table}[h]
+  \caption{Weekly Schedule}
+  \centering
+  \begin{tblr}{
+    colspec = {c c X[l] X[l,4cm] X[l,3.5cm]},
+    rowhead = 1,
+    row{1} = {font=\bfseries}
+  }
+  Week & Date & Topic & Readings / Screenings & Assignments Due \\
+  1  & 1/27 & Welcome, intro, overview & N/A & \\
+  2  & 2/3  &  &  & \\
+  3  & 2/10 &  &  & \\
+  4  & 2/17 &  &  & \\
+  5  & 2/24 &  &  & \\
+  6  & 3/3  &  &  & \\
+  7  & 3/10 &  &  & \\
+  8  & 3/17 & Midterm Exam (if applicable) & ~ & ~ \\
+     & 3/24 & Spring Recess & No class & \\
+  9  & 3/31 &  &  & \\
+  10 & 4/7  &  &  & \\
+  11 & 4/14 &  &  & \\
+  12 & 4/21 &  &  & \\
+  13 & 4/28 &  &  & \\
+  14 & 5/5  &  &  & \\
+  15 & 5/12 &  &  & \\
+  16 & 5/19 & Final Exam or other assessment &  & Due no earlier than scheduled exam time \\
+  \end{tblr}
+  \label{tab:schedule_of_classes}
+\end{table}
 \end{center}
 
 \end{document}
