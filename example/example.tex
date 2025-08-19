@@ -1,0 +1,901 @@
+%% Syllabus - POSC 521: MPA Capstone Seminar
+%% Author: David P. Adams
+%% Semester: Fall 2025
+%% Copyright: David P. Adams, 2025
+%% License: CC BY-NC-SA 4.0
+
+\DocumentMetadata{
+  pdfstandard=UA-2,               % PDF/UA-2 standard for accessibility
+  pdfversion=2.0,                 % PDF version 2.0
+  lang=en-US                      % Document language set to US English
+}
+
+% Document class and font size
+\documentclass[12pt]{article}     % Standard article class with 12pt font size
+
+% Language settings
+\usepackage[american]{babel}      % Set language to American English
+
+% Fonts setup (requires LuaLaTeX)
+\usepackage{fontspec}             % Enables custom font selection
+\setmainfont{TeX Gyre Heros}      % Main font: TeX Gyre Heros (sans-serif)
+\setsansfont{TeX Gyre Heros}      % Sans-serif font: TeX Gyre Heros
+\setmonofont{TeX Gyre Cursor}     % Monospace font: TeX Gyre Cursor
+
+% Page layout and spacing
+\usepackage{geometry}             % Adjust page margins
+\usepackage{xcolor}               % Enable color definitions
+\geometry{margin=1in}             % Set 1-inch margins
+\usepackage{setspace}             % Control line spacing
+\onehalfspacing                   % Set line spacing to 1.5
+
+% List, graphics, table, and caption settings
+\usepackage{enumitem}             % Enhanced list customization
+\setlist[itemize]{                % Default settings for itemized lists
+  itemsep=0pt,                    % No extra space between items
+  parsep=0pt,                     % No extra space between paragraphs
+  topsep=0.25\baselineskip        % Small space before the list
+}
+\newlist{flatlist}{itemize}{1}    % Define a bulletless, flush-left list
+\setlist[flatlist]{               % Settings for flatlist
+  label={},                       % No bullet or label
+  leftmargin=0pt,                 % No left margin
+  itemsep=0pt, parsep=0pt,        % No extra spacing
+  topsep=0pt                      % No space before the list
+}
+\usepackage{graphicx}             % Include graphics
+\usepackage{array, booktabs, longtable} % Enhanced table formatting
+\usepackage{caption}              % Customize captions
+\usepackage{tabularray}           % Modern table package
+\UseTblrLibrary{booktabs}         % Use booktabs for better table rules
+\usepackage{colortbl}
+
+% Accessibility tagging
+\usepackage{tagpdf}               % Enable PDF tagging for accessibility
+\tagpdfsetup{
+  activate-all=true,              % Activate all tagging features
+  interwordspace=true             % Improve word boundary info for assistive tech
+}
+
+% Section Styling
+\renewcommand{\thesection}{\arabic{section}.}
+\renewcommand{\thesubsection}{\thesection\arabic{subsection}}
+\renewcommand{\thesubsubsection}{\thesubsection.\arabic{subsubsection}}
+
+% Bibliography
+\usepackage[longnamesfirst]{natbib}
+\bibpunct{(}{)}{;}{a}{}{,}
+
+% Hyperlinks and PDF metadata
+\usepackage[
+  pdfusetitle,                    % Use \title and \author for PDF metadata
+  pdflang=en-US,                  % Set PDF language to US English
+  pdfstartview=FitH,              % Open PDF with horizontal fit
+  pdfdisplaydoctitle=true         % Display document title in PDF viewer
+]{hyperref}
+
+\hypersetup{
+  unicode=true,                   % Enable Unicode support
+  colorlinks=true,                % Use colored links
+  linkcolor=blue,                 % Color for internal links
+  urlcolor=blue,                  % Color for URLs
+  citecolor=blue,                 % Color for citations
+  pdftitle={POSC 521: MPA Capstone Seminar: COURSE TITLE}, % PDF title
+  pdfauthor={David P. Adams},          % PDF author metadata
+  pdfsubject={California State University, Fullerton Course Syllabus}, % PDF subject
+  pdfkeywords={CSUF, Syllabus, MPA, Public Administration}, % PDF keywords
+  pdfborderstyle={/S/U/W 1}       % Underline links in PDF
+}
+\urlstyle{same}                   % Use the same font style for URLs
+
+% Document title and metadata
+\title{\textbf{\Huge{POSC 521}} \\ \textit{MPA Capstone Seminar}: \\
+Public Administration Theory} % Course title
+\author{}                         % Leave author blank (info in body)
+\date{\Large{Fall 2025}}              % Term and year of the course
+
+% Accessibility enhancements
+\setlistdepth{3}                  % Ensure consistent list tagging depth
+% Example for alt text: \includegraphics[width=2.75in, alt={Cal State Fullerton wordmark}]{csuf_logo.png}
+
+% Begin the document
+\begin{document}
+
+
+% ========== CSUF HEADER (OPTIONAL) ==========
+\maketitle
+
+\begin{center}
+    \includegraphics[width=2.75in, alt={Cal State Fullerton wordmark}]{csuf_logo.png}
+\end{center}
+
+
+% ========== SECTION 1: FACULTY INFORMATION ==========
+\section{Faculty Information}
+% Replace placeholders with your information
+\noindent \textbf{Instructor:} David P. Adams, Ph.D. \\
+\noindent \textbf{Pronouns:} He/Him \\
+\noindent \textbf{Office:} Gordon Hall 521 \\
+\noindent \textbf{Phone/Text:} (657) 278-4770 \\
+\noindent \textbf{Website:} \href{https://dadams.io}{dadams.io} \\
+\noindent \textbf{Email:} dpadams@fullerton.edu \\
+\noindent \textbf{Zoom ID:} 334 750 2639 \\
+\noindent \textbf{Office hours:} Mondays at 12:30--1:30, Tuesdays at 5:30--6:30, and by \href{https://dadams.io/appointments}{appointment} throughout the week. Meetings can be in-person or virtual via Zoom.
+
+% ========== SECTION 2: COURSE COMMUNICATION ==========
+\section{Course Communication}
+All course announcements and communications will be sent via \emph{Canvas} and university email. Students are responsible for regularly checking their \emph{Canvas} notifications and email. Students are also responsible for ensuring that their \emph{Canvas} notifications are set to receive messages from the course. Students are expected to check \emph{Canvas} and their email at least once daily.
+
+% ========== SECTION 3: TECHNICAL PROBLEMS ==========
+\section{Technical Problems}
+If you encounter any technical difficulties, contact the instructor immediately to document the problem. Then, contact: \href{http://www.fullerton.edu/it/students/helpdesk/index.php}{student IT help desk}, \href{mailto:StudentITHelpDesk@fullerton.edu}{email}, phone (657) 278-8888, walk-in \href{http://www.fullerton.edu/it/students/sgc/index.php}{student genius center}, online chat - log into \href{http://my.fullerton.edu}{portal}; click ``Online IT Help''; click ``Live Chat.''
+
+\vspace{0.5em}
+\noindent \textbf{\underline{For issues with Canvas}}: Canvas Support Hotline = (657) 278-8888, \href{https://canvashelp.fullerton.edu/}{search the CSUF Canvas Guides with AI Assistant}, or \href{https://titans.service-now.com/sp?id=sc_cat_item&sys_id=f88efe80ebea6a10fb7cfcffcad0cdc6&subject=Canvas}{report a problem.}
+
+\vspace{0.5em}
+\noindent \textbf{Alternative plan for submitting work:} Students are expected to submit all assignments via \emph{Canvas}. If you cannot submit an assignment via \emph{Canvas}, please contact the professor to discuss alternative submission procedures.
+
+\vspace{0.5em}
+\noindent \textbf{Response time:} I will strive to respond to all student emails and \emph{Canvas} messages within 24 hours, except on weekends and holidays. If you do not receive a response within 24 hours, please send a follow-up message. If you do not receive a response within 48 hours, please send another follow-up message and contact me via phone or SMS text at (657) 278-4770.
+
+% ========== SECTION 4: COURSE INFORMATION ==========
+\section{Course Information}
+
+\subsection*{Course Format:}
+This course will be conducted in a hybrid format, with both in-person and asynchronous online sessions, as indicated in Table \ref{tab:session-schedule}.
+
+    \begin{center}
+    \begin{table}[h]
+        \caption{\textbf{Session Schedule}}
+        \label{tab:session-schedule}
+        \centering
+        \begin{tblr}{
+            colspec = {X[2,l] X[4,l]},
+            rowhead = 1,             
+            row{1} = {font=\bfseries, bg=gray!20},
+        }
+            Session Type & Dates \\      
+            In-Person Sessions & August 26; September 2, 9, 16, 23, 30; October 7, 14, 21, 28; December 9 \\
+            Asynchronous Online Sessions & November 3, 11, 15; December 2, 14 \\
+        \end{tblr}
+    \end{table}
+    \end{center}
+
+	\subsection*{Course Requisites:}
+		\begin{itemize}
+            \item POSC 509: Foundations of Public Administration
+            \item POSC 523: Administrative Research and Analysis
+            \item POSC 526: Public Organizational Theory \& Behavior
+            \item POSC 571: Public Budgeting and Finance
+            \item POSC 572: Human Resources Management
+		\end{itemize}
+
+	\subsection*{Catalog Description:} 
+		Concepts, models and ideologies of public administration within the larger political system. Course restricted to students in their final six units of graduate work.
+
+	\subsection*{Additional Description:}
+		The capstone seminar in the Master of Public Administration program at Cal State Fullerton examines concepts, models, and ideologies of public administration within the larger political system.
+
+
+	\subsection*{Course Materials}
+	\subsubsection*{Required Texts}
+    \begin{itemize}
+        \item Denhardt, Janet V., and Robert B. Denhardt. 2015. \textit{The New Public Service: Serving, Not Steering}. 4th ed. Routledge.
+        \item Lipsky, Michael. 2010. \textit{Street-Level Bureaucracy: Dilemmas of the Individual in Public Services}. Russell Sage Foundation.
+        \item Guy, Mary E., Meredith A. Newman, and Sharon H. Mastracci. 2008. \textit{Emotional Labor: Putting the Service in Public Service}. New York: Routledge.
+        \item McGhee, Heather. 2021. \textit{The Sum of Us: What Racism Costs Everyone and How We Can Prosper Together}. New York: One World.
+    \end{itemize}
+
+
+\vspace{1em}
+\noindent \textbf{Student Learning Outcomes:}
+                   \begin{enumerate}
+                        \item \textbf{Analyze and evaluate public administration theories and literature:} Demonstrate a deep understanding of foundational and contemporary theories in public administration and their application within the larger political system.
+                        \item \textbf{Conduct a literature review in a concentration area:} Synthesize and critically evaluate scholarly literature to develop expertise in a specific aspect of public administration.
+                        \item \textbf{Develop advanced writing skills:} Produce clear, concise, and effective written communication tailored to academic and professional contexts in public administration.
+                        \item \textbf{Apply critical thinking skills:} Analyze and evaluate complex arguments, theories, and practices in public administration to address real-world challenges.
+                        \item \textbf{Demonstrate professional readiness:} Integrate knowledge of trends, issues, and ethical considerations in public administration to prepare for a successful career in public service.
+                  \end{enumerate}
+
+% ========== SECTION 5: GRADING POLICIES AND STANDARDS ==========
+\section{Grading Policies and Standards}
+
+\subsection*{Grading Scale and Weights}
+
+\noindent \textbf{Grading Scale:}
+
+The grading scale is shown in Table~\ref{tab:grading-scale}. Grades will be given based on the weights in Table~\ref{tab:grade-weights}.
+\begin{center}
+\begin{table}[h]
+  \caption{\textbf{Grade scale}}
+  \label{tab:grading-scale}
+  \centering
+  \begin{tblr}{
+    colspec = {l c l c},
+    rowhead = 1,             
+    row{1} = {font=\bfseries, bg=gray!20},
+  }
+  Grade & Percent    & Grade & Percent \\
+  A+    & 98.0--100.0& C+    & 77.0--79.9 \\
+  A     & 93.0--97.9 & C     & 73.0--76.9 \\
+  A-    & 90.0--92.9 & C-    & 70.0--72.9 \\
+  B+    & 87.0--89.9 & D+    & 67.0--69.9 \\
+  B     & 83.0--86.9 & D     & 63.0--66.9 \\
+  B-    & 80.0--82.9 & D-    & 60.0--62.9 \\
+        &            & F     & 0.0--59.9 \\
+  \end{tblr}
+\end{table}
+
+\end{center}
+
+\vspace{1em}
+\noindent \textbf{Required Course Assignments:}
+
+The due dates for the course requirements are as follows:
+    \begin{itemize}
+        \item Weekly Readings Assignments:
+        \begin{itemize}
+            \item Annotated Bibliography: Due each Monday by 11:59 p.m. (Weeks 1--9, excluding Thanksgiving week)
+            \item Rough Draft Synthesis Paper: Due each Tuesday by 7:00 p.m. (Weeks 1--9)
+            \item Final Synthesis Paper: Due each Friday by 11:59 p.m. (Weeks 1--9)
+            \item Personal Reflection: Due each Friday by 11:59 p.m. (Weeks 1--9)
+        \end{itemize}
+        \item Practice Comprehensive Exam Response:
+        \begin{itemize}
+            \item Distributed in Week 10 (Sunday, 10/26)
+            \item Due on Saturday, 11/1 by 11:59 p.m.
+        \end{itemize}
+        \item MPA Comprehensive General Area Essay Exam:
+        \begin{itemize}
+            \item Distributed on Friday, 11/7 at 8:00 a.m.
+            \item Due on Thursday, 11/13 by 4:59 p.m.
+        \end{itemize}
+        \item Concentration Area Paper:
+        \begin{itemize}
+            \item Topic Selection: Due Week 13 (Sunday, 11/23)
+            \item Literature Review Draft: Due Week 14 (Sunday, 12/7)
+            \item Workshop Participation: Week 15 (Tuesday, 12/9)
+            \item Final Draft: Due Tuesday, 12/16 by 9:00 p.m.
+        \end{itemize}
+    \end{itemize}
+
+\begin{center}
+\begin{table}[h]
+  \caption{\textbf{Assignment weighting}}
+  \label{tab:grade-weights}
+  \centering
+  \begin{tblr}{
+    colspec = {l c},
+    rowhead = 1,                 
+    row{1} = {font=\bfseries, bg=gray!20},
+  }
+    Assignment & Weight \\      
+    Weekly Readings Assignments & 30\% \\
+    Reading Discussion Facilitation & 5\% \\
+    Practice Comprehensive Exam Response & 5\% \\
+    MPA Comprehensive General Area Essay Exam & 35\% \\
+    Concentration Area Paper & 20\% \\
+  Total            & 100\%      \\
+  \end{tblr}
+\end{table}
+\end{center}
+
+
+	\subsection*{Attendance and Participation policy:}
+Students are expected to attend all in-person sessions. If you are unable to attend a session, please notify the professor in advance. If you miss a session, you are responsible for obtaining the information and materials covered in the session. If you miss a session, you will not be able to participate in mandatory class activities. This may have an impact on your graded materials. 
+
+	\subsection*{Make-up and Late Submission Policy:}
+		All assignments are due on the date specified in the course schedule. Late assignments will only be accepted if prior arrangements have been made with the professor. Students must submit all assignments on time and in the correct format. Failure to submit an assignment on time may result in a grade penalty.
+
+	\subsection*{Authentication of Student Work:}
+        Students may be required to submit their work to a plagiarism detection service. This may include submitting drafts and final versions of assignments. Students should be aware that their work may be checked for authenticity and originality. Cal State Fullerton uses Turnitin\copyright.
+	\subsection*{Extra Credit:}
+		Extra credit opportunities will not be offered in this course. All students will be graded based on the same criteria and standards.
+
+	\subsection*{Retention of Student Work:}
+		Students are responsible for retaining copies of all assignments submitted in this course. Students should keep copies of all assignments until the end of the semester and verify that their assignments have been graded and returned before discarding them.
+
+\section{Detailed Course Requirements}
+
+\subsection*{1) Weekly Readings Assignment}
+
+\textbf{Important Note:} Beginning in Week 1, all students are required to include copies of their AI feedback as an \emph{appendix} to their final weekly submission. AI feedback is:
+\begin{itemize}
+    \item \textbf{Required} for final synthesis papers every week.
+    \item \textbf{Optional} for annotated bibliographies after Week 3.
+\end{itemize}
+
+The capstone course is designed to integrate key theories and practices in public administration through weekly assignments culminating in a comprehensive capstone synthesis paper. Students will engage with foundational readings, participate in in-person discussions, and produce critical analyses that connect theory to practice.
+
+\subsubsection*{Weekly Assignment Workflow}
+
+Each week includes the following components:
+
+\begin{enumerate}
+    \item \textbf{Annotated Bibliography (Due Monday Before Class)}
+    \begin{itemize}
+        \item \textbf{Purpose}: Prepare for in-class discussion by summarizing key ideas and evaluating the relevance of assigned readings.
+        \item \textbf{Instructions}:
+        \begin{itemize}
+            \item For each assigned reading:
+            \begin{itemize}
+                \item Provide a citation in APA or Chicago author-date style.
+                \item Write a 150-word annotation that includes:
+                \begin{itemize}
+                    \item A brief summary of the central argument and key points.
+                    \item Relevance to the week's topic and implications for public administration.
+                \end{itemize}
+            \end{itemize}
+            \item \textbf{Optional AI Feedback (Weeks 1--3 Required; Week 4+ Optional)}: Students may use tools such as OpenAI's \href{https://chat.openai.com/}{ChatGPT}, Anthropic's \href{https://www.anthropic.com/}{Claude}, Google's \href{https://www.google.com/search/about/}{Gemini}, or the university's \href{https://titangpt.fullerton.edu/auth/jwt/login}{TitanGPT} to request feedback.  
+            \item \textbf{Sample Prompt}:
+            \begin{quote}
+                \texttt{``Here is my annotated bibliography entry. Citation: [insert citation]. Summary: [insert summary]. Relevance: [insert relevance]. Please give me feedback on clarity and accuracy, and suggest 1--2 questions I could raise in class.''}
+            \end{quote}
+        \end{itemize}
+    \end{itemize}
+
+    \item \textbf{Rough Draft Synthesis Paper (Due Tuesday Before Class)}
+    \begin{itemize}
+        \item \textbf{Purpose}: Develop an initial critical analysis integrating insights from the readings to facilitate in-class discussion.
+        \item \textbf{Instructions}:
+        \begin{itemize}
+            \item Write a 3-page rough draft synthesis paper that:
+            \begin{itemize}
+                \item Identifies patterns, connections, and contradictions across the readings.
+                \item Highlights implications for public administration theory and practice.
+            \end{itemize}
+            \item This draft should be substantive but will be refined based on class discussion and further reflection.
+        \end{itemize}
+    \end{itemize}
+
+    \item \textbf{In-Person Class Discussion (Tuesday)}
+    \begin{itemize}
+        \item \textbf{Purpose}: Deepen understanding of the week's readings through collaborative discussion and refine synthesis thinking.
+        \item \textbf{Activity}: Analyze key themes, patterns, and contradictions in the readings; discuss insights from rough drafts.
+        \item \textbf{Special Workshops}: In Weeks 2, 6, and 8, class will include structured peer review workshops in addition to regular discussion.
+    \end{itemize}
+
+    \item \textbf{Final Synthesis Paper \& Reflection (Due Friday Night)}
+    \begin{itemize}
+        \item \textbf{Purpose}: Produce a polished critical analysis incorporating insights from class discussion.
+        \item \textbf{Instructions}:
+        \begin{itemize}
+            \item Write a 4- to 5-page final synthesis paper that:
+            \begin{itemize}
+                \item Refines and expands the rough draft based on class discussion.
+                \item Demonstrates sophisticated integration of readings with deeper analysis.
+                \item Connects theory to practice in public administration.
+            \end{itemize}
+            \item \textbf{AI Feedback (Required)}: Students must use an AI tool for feedback and copy/paste the AI response into the appendix of their final submission.  
+            \begin{quote}
+                \texttt{``I've drafted a synthesis paper that integrates [number] readings on [topic]. Please identify strengths and gaps in my analysis, and suggest additional connections I could make. Do not rewrite the paper.''}
+            \end{quote}
+            \item Write a brief personal reflection on your learning process and insights gained from the week's work.
+            \item Include all AI feedback used during the week in an appendix.
+        \end{itemize}
+    \end{itemize}
+\end{enumerate}
+
+\subsubsection*{Peer Review Workshop Schedule}
+
+In addition to regular class discussion, structured peer review workshops will occur during class in:
+\begin{itemize}
+    \item \textbf{Week 2}: Focus on developing stronger analytical connections
+    \item \textbf{Week 5}: Emphasis on theory-practice integration
+    \item \textbf{Week 8}: Final comprehensive exam preparation and synthesis refinement
+\end{itemize}
+
+\paragraph*{AI Use and Academic Integrity:} AI may be used to provide feedback, raise questions, or suggest additional angles for analysis. It may \textbf{not} be used to draft or rewrite your work. All writing must remain your own. Please read the \textbf{Artificial Intelligence Policy} section of this syllabus for more details on how to use AI responsibly in this course and refer to Table \ref{tab:ai-guidelines} and the more detailed guidelines provided below.
+
+\begin{center}
+\begin{table}[h]
+    \caption{Guidelines for Responsible AI Use in the Course}
+    \label{tab:ai-guidelines}
+    \centering
+    \begin{tblr}{
+        colspec = {X[6,l] X[6,l]},
+        rowhead = 1,             
+        row{1} = {font=\bfseries, bg=gray!20}
+    }
+    AI Use: Do's & AI Use: Don'ts \\
+    Use AI to \textbf{give feedback} on your writing (clarity, gaps, connections). & Use AI to \textbf{write or rewrite} your assignments. \\
+    Ask AI to \textbf{suggest questions} for discussion or reflection. & Copy/paste AI text and submit it as your own work. \\
+    Cite AI when it meaningfully shaped your thinking (e.g., ``ChatGPT feedback, 9/10/25''). & Omit citation when AI influenced your work. \\
+    Use AI to \textbf{check organization, coherence, or flow}. & Rely on AI without engaging critically with course readings. \\
+    Be mindful of \textbf{biases and sustainability impacts}. & Treat AI outputs as authoritative without evaluation. \\
+    Remember: \textbf{Your voice, analysis, and synthesis must remain central.} & Assume AI can replace your own critical thinking. \\
+    \end{tblr}
+\end{table}
+\end{center}
+
+
+\subsection*{2) Practice Comprehensive Exam Response}
+
+\paragraph{Week 10: Comprehensive Exam Response}
+\begin{itemize}
+    \item \textbf{In-Person Class}: Question opens on Sunday. In class we'll have a final preparation.
+    \begin{itemize}
+        \item \textbf{Activities}:
+        \begin{itemize}
+            \item Review key theoretical frameworks.
+            \item Discuss strategies for integrating course materials into a comprehensive argument.
+        \end{itemize}
+    \end{itemize}
+    \item \textbf{Comprehensive Exam Response}:
+    \begin{itemize}
+        \item \textbf{Objective}: Demonstrate mastery of key themes by critically engaging with classical public administration theory, New Public Service, and New Public Management.
+        \item \textbf{Requirements}:
+        \begin{itemize}
+            \item Length: 1,000 words.
+            \item Address the provided exam question with clear argumentation and citations.
+            \item Use APA or Chicago author-date citation style.
+            \item Engage deeply with course readings.
+        \end{itemize}
+        \item \textbf{Assignment}: Final Exam Response Submission (due Saturday night).
+    \end{itemize}
+\end{itemize}
+
+\subsection*{3) Reading Discussion Facilitation}
+
+Students will facilitate class discussions in pairs for Weeks 2 through 9 (skipping Week 1). With 9 students, most weeks will have facilitator pairs, with one week requiring a group of three. Facilitators will lead integrated discussions that build on their collaborative preparation and the rough draft synthesis papers submitted prior to class, creating a dynamic learning environment that bridges individual preparation with collaborative analysis.
+
+\subsubsection*{Facilitator Responsibilities}
+
+\textbf{Pre-Class Preparation:}
+\begin{itemize}
+    \item Collaborate with your partner(s) to share and discuss your annotated bibliographies, identifying complementary perspectives and areas of disagreement
+    \item Prepare 6--8 discussion questions that connect readings to broader public administration theory and practice
+    \item Design activities that encourage synthesis across readings and connection to current events or case studies
+    \item Divide facilitation responsibilities and plan your collaborative approach
+\end{itemize}
+
+\textbf{Class Facilitation (45 minutes):}
+\begin{itemize}
+    \item \textbf{Opening synthesis (10 minutes):} Collaboratively present key themes and tensions across the week's readings, drawing on your joint analysis
+    \item \textbf{Facilitated discussion (25 minutes):} Guide analysis through prepared questions, ensuring all students contribute and connecting individual insights from rough drafts
+    \item \textbf{Practical connections (10 minutes):} Lead discussion on implications for public administration practice, current policy issues, or professional scenarios
+\end{itemize}
+
+\textbf{Post-Class Reflection:}
+\begin{itemize}
+    \item Each facilitator submits an individual brief (250-word) reflection on Canvas within 24 hours, analyzing what worked well, partnership dynamics, and what insights emerged from the discussion
+\end{itemize}
+
+\subsubsection*{Assessment Criteria}
+
+Facilitator pairs will be evaluated on:
+\begin{itemize}
+    \item \textbf{Preparation and Collaboration:} Demonstrates thorough understanding of readings and effective partnership in synthesizing different perspectives from their joint preparation
+    \item \textbf{Discussion Leadership:} Creates inclusive environment, manages extended class time effectively, and guides productive dialogue without dominating
+    \item \textbf{Critical Inquiry:} Poses thought-provoking questions that push beyond summary to analysis, evaluation, and application within their 45-minute segment
+    \item \textbf{Integration:} Successfully connects readings to broader course themes, current events, and professional practice in public administration
+    \item \textbf{Adaptability:} Responds effectively to unexpected directions in discussion and incorporates diverse student perspectives within their facilitation time
+    \item \textbf{Professional Communication:} Maintains respectful, scholarly discourse while encouraging risk-taking in thinking and effectively shares facilitation responsibilities
+\end{itemize}
+
+\textbf{Note:} Facilitator assignments will be distributed at the beginning of the semester. The instructor will handle all peer review workshop activities during designated weeks (3, 5, 8).
+
+\subsection*{4) MPA Comprehensive General Area Essay Exam}
+
+Students will complete a comprehensive general area essay exam as part of the MPA program's comprehensive exam requirement. The exam will consist of two questions from which students will choose one to answer. The questions will be based on the course readings and discussions and will require students to demonstrate their understanding of public administration's key concepts, theories, and debates. The exam will allow students to synthesize their learning in the course and demonstrate their ability to think critically and write clearly about complex issues in public administration. Students who do not pass the exam on the first attempt will have the opportunity to retake the exam once during finals week. The grade for the exam is pass/fail. Students who do not pass on the second attempt will be required to retake the course.
+
+\subsection*{5) Concentration Area Writing Project}
+
+\noindent \textit{Note: The specific focus of this project will vary depending on your concentration area (Public Finance, Human Resource Management, Local Government Management, or Public Policy). Detailed assignment sheets for each concentration provide tailored prompts and options. This syllabus outlines the shared structure, requirements, and grading criteria for all students.}
+
+\subsubsection*{Assignment Overview}
+
+This capstone project allows students to deepen their understanding of their MPA concentration area by integrating theoretical frameworks with real-world challenges. Using \textbf{Heather McGhee's \textit{The Sum of Us: What Racism Costs Everyone and How We Can Prosper Together} \citeyearpar{mcghee2021}} as a central text, students will explore how exclusionary policies and inequitable governance affect their concentration area, such as public finance, human resources, local government management, or public policy. The assignment is scaffolded into stages to guide students toward producing a polished, analytical final paper.
+
+\paragraph*{Objectives:}
+\begin{itemize}
+    \item Develop expertise in a specific public administration concentration area.
+    \item Enhance research, analytical, and writing skills.
+    \item Synthesize theoretical frameworks with practical case studies.
+    \item Critically examine how equity and exclusion affect public administration.
+\end{itemize}
+
+\paragraph*{Assignment Stages and Requirements:}
+\begin{enumerate}
+    \item \textbf{Topic Selection (10\% of assignment grade):}
+    \begin{itemize}
+        \item Submit a one-page proposal outlining your topic, research question, and how you will integrate \textit{The Sum of Us} into your analysis.
+    \end{itemize}
+    \item \textbf{Literature Review (20\% of assignment grade):}
+    \begin{itemize}
+        \item Draft a literature review that synthesizes key themes from \textit{The Sum of Us}, course readings, and additional scholarly materials.
+        \item Discuss how McGhee's arguments about exclusion, equity, and shared prosperity connect to themes in your concentration area.
+    \end{itemize}
+    \item \textbf{Peer Review Workshop (20\% of assignment grade):}
+    \begin{itemize}
+        \item Participate in a peer review workshop to provide and receive feedback on your literature review and paper outline.
+    \end{itemize}
+    \item \textbf{Final Paper (50\% of assignment grade):}
+    \begin{itemize}
+        \item Submit a polished final paper that integrates feedback from earlier stages.
+        \item Analyze an issue relevant to your concentration through the lens of equity and shared prosperity, connecting theoretical frameworks to practical lessons.
+        \item Ensure the paper is 9--12 pages (excluding references), double-spaced, and formatted in APA or Chicago author-date style.
+    \end{itemize}
+\end{enumerate}
+
+\paragraph*{Submission Timeline:}
+\begin{itemize}
+    \item \textbf{Topic Outline:} Due Week 13
+    \item \textbf{Literature Review:} Due Week 14
+    \item \textbf{Peer Review Workshop:} Due Week 15
+    \item \textbf{Final Paper:} Due Week 16
+\end{itemize}
+
+\paragraph*{General Guidelines:}
+\begin{itemize}
+    \item \textbf{Grounding:} Papers must be firmly rooted in \textit{The Sum of Us} and assigned concentration literature, demonstrating a deep understanding of both. Students may also incorporate relevant literature from the capstone or other MPA courses.  
+    \item \textbf{Length:} 9--12 pages, double-spaced (excluding references).  
+    \item \textbf{Formatting:} Use 12-point Times New Roman font with 1-inch margins. APA or Chicago author-date citation style is required.  
+    \item \textbf{Citations:} Provide in-text citations and a comprehensive references page.  
+    \item \textbf{Structure:} Organize the paper with a clear introduction, body, and conclusion. Use descriptive headings to guide the reader.  
+    \item \textbf{Writing Quality:} Papers should be polished, professional, and free of grammatical errors.  
+\end{itemize}
+
+\paragraph*{Grading Criteria:}
+\begin{itemize}
+    \item \textbf{Depth of Analysis (30\%):} Engagement with \textit{The Sum of Us} and the broader literature.
+    \item \textbf{Use of Sources (20\%):} Relevance and critical evaluation of sources.
+    \item \textbf{Clarity and Organization (20\%):} Logical structure and coherent arguments.
+    \item \textbf{Writing Quality (15\%):} Grammar, style, and proper formatting.
+    \item \textbf{Completeness and Accuracy (15\%):} Adherence to assignment requirements and deadlines.
+\end{itemize}
+\noindent This assignment is designed to help you synthesize your learning in the MPA program and apply it to a specific area of public administration. By engaging with \textit{The Sum of Us} and other relevant literature, you will develop a deeper understanding of how equity and exclusion affect public administration and how you can contribute to creating a more equitable and inclusive society.
+
+% ========== SECTION 8: ACADEMIC INTEGRITY ==========
+	\section{Academic Integrity}
+	Students are expected to adhere to the highest standards of academic integrity. Any student found to have engaged in academic dishonesty will be subject to the sanctions described in the \href{https://www.fullerton.edu/senate/publications_policies_resolutions/ups/UPS%20300/UPS%20300.021.pdf}{Academic Dishonesty Policy} (UPS 300.021). Academic dishonesty includes, but is not limited to, cheating, plagiarism, fabrication, facilitating academic dishonesty, and submitting previously graded work without prior authorization. Students are expected to be familiar with the university's policy on academic dishonesty and to adhere to this policy in all aspects of this course. Any student who has questions about the policy should ask the professor for clarification.
+	
+	\subsection*{Plagiarism}
+	Plagiarism is a serious violation of academic integrity and will not be tolerated in this course. Plagiarism includes, but is not limited to, copying and pasting text from sources without proper citation, paraphrasing text from sources without proper citation, and submitting work that is not your own. Students are expected to properly cite all sources used in their work and to submit original work. Failure to do so may result in a failing grade for the assignment and further disciplinary action.
+	
+	\subsection*{Written Work}
+	All written work must be submitted in a professional format, including proper grammar, spelling, and punctuation. Written work must also be properly cited using the appropriate citation style. Students are expected to follow the guidelines for written work provided by the professor and to seek clarification if they have questions about the requirements.
+
+	\subsection*{Artificial Intelligence (AI) Policy}
+
+	\subsubsection*{Definition of Generative AI}
+	
+	\noindent For this course, generative AI refers to systems capable of producing human-like text, images, data analysis, or other content. Examples include:
+	
+	\begin{itemize}
+	    \item Large Language Models (e.g., GPT-4, GPT-5, Claude, Gemini, TitanGPT)
+	    \item Text-to-image or multimodal generators (e.g., DALL-E, Midjourney)
+	    \item AI writing assistants and summarizers
+	    \item Automated coding, data, or content generators
+	\end{itemize}
+	
+	\subsubsection*{AI Use Policy}
+	
+	AI is permitted and encouraged as a learning tool, under the following guidelines:
+	
+	\begin{itemize}
+	    \item \textbf{Allowed}: Using AI for feedback on annotated bibliographies, synthesis drafts, and reflections (see assignments for sample prompts).
+	    \item \textbf{Allowed}: Using AI to brainstorm questions, highlight gaps, or check clarity and organization.
+	    \item \textbf{Not Allowed}: Submitting AI-generated text as your own work or asking AI to rewrite your assignments.
+	    \item \textbf{Optional}: Students may choose whether or not to use AI tools for any assignment in this course. All work can be completed successfully without AI assistance. This optional approach applies to all course requirements, regardless of specific AI-related instructions in individual assignments.
+	\end{itemize}
+	
+	\subsubsection*{Rationale for AI Policy}
+	
+	This policy is designed to ensure AI use strengthens—not substitutes—your academic work:
+	
+	\begin{enumerate}
+	    \item Promotes critical engagement with public administration theory by using AI as a feedback partner.
+	    \item Enhances literature review and writing by highlighting missing connections or blind spots.
+	    \item Builds professional literacy with tools already common in public service organizations.
+	    \item Develops ethical judgment by practicing responsible use of emerging technologies.
+	    \item Encourages sustainability awareness in balancing AI's benefits with its environmental costs.
+	\end{enumerate}
+	
+	\subsubsection*{Ethics and Responsible Use}
+	
+	\noindent Students are expected to engage with AI responsibly:
+	
+	\begin{itemize}
+	    \item \textbf{Authorship}: All substantive writing must be your own. AI may provide critique, but not draft or rewrite.
+	    \item \textbf{Citation}: When AI meaningfully informs your work, cite it (e.g., ``ChatGPT (GPT-5) [AI model], feedback received [date]``).
+	    \item \textbf{Bias Awareness}: AI outputs reflect biases. Evaluate them critically for fairness and accuracy.
+	    \item \textbf{Sustainability}: Be mindful of AI's environmental footprint and use tools thoughtfully.
+	\end{itemize}
+	
+	\subsubsection*{Repercussions for Misuse}
+	
+	\begin{itemize}
+	    \item Misuse includes submitting AI-generated work as your own, failing to cite AI contributions, or relying on AI instead of demonstrating your own analysis.
+	    \item Consequences may include revision requirements, grade penalties, or formal academic integrity proceedings.
+	\end{itemize}
+	
+	\subsubsection*{Assessment of AI Use}
+	
+	AI use will be assessed not by how often you use it, but by how thoughtfully you integrate it into your learning:
+	
+	\begin{itemize}
+	    \item Evidence of revision and improvement based on AI or peer feedback.
+	    \item Student reflections on the usefulness and limitations of AI.
+	    \item Quality of class participation, showing independent engagement with readings and theory.
+	    \item Final projects that demonstrate original critical thinking, even if AI supported the drafting process.
+	\end{itemize}
+	
+	\noindent The goal is to treat AI as a \textit{feedback partner}---a tool to sharpen your analysis, deepen your questions, and strengthen your voice in public administration.
+
+% ========== SECTION 8: TECHNICAL COMPETENCIES (DELETE IF NOT APPLICABLE) ==========
+\section{Technical Requirements}
+
+	\subsection*{Pollak Library Resources}
+	
+	The Pollak Library provides a wide range of resources and services to support your research and learning. These resources include books, journals, databases, and research guides. You can access the library's resources online through the \href{http://www.library.fullerton.edu/}{Pollak Library website}. The library also offers research assistance through the \href{http://www.library.fullerton.edu/research/}{Research Assistance Program}. You can also access the \href{http://www.library.fullerton.edu/about/guidelines/online-instruction-guidelines.php}{library's online instruction guidelines} for help with online learning.
+	
+	\subsection*{Canvas}
+	
+	This course will use \href{https://csufullerton.instructure.com/}{Canvas} as a learning management system. You will use \emph{Canvas} to access course materials, submit assignments, participate in discussions, and communicate with the professor and your classmate. You are responsible for checking \emph{Canvas} regularly for announcements, assignments, and other course materials. You are also responsible for ensuring that your \emph{Canvas} notifications are set to receive messages from the course. 
+	
+	\subsection*{Zoom}
+	This course may include synchronous online sessions using \href{https://fullerton.zoom.us/}{Zoom}. You are responsible for ensuring that you have the necessary equipment and internet connection to participate in these sessions. 
+	
+	\subsection*{Minimum Technical Requirements}
+	
+	To participate in this course, you will need the following minimum technical requirements:
+	\begin{itemize}
+	    \item A computer or tablet with a reliable internet connection
+	    \item A webcam and microphone
+	    \item A modern web browser (Chrome, Firefox, Safari, or Edge)
+	    \item Microsoft Word or a compatible word processing program
+	    \item Adobe Acrobat Reader or a compatible PDF reader
+	\end{itemize}
+	
+	
+	\noindent Long- and short-term computer and internet access loans are available through the \href{http://www.fullerton.edu/it/students/sgc/index.php}{Student Genius Center}.
+
+% ========== SECTION 9: STUDENT RESOURCES WEBSITE ==========
+\section{Student Resources Website}
+It is the student's responsibility to read and understand the required and important \href{https://fdc.fullerton.edu/teaching/student-info-syllabi.html}{student information for course syllabi}. Included is information about:
+
+\begin{itemize}
+\item University learning goals
+\item General Education learning objectives
+\item Netiquette/appropriate online behavior
+\item Students' rights to accommodations
+\item Campus student support resources
+\item Academic integrity
+\item Emergency preparedness/what to do
+\item Library services
+\item Student IT services and competencies
+\item Software privacy and accessibility
+\item Accessibility statement
+\item Diversity statement
+\item Land acknowledgment
+\item Final exam schedule
+\item Semester calendar
+\end{itemize}
+
+% ========== SECTION 10: CLASSROOM MANAGEMENT ==========
+\section{Classroom Management}
+\subsection*{Classroom Policies}
+\begin{itemize}
+    \item \textbf{Attendance:} Regular attendance is crucial for success in this course. If you must miss a class, please notify me in advance and make arrangements to catch up on missed material.
+    \item \textbf{Participation:} Active participation in class discussions is expected. Please come prepared to engage with the readings and contribute to group activities.
+    \item \textbf{Technology Use:} Laptops and tablets are allowed for note-taking and accessing course materials. However, please refrain from using your devices for non-class-related activities during class.
+    \item \textbf{Respectful Communication:} Treat your classmates and instructor with respect. Disagreements are natural, but please express them constructively and courteously.
+\end{itemize}
+
+% ========== SECTION 13: CALENDAR/SCHEDULE ==========
+
+\section{Course Schedule}
+
+\subsection*{Week 1, Starting 8/25: Public Administration Theory I}
+\begin{itemize}
+    \item \textbf{In-person Session}: Introduction to the Course
+    \item Readings:
+        \begin{itemize}
+            \item \citet{WILSON1887a}, ``The Study of Administration''
+            \item \citet{Weber1946}, ``Bureaucracy'' 
+            \item \citet{gulick1937}, ``Notes on the Theory of Organization'' 
+            \item \citet{Follett1926}, ``The Giving of Orders'' 
+            \item \citet{simon1946}, ``Proverbs of Administration'' 
+        \end{itemize}
+    \item \textbf{Due Monday (8/25)}: Annotated Bibliography
+    \item \textbf{Due Tuesday (8/26)}: Rough Draft Synthesis Paper
+    \item \textbf{Tuesday (8/26)}: Class Discussion
+    \item \textbf{Due Friday (8/29)}: Final Synthesis Paper \& Reflection
+\end{itemize}
+
+\subsection*{Week 2, Starting 9/1: Ethics and Values in Public Administration}
+\begin{itemize}
+    \item \textbf{In-person Session}: Public Service Values and Ethics
+    \item Readings:
+        \begin{itemize}
+            \item \citet{friedrich1935}, ``Responsible Government Service Under the American Constitution'' 
+            \item \citet{FINER1941}, ``Administrative Responsibility in Democratic Government'' 
+            \item \citet{goss1996}, ``A Distinct Public Administration Ethics?'' 
+            \item \citet{Adams2009}, ``Unmasking Administrative Evil'' 
+            \item \citet{Denhardt2015}, \emph{The New Public Service}, Chapter 7 
+        \end{itemize}
+    \item \textbf{Due Monday (9/1)}: Annotated Bibliography
+    \item \textbf{Due Tuesday (9/2)}: Rough Draft Synthesis Paper
+    \item \textbf{Tuesday (9/2)}: Class Discussion  \& Peer Review Workshop
+    \item \textbf{Due Friday (9/5)}: Final Synthesis Paper \& Reflection
+\end{itemize}
+
+\subsection*{Week 3, Starting 9/8: Public Administration Theory II}
+\begin{itemize}
+    \item \textbf{In-person Session}: Public Administration in the U.S. Context
+    \item Readings:
+        \begin{itemize}
+            \item TBD
+            \item \citet{Denhardt2015}, \emph{The New Public Service}, Chapters 1--6 
+        \end{itemize}
+    \item \textbf{Due Monday (9/8)}: Annotated Bibliography
+    \item \textbf{Due Tuesday (9/9)}: Rough Draft Synthesis Paper
+    \item \textbf{Tuesday (9/9)}: Class Discussion
+    \item \textbf{Due Friday (9/12)}: Final Synthesis Paper \& Reflection
+\end{itemize}
+
+\subsection*{Week 4, Starting 9/15: Leadership and Motivation}
+\begin{itemize}
+    \item \textbf{In-person Session}: Leadership and Motivation
+    \item Readings:
+        \begin{itemize}
+            \item \citet{Christensen2017}, ``Public Service Motivation Research'' 
+            \item \citet{Denhardt2015}, \emph{The New Public Service}, Chapter 8 
+            \item \citet{Lachance2017}, ``Public Service Motivation'' 
+            \item \citet{maslow1943}, ``A Theory of Human Motivation'' 
+            \item \citet{Fairholm2004}, ``Different Perspectives on the Practice of Leadership'' 
+        \end{itemize}
+    \item \textbf{Due Monday (9/15)}: Annotated Bibliography
+    \item \textbf{Due Tuesday (9/16)}: Rough Draft Synthesis Paper
+    \item \textbf{Tuesday (9/16)}: Class Discussion
+    \item \textbf{Due Friday (9/19)}: Final Synthesis Paper \& Reflection
+\end{itemize}
+
+\subsection*{Week 5, Starting 9/22: Performance Management}
+\begin{itemize}
+    \item \textbf{In-person Session}: Performance Management
+    \item Readings:
+        \begin{itemize}
+            \item \citet{Behn2003}, ``Why Measure Performance?'' 
+            \item \citet{Denhardt2015}, \emph{The New Public Service}, Chapter 9 
+            \item \citet{douglas2021}, ``Getting a Grip on Performance of Collaborations'' 
+            \item \citet{marvel2015}, ``Unconscious Bias in Citizens' Evaluations\dots'' 
+            \item \citet{nicholson-crotty2004}, ``Public Management and Organizational Performance'' 
+        \end{itemize}
+    \item \textbf{Due Monday (9/22)}: Annotated Bibliography
+    \item \textbf{Due Tuesday (9/23)}: Rough Draft Synthesis Paper
+    \item \textbf{Tuesday (9/23)}: Class Discussion \& Peer Review Workshop
+    \item \textbf{Due Friday (9/26)}: Final Synthesis Paper \& Reflection
+\end{itemize}
+
+\subsection*{Week 6, Starting 9/29: Street-Level Bureaucrats}
+\begin{itemize}
+    \item \textbf{In-person Session}: Street-Level Bureaucrats
+    \item Readings:
+        \begin{itemize}
+            \item \citet{Lipsky2010}, \emph{Street-Level Bureaucracy}
+        \end{itemize}
+    \item \textbf{Due Monday (9/29)}: Annotated Bibliography
+    \item \textbf{Due Tuesday (9/30)}: Rough Draft Synthesis Paper
+    \item \textbf{Tuesday (9/30)}: Class Discussion
+    \item \textbf{Due Friday (10/3)}: Final Synthesis Paper \& Reflection
+\end{itemize}
+
+\subsection*{Week 7, Starting 10/6: Privatization and Contracting}
+\begin{itemize}
+    \item \textbf{In-person Session}: Privatization and Contracting
+    \item Readings:
+        \begin{itemize}
+            \item \citet{MILWARD2000a}, ``Governing the Hollow State''
+            \item \cite{hood1991}, ``A Public Management for All Seasons?''
+            \item \citet{brownManagingPublicService2006}, ``Managing Public Service Contracts''
+            \item \citet{jos2009}, ``Keeping it Public''
+            \item \citet{RAINEY2000a}, ``Comparing Public and Private Organizations''
+        \end{itemize}
+    \item \textbf{Due Monday (10/6)}: Annotated Bibliography
+    \item \textbf{Due Tuesday (10/7)}: Rough Draft Synthesis Paper
+    \item \textbf{Tuesday (10/7)}: Class Discussion
+    \item \textbf{Due Friday (10/10)}: Final Synthesis Paper \& Reflection
+\end{itemize}
+
+\subsection*{Week 8, Starting 10/13: 21st Century Challenges}
+\begin{itemize}
+    \item \textbf{In-person Session}: 21st Century Challenges
+    \item Readings:
+        \begin{itemize}
+            \item \citet{maynard-moody2012}, ``Social Equities and Inequities in Practice'' 
+            \item \citet{GOODEN2017}, ``Social Equity and Evidence'' 
+            \item \citet{mccandless2022}, ``A Long Road''
+            \item \citet{Denhardt2015}, \emph{The New Public Service}, Chapters 10--12 
+        \end{itemize}
+    \item \textbf{Due Monday (10/13)}: Annotated Bibliography
+    \item \textbf{Due Tuesday (10/14)}: Rough Draft Synthesis Paper
+    \item \textbf{Tuesday (10/14)}: Peer Review Workshop \& Class Discussion
+    \item \textbf{Due Friday (10/17)}: Final Synthesis Paper \& Reflection
+\end{itemize}
+
+\subsection*{Week 9, Starting 10/20: Readings and Peer Review Workshop}
+\begin{itemize}
+    \item \textbf{In-person Session}: Class discussion and peer review workshop on assigned readings
+    \item Readings:
+        \begin{itemize}
+            \item \cite{guy2008}, \emph{Emotional Labor: Putting the Service in Public Service}
+        \end{itemize}
+    \item \textbf{Due Monday (10/20)}: Annotated Bibliography
+    \item \textbf{Due Tuesday (10/21)}: Rough Draft Synthesis Paper
+    \item \textbf{Tuesday (10/21)}: Class Discussion
+    \item \textbf{Due Friday (10/24)}: Final Synthesis Paper \& Reflection
+\end{itemize}
+
+\subsection*{Week 10, Starting 10/27: Practice Comprehensive Exam Response}
+\begin{itemize}
+    \item \textbf{In-person Session}: Distribution and discussion of practice comprehensive exam
+    \begin{itemize}
+        \item Review key theoretical frameworks in public administration
+        \item Discuss strategies for integrating course materials into a comprehensive argument
+        \item Outline approaches to time management and exam writing
+    \end{itemize}
+    \item \textbf{Readings}: Revisit core course texts; review prior synthesis papers
+    \item \textbf{Tuesday (10/28)}: Class Discussion on practice exam prompt
+    \item \textbf{Due Tuesday (11/4)}: Practice Comprehensive Exam Essay 
+\end{itemize}
+
+
+\subsection*{Week 11, Starting 11/3: Comprehensive General Area Essay Exam}
+\begin{itemize}
+    \item \textbf{Asynchronous Session}: Practice Exam Review due Tuesday (11/4) by 7:00 p.m.
+    \item \textbf{Comprehensive General Area Exam distributed Friday (11/7) at 8:00 a.m.}
+\end{itemize}
+
+\subsection*{Week 12, Starting 11/10: Comprehensive General Area Essay Exam}
+\begin{itemize}
+    \item \textbf{Asynchronous Session}: No class meeting
+    \item \textbf{Comprehensive General Area Exam due Thursday (11/13) by 4:59 p.m.}
+\end{itemize}
+
+\subsection*{Week 13, Starting 11/17: Concentration Area Paper}
+\begin{itemize}
+    \item \textbf{Asynchronous Session}: Concentration Area Paper
+    \item Paper expectations and guidelines 
+    \item Due: Topic Selection
+\end{itemize}
+
+\subsection*{Week X, Starting 11/24: Thanksgiving Break}
+\begin{itemize}
+    \item \textbf{No Class}: Thanksgiving Holiday
+\end{itemize}
+
+\subsection*{Week 14, Starting 12/1: Concentration Area Paper}
+\begin{itemize}
+    \item \textbf{Asynchronous Session}: Literature Review Draft
+\end{itemize}
+
+\subsection*{Week 15, Starting 12/8: Concentration Area Paper}
+\begin{itemize}
+    \item \textbf{In-Person Session}: Concentration Area Paper Workshop
+\end{itemize}
+
+\subsection*{Week 16, Starting 12/15: Concentration Area Paper}
+\begin{itemize}
+    \item \textbf{Asynchronous Session}: Concentration Area Paper
+    \item \textbf{Due: Final Draft on Tuesday 12/16 by 9:00 p.m.}
+\end{itemize}
+
+
+\newpage
+%% bibliography
+
+
+            \singlespace
+            \bibliographystyle{apsr}
+            \bibliography{521_students}
+\vspace{1cm}
+% updated date and time
+\begin{flushright}
+Updated: \today
+\end{flushright}
+
+
+\end{document}
