@@ -32,12 +32,26 @@
 % Language settings
 \usepackage[american]{babel}      % Set language to American English
 
-% Fonts setup (requires LuaLaTeX)
-\usepackage{fontspec}             % Enables custom font selection
-\setmainfont{TeX Gyre Heros}      % Main font: TeX Gyre Heros (sans-serif)
-\setsansfont{TeX Gyre Heros}      % Sans-serif font: TeX Gyre Heros
-\setmonofont{TeX Gyre Cursor}     % Monospace font: TeX Gyre Cursor
-
+% Font settings (LuaLaTeX-native fonts)
+\usepackage{fontspec} % Package for font customization
+% Check and set main font
+\IfFontExistsTF{TeX Gyre Termes}{
+  \setmainfont{TeX Gyre Termes} % Use TeX Gyre Termes if available
+}{
+  \setmainfont{Latin Modern Roman} % Fallback to Latin Modern Roman
+}
+% Check and set sans-serif font
+\IfFontExistsTF{TeX Gyre Heros}{
+  \setsansfont{TeX Gyre Heros} % Use TeX Gyre Heros if available
+}{
+  \setsansfont{Latin Modern Sans} % Fallback to Latin Modern Sans
+}
+% Check and set monospaced font
+\IfFontExistsTF{TeX Gyre Cursor}{
+  \setmonofont{TeX Gyre Cursor} % Use TeX Gyre Cursor if available
+}{
+  \setmonofont{Latin Modern Mono} % Fallback to Latin Modern Mono
+}
 % Page layout and spacing
 \usepackage{geometry}             % Adjust page margins
 \geometry{margin=1in}             % Set 1-inch margins
@@ -64,12 +78,19 @@
 \usepackage{tabularray}           % Modern table package
 \UseTblrLibrary{booktabs}         % Use booktabs for better table rules
 
-% Accessibility tagging
-\usepackage{tagpdf}               % Enable PDF tagging for accessibility
-\tagpdfsetup{
-  activate-all=true,              % Activate all tagging features
-  interwordspace=true             % Improve word boundary info for assistive tech
+% Tagging for accessibility
+% Check if the tagpdf package is available
+\IfFileExists{tagpdf-base.sty}{
+  % If available, load the tagpdf package for accessibility tagging
+  \usepackage{tagpdf}
+  % Activate all tagging features and enable interword spacing for better accessibility
+  \tagpdfsetup{activate-all=true, interwordspace=true}
+}{
+  % If the tagpdf package is not installed, provide a fallback
+  % Define a dummy \tagpdfsetup command to avoid compilation errors
+  \newcommand\tagpdfsetup[1]{}
 }
+
 
 % Hyperlinks and PDF metadata
 \usepackage[

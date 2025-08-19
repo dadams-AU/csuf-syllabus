@@ -36,10 +36,26 @@
 \usepackage[american]{babel} % Set language to American English
 
 % Font settings (LuaLaTeX-native fonts)
-\usepackage{fontspec} % Enable font customization
-\setmainfont{TeX Gyre Heros} % Set main font to TeX Gyre Heros
-\setsansfont{TeX Gyre Heros} % Set sans-serif font to TeX Gyre Heros
-\setmonofont{TeX Gyre Cursor} % Set monospaced font to TeX Gyre Cursor
+\usepackage{fontspec} % Package for font customization
+% Check and set main font
+\IfFontExistsTF{TeX Gyre Termes}{
+  \setmainfont{TeX Gyre Termes} % Use TeX Gyre Termes if available
+}{
+  \setmainfont{Latin Modern Roman} % Fallback to Latin Modern Roman
+}
+% Check and set sans-serif font
+\IfFontExistsTF{TeX Gyre Heros}{
+  \setsansfont{TeX Gyre Heros} % Use TeX Gyre Heros if available
+}{
+  \setsansfont{Latin Modern Sans} % Fallback to Latin Modern Sans
+}
+% Check and set monospaced font
+\IfFontExistsTF{TeX Gyre Cursor}{
+  \setmonofont{TeX Gyre Cursor} % Use TeX Gyre Cursor if available
+}{
+  \setmonofont{Latin Modern Mono} % Fallback to Latin Modern Mono
+}
+
 
 % Page layout and spacing
 \usepackage{geometry} % Adjust page geometry
@@ -63,11 +79,18 @@
 \UseTblrLibrary{booktabs} % Enable booktabs-style rules for tables
 
 % Tagging for accessibility
-\usepackage{tagpdf} % Enable PDF tagging for accessibility
-\tagpdfsetup{
-  activate-all=true,   % Activate tagging for all elements
-  interwordspace=true  % Improve word boundary information for assistive technology
+% Check if the tagpdf package is available
+\IfFileExists{tagpdf-base.sty}{
+  % If available, load the tagpdf package for accessibility tagging
+  \usepackage{tagpdf}
+  % Activate all tagging features and enable interword spacing for better accessibility
+  \tagpdfsetup{activate-all=true, interwordspace=true}
+}{
+  % If the tagpdf package is not installed, provide a fallback
+  % Define a dummy \tagpdfsetup command to avoid compilation errors
+  \newcommand\tagpdfsetup[1]{}
 }
+
 
 % Color definitions
 \usepackage{xcolor} % Enable color customization
