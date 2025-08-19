@@ -1,3 +1,11 @@
+%% ==============================================
+%% To compile this syllabus:
+%% 1. Use LuaLaTeX (Overleaf: Menu → Compiler → LuaLaTeX)
+%% 2. Make sure "csuf_logo.png" is in the same folder
+%% 3. If you see errors about fonts or tagpdf, update TeX Live
+%% ==============================================
+
+
 %% Syllabus - POSC 521: MPA Capstone Seminar
 %% Author: David P. Adams
 %% Semester: Fall 2025
@@ -16,11 +24,21 @@
 % Language settings
 \usepackage[american]{babel}      % Set language to American English
 
-% Fonts setup (requires LuaLaTeX)
-\usepackage{fontspec}             % Enables custom font selection
-\setmainfont{TeX Gyre Heros}      % Main font: TeX Gyre Heros (sans-serif)
-\setsansfont{TeX Gyre Heros}      % Sans-serif font: TeX Gyre Heros
-\setmonofont{TeX Gyre Cursor}     % Monospace font: TeX Gyre Cursor
+% Font settings (LuaLaTeX-native fonts)
+\usepackage{fontspec} % Package for font customization
+% Main font (default for body text)
+\IfFontExistsTF{TeX Gyre Heros}{
+  \setmainfont{TeX Gyre Heros} % Sans serif for main text
+}{
+  \setmainfont{Latin Modern Sans} % Fallback to Latin Modern Sans
+}
+
+% Monospaced font
+\IfFontExistsTF{TeX Gyre Cursor}{
+  \setmonofont{TeX Gyre Cursor}
+}{
+  \setmonofont{Latin Modern Mono}
+}
 
 % Page layout and spacing
 \usepackage{geometry}             % Adjust page margins
@@ -50,12 +68,19 @@
 \UseTblrLibrary{booktabs}         % Use booktabs for better table rules
 \usepackage{colortbl}
 
-% Accessibility tagging
-\usepackage{tagpdf}               % Enable PDF tagging for accessibility
-\tagpdfsetup{
-  activate-all=true,              % Activate all tagging features
-  interwordspace=true             % Improve word boundary info for assistive tech
+% Tagging for accessibility
+% Check if the tagpdf package is available
+\IfFileExists{tagpdf-base.sty}{
+  % If available, load the tagpdf package for accessibility tagging
+  \usepackage{tagpdf}
+  % Activate all tagging features and enable interword spacing for better accessibility
+  \tagpdfsetup{activate-all=true, interwordspace=true}
+}{
+  % If the tagpdf package is not installed, provide a fallback
+  % Define a dummy \tagpdfsetup command to avoid compilation errors
+  \newcommand\tagpdfsetup[1]{}
 }
+
 
 % Section Styling
 \renewcommand{\thesection}{\arabic{section}.}
@@ -63,7 +88,7 @@
 \renewcommand{\thesubsubsection}{\thesubsection.\arabic{subsubsection}}
 
 % Bibliography
-\usepackage[longnamesfirst]{natbib}
+\usepackage{natbib}
 \bibpunct{(}{)}{;}{a}{}{,}
 
 % Hyperlinks and PDF metadata
@@ -885,7 +910,7 @@ It is the student's responsibility to read and understand the required and impor
 
 
             \singlespace
-            \bibliographystyle{apsr}
+            \bibliographystyle{chicago}
             \bibliography{521_students}
 \vspace{1cm}
 % updated date and time
