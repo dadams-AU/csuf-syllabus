@@ -35,27 +35,71 @@
 % Language settings
 \usepackage[american]{babel} % Set language to American English
 
-% Font settings (LuaLaTeX-native fonts)
-\usepackage{fontspec} % Package for font customization
-% Check and set main font
-\IfFontExistsTF{TeX Gyre Termes}{
-  \setmainfont{TeX Gyre Termes} % Use TeX Gyre Termes if available
-}{
-  \setmainfont{Latin Modern Roman} % Fallback to Latin Modern Roman
-}
-% Check and set sans-serif font
+% ================================
+% FONT SETTINGS
+% ================================
+
+\usepackage{fontspec}
+
+% === Recommended (Sans-serif body text) ===
 \IfFontExistsTF{TeX Gyre Heros}{
-  \setsansfont{TeX Gyre Heros} % Use TeX Gyre Heros if available
+  \setmainfont{TeX Gyre Heros} % Default to sans-serif
 }{
-  \setsansfont{Latin Modern Sans} % Fallback to Latin Modern Sans
-}
-% Check and set monospaced font
-\IfFontExistsTF{TeX Gyre Cursor}{
-  \setmonofont{TeX Gyre Cursor} % Use TeX Gyre Cursor if available
-}{
-  \setmonofont{Latin Modern Mono} % Fallback to Latin Modern Mono
+  \setmainfont{Latin Modern Sans} % Fallback sans
 }
 
+% === Alternative (Serif body text) ===
+% Uncomment below to switch back to serif body text:
+% \IfFontExistsTF{TeX Gyre Termes}{
+%   \setmainfont{TeX Gyre Termes} % Default to serif
+% }{
+%   \setmainfont{Latin Modern Roman} % Fallback serif
+% }
+
+% Monospaced font (for code, etc.)
+\IfFontExistsTF{TeX Gyre Cursor}{
+  \setmonofont{TeX Gyre Cursor}
+}{
+  \setmonofont{Latin Modern Mono}
+}
+
+% ================================
+% HEADINGS & HIERARCHY
+% ================================
+\usepackage{titlesec}
+
+% ---- Option A (default): All-sans body; bolder, spaced headings
+\newcommand{\useSansHeadings}{%
+  % Section numbers already set earlier; this just styles faces/sizes/spacings.
+  \titleformat{\section}
+    {\sffamily\bfseries\Large\addfontfeatures{LetterSpace=2.0}}{\thesection}{0.6em}{}
+  \titleformat{\subsection}
+    {\sffamily\bfseries\large}{\thesubsection}{0.6em}{}
+  \titleformat{\subsubsection}
+    {\sffamily\bfseries\normalsize}{\thesubsubsection}{0.6em}{}
+  \titlespacing*{\section}{0pt}{1.2ex plus .4ex}{0.6ex}
+  \titlespacing*{\subsection}{0pt}{1.0ex plus .3ex}{0.4ex}
+  \titlespacing*{\subsubsection}{0pt}{0.8ex plus .2ex}{0.3ex}
+}
+
+% ---- Option B: Serif body text; keep headings in sans for contrast
+\newcommand{\useSansHeadingsWithSerifBody}{%
+  \titleformat{\section}
+    {\sffamily\bfseries\Large\addfontfeatures{LetterSpace=2.0}}{\thesection}{0.6em}{}
+  \titleformat{\subsection}
+    {\sffamily\bfseries\large}{\thesubsection}{0.6em}{}
+  \titleformat{\subsubsection}
+    {\sffamily\bfseries\normalsize}{\thesubsubsection}{0.6em}{}
+  \titlespacing*{\section}{0pt}{1.4ex plus .5ex}{0.7ex}
+  \titlespacing*{\subsection}{0pt}{1.1ex plus .4ex}{0.5ex}
+  \titlespacing*{\subsubsection}{0pt}{0.9ex plus .3ex}{0.4ex}
+}
+
+% === Activate one of the two ===
+\useSansHeadings
+% \useSansHeadingsWithSerifBody  % <- use this if you switch to a serif main font
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % Page layout and spacing
 \usepackage{geometry} % Adjust page geometry

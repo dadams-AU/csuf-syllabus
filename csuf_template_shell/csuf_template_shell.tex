@@ -32,26 +32,35 @@
 % Language settings
 \usepackage[american]{babel}      % Set language to American English
 
-% Font settings (LuaLaTeX-native fonts)
-\usepackage{fontspec} % Package for font customization
-% Check and set main font
-\IfFontExistsTF{TeX Gyre Termes}{
-  \setmainfont{TeX Gyre Termes} % Use TeX Gyre Termes if available
-}{
-  \setmainfont{Latin Modern Roman} % Fallback to Latin Modern Roman
-}
-% Check and set sans-serif font
+% ================================
+% FONT SETTINGS
+% ================================
+
+\usepackage{fontspec}
+
+% === Recommended (Sans-serif body text) ===
 \IfFontExistsTF{TeX Gyre Heros}{
-  \setsansfont{TeX Gyre Heros} % Use TeX Gyre Heros if available
+  \setmainfont{TeX Gyre Heros} % Default to sans-serif
 }{
-  \setsansfont{Latin Modern Sans} % Fallback to Latin Modern Sans
+  \setmainfont{Latin Modern Sans} % Fallback sans
 }
-% Check and set monospaced font
+
+% === Alternative (Serif body text) ===
+% Uncomment below to switch back to serif body text:
+% \IfFontExistsTF{TeX Gyre Termes}{
+%   \setmainfont{TeX Gyre Termes} % Default to serif
+% }{
+%   \setmainfont{Latin Modern Roman} % Fallback serif
+% }
+
+% Monospaced font (for code, etc.)
 \IfFontExistsTF{TeX Gyre Cursor}{
-  \setmonofont{TeX Gyre Cursor} % Use TeX Gyre Cursor if available
+  \setmonofont{TeX Gyre Cursor}
 }{
-  \setmonofont{Latin Modern Mono} % Fallback to Latin Modern Mono
+  \setmonofont{Latin Modern Mono}
 }
+
+
 % Page layout and spacing
 \usepackage{geometry}             % Adjust page margins
 \geometry{margin=1in}             % Set 1-inch margins
