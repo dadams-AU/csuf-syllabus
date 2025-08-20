@@ -7,7 +7,7 @@ LaTeX syllabus templates for California State University, Fullerton (CSUF) facul
 
 ---
 
-## 🚀 Quick Start (For Workshop)
+## 🚀 Quick Start
 
 ### Option 1: Overleaf (Recommended for Beginners)
 1. Go to [Overleaf](https://www.overleaf.com/) and create/login to account
