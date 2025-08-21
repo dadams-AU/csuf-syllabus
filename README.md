@@ -19,8 +19,8 @@ LaTeX syllabus templates for California State University, Fullerton (CSUF) facul
 
 ### Option 2: Local Installation (For Advanced Users)
 ```bash
-git clone https://github.com/CSUF-MPA/csuf-syllabus.git
-cd csuf_template
+git clone https://github.com/dadams-AU/csuf-syllabus.git
+cd csuf-syllabus/csuf_template
 lualatex csuf_template.tex
 ```
 
