@@ -81,6 +81,8 @@
   itemsep=0pt, parsep=0pt,        % No extra spacing
   topsep=0pt                      % No space before the list
 }
+\setlistdepth{3}                  % Ensure consistent list tagging depth
+\usepackage{xcolor}               % Colors (used by hyperref and optional table shading)
 \usepackage{graphicx}             % Include graphics
 \usepackage{array, booktabs, longtable} % Enhanced table formatting
 \usepackage{caption}              % Customize captions
@@ -115,39 +117,61 @@
   linkcolor=blue,                 % Color for internal links
   urlcolor=blue,                  % Color for URLs
   citecolor=blue,                 % Color for citations
-  pdftitle={COURSE PREFIX \& NUMBER: COURSE TITLE}, % PDF title
-  pdfauthor={YOUR NAME},          % PDF author metadata
   pdfsubject={California State University, Fullerton Course Syllabus}, % PDF subject
-  pdfkeywords={CSUF, Syllabus, YOUR DEPARTMENT}, % PDF keywords
+  % NOTE: Keep the PDF metadata below in sync with the course fields further down.
+  % These values show up in the PDF's "Properties" and help screen readers.
+  pdftitle={\CourseCode: \CourseTitle}, % PDF title
+  pdfauthor={\InstructorName},           % PDF author metadata
+  pdfkeywords={CSUF, Syllabus, \DepartmentKeywords, \CourseCode}, % PDF keywords
   pdfborderstyle={/S/U/W 1}       % Underline links in PDF
 }
 \urlstyle{same}                   % Use the same font style for URLs
 
-% Document title and metadata
-\title{PREFIX \& Number, \textit{Course Title}} % Course title
-\author{}                         % Leave author blank (info in body)
-\date{Term and Year}              % Term and year of the course
+% ================================
+% COURSE FIELDS (edit these)
+% ================================
+% These fields are used for BOTH the visible title block and the PDF metadata.
+\newcommand{\CourseCode}{PREFIX\ \#\#\#}
+\newcommand{\CourseTitle}{Course Title}
+\newcommand{\CourseTerm}{Term and Year}
+\newcommand{\InstructorName}{YOUR NAME}
+\newcommand{\DepartmentKeywords}{YOUR DEPARTMENT}
 
-% Accessibility enhancements
-\setlistdepth{3}                  % Ensure consistent list tagging depth
-% Example for alt text: \includegraphics[width=2.75in, alt={Cal State Fullerton wordmark}]{csuf_logo.png}
+% Document title and metadata (visible)
+\title{\CourseCode: \CourseTitle}
+\author{}                         % Leave author blank (info in body)
+\date{\CourseTerm}
+
+% Optional logo configuration (must include alt text for accessibility)
+\newcommand{\CSUFLogoPath}{csuf_logo.png}
+\newcommand{\CSUFLogoAltText}{Cal State Fullerton wordmark}
 
 % Begin the document
 \begin{document}
 
-
 % ========== CSUF HEADER (OPTIONAL) ==========
-% If you have the CSUF logo file, uncomment the following lines
-% \begin{center}
-% \includegraphics[width=2.75in, alt={Cal State Fullerton wordmark}]{csuf_logo.png}
-% \end{center}
+% If \CSUFLogoPath exists, it will be included with alt text.
+\makeatletter
+\renewcommand{\maketitle}{%
+  \begin{center}
+    \IfFileExists{\CSUFLogoPath}{%
+      \includegraphics[width=2.75in, alt={\CSUFLogoAltText}]{\CSUFLogoPath}\par
+      \vspace{0.75em}
+    }{}
+    {\LARGE \@title\par}
+    \vspace{0.25em}
+    {\large \@date\par}
+  \end{center}
+  \vspace{1em}
+}
+\makeatother
 
 \maketitle
 
 % ========== SECTION 1: FACULTY INFORMATION ==========
 \section*{Faculty Information}
 % Replace placeholders with your information
-\noindent \textbf{Instructor:} YOUR NAME \\
+\noindent \textbf{Instructor:} \InstructorName \\
 \noindent \textbf{Office:} BUILDING AND ROOM \\
 \noindent \textbf{Phone:} (657) 278-XXXX \\
 \noindent \textbf{Email:} youremail@fullerton.edu \\
@@ -174,7 +198,7 @@ If you encounter any technical difficulties, contact the instructor immediately 
 % ========== SECTION 4: COURSE INFORMATION ==========
 \section*{Course Information}
 % Fill in all course details
-\noindent \textbf{Prefix, number, title:} PREFIX \#\#\#, \textit{Course Title} \\
+\noindent \textbf{Prefix, number, title:} \CourseCode, \textit{\CourseTitle} \\
 \noindent \textbf{Meeting times with modality, day(s), time(s), and location (if synchronous):} 
 % Choose ONE modality from UPS 411.104:
 % - In-Person (0-20% online)

@@ -157,18 +157,30 @@
   linkcolor=blue,        % Set link color to blue
   urlcolor=blue,         % Set URL color to blue
   citecolor=blue,        % Set citation link color to blue
-  pdftitle={PREFIX \& Number: Title}, % Set PDF title
-  pdfauthor={Instructor Name},        % Set PDF author
   pdfsubject={California State University, Fullerton Course Syllabus}, % Set PDF subject
-  pdfkeywords={CSUF, Syllabus, Accessibility}, % Set PDF keywords
+  % NOTE: Keep the PDF metadata below in sync with the course fields further down.
+  % These values show up in the PDF's "Properties" and help screen readers.
+  pdftitle={\CourseCode: \CourseTitle}, % Set PDF title
+  pdfauthor={\InstructorName},           % Set PDF author
+  pdfkeywords={CSUF, Syllabus, Accessibility, \DepartmentKeywords, \CourseCode}, % Set PDF keywords
   pdfborderstyle={/S/U/W 1} % Set link border style to underline
 }
 \urlstyle{same} % Use the same font style for URLs
 
+% ================================
+% COURSE FIELDS (edit these)
+% ================================
+% These fields are used for BOTH the visible title and the PDF metadata.
+\newcommand{\CourseCode}{PREFIX\ 100}
+\newcommand{\CourseTitle}{Title}
+\newcommand{\CourseTerm}{Semester, Year}
+\newcommand{\InstructorName}{Instructor Name}
+\newcommand{\DepartmentKeywords}{YOUR DEPARTMENT}
+
 % Document information
-\title{PREFIX \& Number: Title} % Placeholder for course title
+\title{\CourseCode: \CourseTitle}
 \author{} % Leave author blank
-\date{Semester, Year} % Placeholder for semester and year
+\date{\CourseTerm}
 
 % Accessibility enhancements
 \setlistdepth{3} % Set maximum list depth for accessibility
