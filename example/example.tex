@@ -13,9 +13,10 @@
 %% License: CC BY-NC-SA 4.0
 
 \DocumentMetadata{
-  pdfstandard=UA-2,               % PDF/UA-2 standard for accessibility
+  pdfstandard=ua-2,               % PDF/UA-2 standard for accessibility
   pdfversion=2.0,                 % PDF version 2.0
-  lang=en-US                      % Document language set to US English
+  lang=en-US,                     % Document language set to US English
+  testphase={phase-III, math, table, firstaid, sec, title} % Activate kernel tagging
 }
 
 % Document class and font size
@@ -69,17 +70,12 @@
 \usepackage{colortbl}
 
 % Tagging for accessibility
-% Check if the tagpdf package is available
-\IfFileExists{tagpdf-base.sty}{
-  % If available, load the tagpdf package for accessibility tagging
-  \usepackage{tagpdf}
-  % Activate all tagging features and enable interword spacing for better accessibility
-  \tagpdfsetup{activate-all=true, interwordspace=true}
-}{
-  % If the tagpdf package is not installed, provide a fallback
-  % Define a dummy \tagpdfsetup command to avoid compilation errors
-  \newcommand\tagpdfsetup[1]{}
-}
+% The kernel's tagging engine is activated by `testphase` in the
+% \DocumentMetadata block above. The tagpdf package supplies
+% supplementary commands (interword space tagging, manual tag
+% wrapping, etc.) and is required for proper UA-2 output.
+\usepackage{tagpdf}
+\tagpdfsetup{interwordspace=true}
 
 
 % Section Styling

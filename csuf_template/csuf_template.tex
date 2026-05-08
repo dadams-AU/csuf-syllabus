@@ -24,9 +24,10 @@
 % !TEX program = lualatex
 % Document metadata for accessibility and compliance
 \DocumentMetadata{
-  pdfstandard=UA-2,   % Use UA-1 + pdfversion=1.7 if your validator requires it
+  pdfstandard=ua-2,   % Use UA-1 + pdfversion=1.7 if your validator requires it
   pdfversion=2.0,     % PDF version 2.0 for modern accessibility features
-  lang=en-US          % Language set to US English
+  lang=en-US,         % Language set to US English
+  testphase={phase-III, math, table, firstaid, sec, title} % Activate kernel tagging
 }
 
 % Document class declaration
@@ -123,17 +124,12 @@
 \UseTblrLibrary{booktabs} % Enable booktabs-style rules for tables
 
 % Tagging for accessibility
-% Check if the tagpdf package is available
-\IfFileExists{tagpdf-base.sty}{
-  % If available, load the tagpdf package for accessibility tagging
-  \usepackage{tagpdf}
-  % Activate all tagging features and enable interword spacing for better accessibility
-  \tagpdfsetup{activate-all=true, interwordspace=true}
-}{
-  % If the tagpdf package is not installed, provide a fallback
-  % Define a dummy \tagpdfsetup command to avoid compilation errors
-  \newcommand\tagpdfsetup[1]{}
-}
+% The kernel's tagging engine is activated by `testphase` in the
+% \DocumentMetadata block above. The tagpdf package supplies
+% supplementary commands (interword space tagging, manual tag
+% wrapping, etc.) and is required for proper UA-2 output.
+\usepackage{tagpdf}
+\tagpdfsetup{interwordspace=true}
 
 
 % Color definitions
