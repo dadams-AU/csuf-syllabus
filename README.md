@@ -145,6 +145,23 @@ kpsewhich texgyretermes-regular.otf
 - Modify accessibility tagging if needed (advanced users only)
 - Fallbacks ensure compilation even without optimal setup
 
+### Accessible Table Pattern
+
+Use `tabularray` (`tblr`) for syllabus tables. Mark the first row as the table header and use the shared shaded header style:
+
+```latex
+\begin{tblr}{
+  colspec = {X[l] c c},
+  rowhead = 1,
+  row{1} = {font=\bfseries, bg=csufTableHeader},
+}
+Assignment & Weight & Due \\
+...
+\end{tblr}
+```
+
+`rowhead = 1` helps preserve table-header structure in tagged PDFs; the shaded header improves visual scanning without replacing the accessibility tagging.
+
 ---
 
 ## Why Accessibility Matters (CSUF Compliance)

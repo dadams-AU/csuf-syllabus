@@ -89,6 +89,8 @@
 \usepackage{caption}              % Customize captions
 \usepackage{tabularray}           % Modern table package
 \UseTblrLibrary{booktabs}         % Use booktabs for better table rules
+\colorlet{csufTableHeader}{gray!20} % Header shading for accessible tables
+% For tables, use tblr with rowhead = 1 and row{1} = {font=\bfseries, bg=csufTableHeader}.
 
 % Tagging for accessibility
 % The kernel's tagging engine is activated by `testphase` in the
@@ -98,6 +100,15 @@
 \usepackage{tagpdf}
 \tagpdfsetup{interwordspace=true}
 
+% ================================
+% COURSE FIELDS (edit these)
+% ================================
+% These fields are used for BOTH the visible title block and the PDF metadata.
+\newcommand{\CourseCode}{PREFIX\ \#\#\#}
+\newcommand{\CourseTitle}{Course Title}
+\newcommand{\CourseTerm}{Term and Year}
+\newcommand{\InstructorName}{YOUR NAME}
+\newcommand{\DepartmentKeywords}{YOUR DEPARTMENT}
 
 % Hyperlinks and PDF metadata
 \usepackage[
@@ -122,16 +133,6 @@
   pdfborderstyle={/S/U/W 1}       % Underline links in PDF
 }
 \urlstyle{same}                   % Use the same font style for URLs
-
-% ================================
-% COURSE FIELDS (edit these)
-% ================================
-% These fields are used for BOTH the visible title block and the PDF metadata.
-\newcommand{\CourseCode}{PREFIX\ \#\#\#}
-\newcommand{\CourseTitle}{Course Title}
-\newcommand{\CourseTerm}{Term and Year}
-\newcommand{\InstructorName}{YOUR NAME}
-\newcommand{\DepartmentKeywords}{YOUR DEPARTMENT}
 
 % Document title and metadata (visible)
 \title{\CourseCode: \CourseTitle}
@@ -239,8 +240,8 @@ YOUR MODALITY, DAYS, TIMES, LOCATION
   \centering
   \begin{tblr}{
     colspec = {l c l c},
-    rowhead = 1,                 % ← marks first row as table header
-    row{1} = {font=\bfseries},   % bold header text
+    rowhead = 1,                 % Marks first row as table header
+    row{1} = {font=\bfseries, bg=csufTableHeader},
   }
   Grade & Percent    & Grade & Percent \\
   A+    & 98.0--100.0& C+    & 77.0--79.9 \\
@@ -265,16 +266,16 @@ YOUR MODALITY, DAYS, TIMES, LOCATION
   \caption{Assignment weighting}
   \centering
   \begin{tblr}{
-    colspec = {l c},
+    colspec = {X[l] c c},
     rowhead = 1,                 % marks first row as table header
-    row{1} = {font=\bfseries},   % bold header text
+    row{1} = {font=\bfseries, bg=csufTableHeader},
   }
-  Assignment       & Percentage \\
-  ASSIGNMENT TYPE 1 & XX\%       \\
-  ASSIGNMENT TYPE 2 & XX\%       \\
-  ASSIGNMENT TYPE 3 & XX\%       \\
-  ASSIGNMENT TYPE 4 & XX\%       \\
-  Total            & 100\%      \\
+  Assignment        & Percentage & Due \\
+  ASSIGNMENT TYPE 1 & XX\%       & DATE \\
+  ASSIGNMENT TYPE 2 & XX\%       & DATE \\
+  ASSIGNMENT TYPE 3 & XX\%       & DATE \\
+  ASSIGNMENT TYPE 4 & XX\%       & DATE \\
+  Total             & 100\%      & \\
   \end{tblr}
 \end{table}
 \end{center}
@@ -402,19 +403,20 @@ Assignment(s) Due: \\
 
 % Option 2: Table format (uncomment if preferred)
 % \begin{center}
-% \begin{tabular}{|c|c|l|l|l|}
-% \hline
-% \textbf{Week} & \textbf{Date} & \textbf{Topic} & \textbf{Readings} & \textbf{Assignments Due} \\
-% \hline
-% 1 & MM/DD & & & \\
-% \hline
-% 2 & MM/DD & & & \\
-% \hline
-% % ... continue for all weeks
-% \hline
-% 16 & MM/DD & Final Exam & & \\
-% \hline
-% \end{tabular}
+% \begin{table}[h]
+%   \caption{Weekly schedule}
+%   \centering
+%   \begin{tblr}{
+%     colspec = {c c X[l] X[l] X[l]},
+%     rowhead = 1,
+%     row{1} = {font=\bfseries, bg=csufTableHeader},
+%   }
+%   Week & Date & Topic & Readings & Assignments Due \\
+%   1  & MM/DD &  &  &  \\
+%   2  & MM/DD &  &  &  \\
+%   16 & MM/DD & Final exam or other assessment &  & Due no earlier than scheduled exam time \\
+%   \end{tblr}
+% \end{table}
 % \end{center}
 
 \end{document}

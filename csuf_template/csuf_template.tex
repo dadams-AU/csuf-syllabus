@@ -117,11 +117,14 @@
 \setlist[flatlist]{label={}, leftmargin=0pt, itemsep=0pt, parsep=0pt, topsep=0pt}
 
 % Figures, tables, and captions
+\usepackage{xcolor} % Enable color customization
 \usepackage{graphicx} % Enable inclusion of graphics
 \usepackage{array, booktabs, longtable} % Table formatting packages
 \usepackage{caption} % Customize captions for figures and tables
 \usepackage{tabularray} % Enhanced table formatting
 \UseTblrLibrary{booktabs} % Enable booktabs-style rules for tables
+\colorlet{csufTableHeader}{gray!20} % Header shading for accessible tables
+% For tables, use tblr with rowhead = 1 and row{1} = {font=\bfseries, bg=csufTableHeader}.
 
 % Tagging for accessibility
 % The kernel's tagging engine is activated by `testphase` in the
@@ -133,10 +136,19 @@
 
 
 % Color definitions
-\usepackage{xcolor} % Enable color customization
 % High-contrast annotation colors (WCAG AA compliant on white background)
 \definecolor{annotationblue}{RGB}{0,77,153} % Define annotation blue color (#004D99)
 \definecolor{suggestionred}{RGB}{153,0,0}   % Define suggestion red color (#990000)
+
+% ================================
+% COURSE FIELDS (edit these)
+% ================================
+% These fields are used for BOTH the visible title and the PDF metadata.
+\newcommand{\CourseCode}{PREFIX\ 100}
+\newcommand{\CourseTitle}{Title}
+\newcommand{\CourseTerm}{Semester, Year}
+\newcommand{\InstructorName}{Instructor Name}
+\newcommand{\DepartmentKeywords}{YOUR DEPARTMENT}
 
 % Hyperlinks and PDF metadata
 \usepackage[
@@ -162,16 +174,6 @@
   pdfborderstyle={/S/U/W 1} % Set link border style to underline
 }
 \urlstyle{same} % Use the same font style for URLs
-
-% ================================
-% COURSE FIELDS (edit these)
-% ================================
-% These fields are used for BOTH the visible title and the PDF metadata.
-\newcommand{\CourseCode}{PREFIX\ 100}
-\newcommand{\CourseTitle}{Title}
-\newcommand{\CourseTerm}{Semester, Year}
-\newcommand{\InstructorName}{Instructor Name}
-\newcommand{\DepartmentKeywords}{YOUR DEPARTMENT}
 
 % Document information
 \title{\CourseCode: \CourseTitle}
@@ -301,19 +303,21 @@
 
 \begin{center}
 \begin{table}[h]
-  \caption{Assignment Weighting Table}
+  \caption{Grade scale}
   \centering
   \begin{tblr}{
-    colspec = {l c},
+    colspec = {l c l c},
     rowhead = 1,                 % first row = <TH> scope="column"
-    row{1} = {font=\bfseries},
+    row{1} = {font=\bfseries, bg=csufTableHeader},
   }
-  Assignment        & Percentage \\
-  Assignment Type 1 & XX\%       \\
-  Assignment Type 2 & XX\%       \\
-  Assignment Type 3 & XX\%       \\
-  Assignment Type 4 & XX\%       \\
-  Total             & 100\%      \\
+  Grade & Percent     & Grade & Percent \\
+  A+    & 98.0--100.0 & C+    & 77.0--79.9 \\
+  A     & 93.0--97.9  & C     & 73.0--76.9 \\
+  A-    & 90.0--92.9  & C-    & 70.0--72.9 \\
+  B+    & 87.0--89.9  & D+    & 67.0--69.9 \\
+  B     & 83.0--86.9  & D     & 63.0--66.9 \\
+  B-    & 80.0--82.9  & D-    & 60.0--62.9 \\
+        &             & F     & 0.0--59.9 \\
   \end{tblr}
   \label{tab:grading_scale}
 \end{table}
@@ -330,16 +334,16 @@
   \caption{Assignment Points and Percentages}
   \centering
   \begin{tblr}{
-    colspec = {l c},
+    colspec = {X[l] c c},
     rowhead = 1,                 % first row is header
-    row{1} = {font=\bfseries},   % bold header
+    row{1} = {font=\bfseries, bg=csufTableHeader},
   }
-  Item & Points = \% \\
-  Participation & 25 \\
-  Presentation & 25 \\
-  Midterm Essay or Exam & 25 \\
-  Final Essay or Exam & 25 \\
-  \textbf{Total} & 100 \\
+  Item & Points = \% & Due \\
+  Participation & 25 & Ongoing \\
+  Presentation & 25 & DATE \\
+  Midterm Essay or Exam & 25 & DATE \\
+  Final Essay or Exam & 25 & Finals week \\
+  \textbf{Total} & 100 & \\
   \end{tblr}
   \label{tab:assignment_points}
 \end{table}
@@ -585,17 +589,13 @@ Other information as applicable
 
 
 \begin{center}
-\textbf{Table 3: Schedule of Classes for a Spring semester}
-\end{center}
-
-\begin{center}
 \begin{table}[h]
-  \caption{Weekly Schedule}
+  \caption{Schedule of classes for a spring semester}
   \centering
   \begin{tblr}{
     colspec = {c c X[l] X[l,4cm] X[l,3.5cm]},
     rowhead = 1,
-    row{1} = {font=\bfseries}
+    row{1} = {font=\bfseries, bg=csufTableHeader},
   }
   Week & Date & Topic & Readings / Screenings & Assignments Due \\
   1  & 1/27 & Welcome, intro, overview & N/A & \\
