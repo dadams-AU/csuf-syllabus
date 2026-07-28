@@ -142,7 +142,7 @@ kpsewhich texgyretermes-regular.otf
 ### Advanced Customization
 - Add/remove sections as needed
 - Adjust formatting using standard LaTeX commands
-- Modify accessibility tagging if needed (advanced users only)
+- Modify accessibility tagging if needed (advanced users only — but never remove the `testphase` line from `\DocumentMetadata`; see [Verifying Tagging](#verifying-tagging-important))
 - Fallbacks ensure compilation even without optimal setup
 
 ### Accessible Table Pattern
@@ -173,6 +173,57 @@ The PDF/UA tagging in these templates ensures:
 - Future-proofing for accessibility standards
 
 **This isn't optional** - it's required for CSUF syllabi.
+
+---
+
+## Verifying Tagging (Important)
+
+⚠️ A syllabus can compile with **zero errors**, declare PDF/UA conformance in its metadata, and still produce an **untagged** PDF that a screen reader cannot navigate. Nothing in the LaTeX log warns you. Always verify before you post a syllabus.
+
+### The one-line check
+
+```bash
+pdfinfo csuf_template.pdf | grep Tagged
+```
+
+You want `Tagged: yes`. If you get `Tagged: no`, the PDF will fail Canvas **UDOIT** and Adobe Acrobat accessibility review no matter what the metadata claims.
+
+For more detail, inspect the PDF catalog directly:
+
+```bash
+root=$(qpdf --show-object=trailer csuf_template.pdf | grep -oE "/Root [0-9]+" | awk '{print $2}')
+qpdf --show-object=$root csuf_template.pdf
+```
+
+A properly tagged file lists `/StructTreeRoot`, `/MarkInfo`, and `/Lang`:
+
+```
+<< /AF ... /Lang (en-US) /MarkInfo 29 0 R /StructTreeRoot 5 0 R /Type /Catalog ... >>
+```
+
+If `/StructTreeRoot` is absent, the file is not tagged. (Don't try to `grep` the PDF itself for that string — it lives inside compressed object streams.)
+
+### What actually turns tagging on
+
+Tagging is activated in the `\DocumentMetadata` block at the very top of each `.tex` file:
+
+```latex
+\DocumentMetadata{
+  pdfstandard=ua-2,
+  pdfversion=2.0,
+  lang=en-US,
+  testphase={phase-III, math, table, firstaid, sec, title}  % <- this activates tagging
+}
+```
+
+**Do not delete the `testphase` line.** It is the part that does the work:
+
+- `pdfstandard=ua-2` only *declares* conformance. Older LaTeX kernels inferred tagging from it; **current kernels do not.**
+- Loading `tagpdf` and calling `\tagpdfsetup{activate-all=true}` does **not** activate tagging on its own either.
+
+Without an explicit activation line you get a clean compile and an untagged PDF. This is a real regression that has silently broken previously-working documents: recompiling an untouched `.tex` on a newer TeX Live can turn a tagged PDF into an untagged one.
+
+On **LaTeX 2025-06-01 or newer** you may use `tagging=on` in place of `testphase={...}`; both work. These templates keep `testphase` because it also works on older distributions, including whatever Overleaf is currently running.
 
 ---
 
