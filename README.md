@@ -147,20 +147,20 @@ kpsewhich texgyretermes-regular.otf
 
 ### Accessible Table Pattern
 
-Use `tabularray` (`tblr`) for syllabus tables. Mark the first row as the table header and use the shared shaded header style:
+Use `tabular` (fixed-width columns) or `tabularx` (stretchable `X`/`L` columns) for syllabus tables. Declare the header row to the tagging engine, then style it with `\rowcolor`:
 
 ```latex
-\begin{tblr}{
-  colspec = {X[l] c c},
-  rowhead = 1,
-  row{1} = {font=\bfseries, bg=csufTableHeader},
-}
-Assignment & Weight & Due \\
+\tagpdfsetup{table/header-rows={1}}
+\begin{tabularx}{\linewidth}{L c c}
+\rowcolor{csufTableHeader}
+\textbf{Assignment} & \textbf{Weight} & \textbf{Due} \\
 ...
-\end{tblr}
+\end{tabularx}
 ```
 
-`rowhead = 1` helps preserve table-header structure in tagged PDFs; the shaded header improves visual scanning without replacing the accessibility tagging.
+`table/header-rows={1}` is what emits real `<TH>` cells with `/Scope`; the shaded header improves visual scanning without replacing the accessibility tagging. The `L` column type (left-aligned, stretchable) is defined in each template's preamble.
+
+> ⚠️ **Do not use `tabularray` (`tblr`).** Earlier versions of these templates did. Despite its `rowhead = 1` key, tabularray nests `<P>` tags inside table cells, which fails PDF/UA-2 validation (rule Table 5, P-P-1) — while still reporting `Tagged: yes`. This was caught by veraPDF in July 2026 and all templates were converted to `tabular`/`tabularx`.
 
 ---
 
@@ -180,13 +180,29 @@ The PDF/UA tagging in these templates ensures:
 
 ⚠️ A syllabus can compile with **zero errors**, declare PDF/UA conformance in its metadata, and still produce an **untagged** PDF that a screen reader cannot navigate. Nothing in the LaTeX log warns you. Always verify before you post a syllabus.
 
-### The one-line check
+### Step 1: the one-line check
 
 ```bash
 pdfinfo csuf_template.pdf | grep Tagged
 ```
 
 You want `Tagged: yes`. If you get `Tagged: no`, the PDF will fail Canvas **UDOIT** and Adobe Acrobat accessibility review no matter what the metadata claims.
+
+### Step 2: validate against PDF/UA-2 (don't skip this)
+
+⚠️ `Tagged: yes` is necessary but **not sufficient**. It only says a structure tree exists — not that the structure is valid. A file can report `Tagged: yes` and still fail PDF/UA-2 outright; that is exactly what a bad table package does (see [Accessible Table Pattern](#accessible-table-pattern)). Run a real validator:
+
+```bash
+verapdf -f ua2 --format text csuf_template.pdf
+```
+
+You want `PASS`. On `FAIL`, get the specific rules:
+
+```bash
+verapdf -f ua2 --format xml csuf_template.pdf | grep -A2 'status="failed"'
+```
+
+veraPDF is free and open source ([verapdf.org](https://verapdf.org/)); on Debian/Ubuntu, `apt install verapdf`. If you can't install it, veraPDF also offers a browser-based validator, and Adobe Acrobat Pro's Accessibility Checker catches many (not all) of the same issues.
 
 For more detail, inspect the PDF catalog directly:
 

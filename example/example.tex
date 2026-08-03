@@ -43,7 +43,7 @@
 
 % Page layout and spacing
 \usepackage{geometry}             % Adjust page margins
-\usepackage{xcolor}               % Enable color definitions
+\usepackage[table]{xcolor}        % Enable color definitions (table option supplies \rowcolor)
 \geometry{margin=1in}             % Set 1-inch margins
 \usepackage{setspace}             % Control line spacing
 \onehalfspacing                   % Set line spacing to 1.5
@@ -65,9 +65,10 @@
 \usepackage{graphicx}             % Include graphics
 \usepackage{array, booktabs, longtable} % Enhanced table formatting
 \usepackage{caption}              % Customize captions
-\usepackage{tabularray}           % Modern table package
-\UseTblrLibrary{booktabs}         % Use booktabs for better table rules
-\usepackage{colortbl}
+\usepackage{tabularx}             % Tables with stretchable (X) columns
+\newcolumntype{L}{>{\raggedright\arraybackslash}X} % Left-aligned stretchable column
+% Tables use \tagpdfsetup{table/header-rows={1}} plus a \rowcolor header row.
+% Do NOT use tabularray (tblr): it emits nested <P> tags that fail PDF/UA-2.
 
 % Tagging for accessibility
 % The kernel's tagging engine is activated by `testphase` in the
@@ -171,15 +172,13 @@ This course will be conducted in a hybrid format, with both in-person and asynch
         \caption{\textbf{Session Schedule}}
         \label{tab:session-schedule}
         \centering
-        \begin{tblr}{
-            colspec = {X[2,l] X[4,l]},
-            rowhead = 1,             
-            row{1} = {font=\bfseries, bg=gray!20},
-        }
-            Session Type & Dates \\      
+        \tagpdfsetup{table/header-rows={1}}
+        \begin{tabularx}{\linewidth}{>{\hsize=0.667\hsize}L >{\hsize=1.333\hsize}L}
+            \rowcolor{gray!20}
+            \textbf{Session Type} & \textbf{Dates} \\
             In-Person Sessions & August 26; September 2, 9, 16, 23, 30; October 7, 14, 21, 28; December 9 \\
             Asynchronous Online Sessions & November 3, 11, 15; December 2, 14 \\
-        \end{tblr}
+        \end{tabularx}
     \end{table}
     \end{center}
 
@@ -232,12 +231,10 @@ The grading scale is shown in Table~\ref{tab:grading-scale}. Grades will be give
   \caption{\textbf{Grade scale}}
   \label{tab:grading-scale}
   \centering
-  \begin{tblr}{
-    colspec = {l c l c},
-    rowhead = 1,             
-    row{1} = {font=\bfseries, bg=gray!20},
-  }
-  Grade & Percent    & Grade & Percent \\
+  \tagpdfsetup{table/header-rows={1}}
+  \begin{tabular}{l c l c}
+  \rowcolor{gray!20}
+  \textbf{Grade} & \textbf{Percent} & \textbf{Grade} & \textbf{Percent} \\
   A+    & 98.0--100.0& C+    & 77.0--79.9 \\
   A     & 93.0--97.9 & C     & 73.0--76.9 \\
   A-    & 90.0--92.9 & C-    & 70.0--72.9 \\
@@ -245,7 +242,7 @@ The grading scale is shown in Table~\ref{tab:grading-scale}. Grades will be give
   B     & 83.0--86.9 & D     & 63.0--66.9 \\
   B-    & 80.0--82.9 & D-    & 60.0--62.9 \\
         &            & F     & 0.0--59.9 \\
-  \end{tblr}
+  \end{tabular}
 \end{table}
 
 \end{center}
@@ -286,19 +283,17 @@ The due dates for the course requirements are as follows:
   \caption{\textbf{Assignment weighting}}
   \label{tab:grade-weights}
   \centering
-  \begin{tblr}{
-    colspec = {l c},
-    rowhead = 1,                 
-    row{1} = {font=\bfseries, bg=gray!20},
-  }
-    Assignment & Weight \\      
+  \tagpdfsetup{table/header-rows={1}}
+  \begin{tabular}{l c}
+    \rowcolor{gray!20}
+    \textbf{Assignment} & \textbf{Weight} \\
     Weekly Readings Assignments & 30\% \\
     Reading Discussion Facilitation & 5\% \\
     Practice Comprehensive Exam Response & 5\% \\
     MPA Comprehensive General Area Essay Exam & 35\% \\
     Concentration Area Paper & 20\% \\
   Total            & 100\%      \\
-  \end{tblr}
+  \end{tabular}
 \end{table}
 \end{center}
 
@@ -414,19 +409,17 @@ In addition to regular class discussion, structured peer review workshops will o
     \caption{Guidelines for Responsible AI Use in the Course}
     \label{tab:ai-guidelines}
     \centering
-    \begin{tblr}{
-        colspec = {X[6,l] X[6,l]},
-        rowhead = 1,             
-        row{1} = {font=\bfseries, bg=gray!20}
-    }
-    AI Use: Do's & AI Use: Don'ts \\
+    \tagpdfsetup{table/header-rows={1}}
+    \begin{tabularx}{\linewidth}{L L}
+    \rowcolor{gray!20}
+    \textbf{AI Use: Do's} & \textbf{AI Use: Don'ts} \\
     Use AI to \textbf{give feedback} on your writing (clarity, gaps, connections). & Use AI to \textbf{write or rewrite} your assignments. \\
     Ask AI to \textbf{suggest questions} for discussion or reflection. & Copy/paste AI text and submit it as your own work. \\
     Cite AI when it meaningfully shaped your thinking (e.g., ``ChatGPT feedback, 9/10/25''). & Omit citation when AI influenced your work. \\
     Use AI to \textbf{check organization, coherence, or flow}. & Rely on AI without engaging critically with course readings. \\
     Be mindful of \textbf{biases and sustainability impacts}. & Treat AI outputs as authoritative without evaluation. \\
     Remember: \textbf{Your voice, analysis, and synthesis must remain central.} & Assume AI can replace your own critical thinking. \\
-    \end{tblr}
+    \end{tabularx}
 \end{table}
 \end{center}
 
