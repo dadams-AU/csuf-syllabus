@@ -162,17 +162,57 @@ Use `tabular` (fixed-width columns) or `tabularx` (stretchable `X`/`L` columns) 
 
 > ⚠️ **Do not use `tabularray` (`tblr`).** Earlier versions of these templates did. Despite its `rowhead = 1` key, tabularray nests `<P>` tags inside table cells, which fails PDF/UA-2 validation (rule Table 5, P-P-1) — while still reporting `Tagged: yes`. This was caught by veraPDF in July 2026 and all templates were converted to `tabular`/`tabularx`.
 
+### Heading Styling — do not use `titlesec`
+
+> ⚠️ **Do not load `titlesec`.** `csuf_template.tex` did until August 2026. titlesec replaces the kernel's sectioning internals, and the tagging engine then never sees the headings: all 16 `\section*` commands were emitted as **ordinary paragraphs**, so the PDF contained **zero heading structure elements**. A screen reader user got no heading navigation through a 13-page syllabus — the single most important way people move around a long document.
+>
+> This is worse than the tabularray bug in one respect: **veraPDF reports `PASS` on PDF/UA-2 anyway.** PDF/UA does not require headings to *exist*, only that any headings present are correctly nested. Zero headings is vacuously valid. It is nonetheless a **WCAG 1.3.1 (Info and Relationships, Level A)** failure, which is what the ADA Title II rule actually measures against.
+
+Style headings with `\@startsection` instead, which the tagging engine understands:
+
+```latex
+\makeatletter
+\renewcommand\section{\@startsection{section}{1}{0pt}%
+  {-1.2ex plus -.4ex}{0.6ex}%
+  {\sffamily\bfseries\Large\addfontfeatures{LetterSpace=2.0}}}
+\makeatother
+```
+
+This produces visually identical output to the old titlesec setup (verified pixel-for-pixel across all 13 pages; only a ~8px vertical shift on pp. 9–10) while restoring all 16 headings.
+
+**How to check your own file:**
+
+```bash
+qpdf --qdf --object-streams=disable yours.pdf - | grep -c "/S /section"
+```
+
+If that returns `0` but your syllabus visibly has headings, your headings are not tagged.
+
 ---
 
 ## Why Accessibility Matters (CSUF Compliance)
 
-The PDF/UA tagging in these templates ensures:
-- Screen reader compatibility
-- University ADA compliance
+The PDF/UA tagging in these templates gives you:
+- Screen reader compatibility (headings, lists, table headers, reading order)
 - Better searchability
-- Future-proofing for accessibility standards
+- Most of what an accessibility review will look for
 
 **This isn't optional** - it's required for CSUF syllabi.
+
+### What these templates do *not* by themselves guarantee
+
+The DOJ's ADA Title II rule (89 FR 31320) names **WCAG 2.1 Level AA** as the technical standard, and it covers PDFs posted on a public entity's website. PDF/UA-2 overlaps heavily with WCAG but **is not the same standard**, and a veraPDF `PASS` is not a compliance certificate. PDF/A-4f is archival conformance with *no* accessibility meaning at all — don't let it be cited as evidence.
+
+Verified as passing in these templates: contrast (1.4.3 — all colors ≥ 8:1 on white), image alt text (1.1.1), table headers and heading structure (1.3.1), document language (3.1.1), and descriptive link text (2.4.4).
+
+Still your responsibility in each syllabus you build:
+- **2.4.2 Page Titled** — set `pdftitle` in `\hypersetup` to your real course title. A leftover `COURSE TITLE` placeholder is what a screen reader announces on open.
+- **1.1.1** — real alt text on any image *you* add.
+- **1.3.1** — use `\section`/`\subsection`, not bold text, for anything that reads as a heading.
+
+Two AA criteria that **no** fixed-layout PDF fully satisfies: **1.4.10 Reflow** and **1.4.12 Text Spacing**, both of which assume content can reflow to a narrow viewport and accept user-overridden spacing. The standard mitigation is to post the syllabus as **HTML in Canvas** with the PDF as a supplementary download. A tagged PDF is a good PDF; it is not equivalent to an accessible web page.
+
+**CSUF's compliance deadline is April 26, 2027.** (The rule sets two dates; the other, April 24, 2026, applies to larger public entities.) Syllabi posted to Canvas or a department site are in scope as "conventional electronic documents." There is no exception for documents still in active use — the archived-content exception does not cover a syllabus you are currently teaching from.
 
 ---
 
@@ -204,6 +244,21 @@ verapdf -f ua2 --format xml csuf_template.pdf | grep -A2 'status="failed"'
 
 veraPDF is free and open source ([verapdf.org](https://verapdf.org/)); on Debian/Ubuntu, `apt install verapdf`. If you can't install it, veraPDF also offers a browser-based validator, and Adobe Acrobat Pro's Accessibility Checker catches many (not all) of the same issues.
 
+### Step 3: validate against PDF/A-4f (archival conformance)
+
+The templates also claim PDF/A, so check that flavour too:
+
+```bash
+verapdf -f 4f --format text csuf_template.pdf
+```
+
+**Why `4f` and not `2a` or plain `4`:**
+
+- **PDF/A-2a is not available here.** PDF/A-2 is built on PDF 1.7 and its file header must read `%PDF-1.n`. PDF/UA-2 requires PDF 2.0. The two standards are mutually exclusive — you cannot have both. PDF/A-4 is the PDF 2.0-era part, and it is the one that pairs with PDF/UA-2. (If some external system insists on literal PDF/A-2a, you must drop to `pdfstandard={ua-1, a-2a}` with `pdfversion=1.7` and give up PDF/UA-2.)
+- **Plain PDF/A-4 fails.** LaTeX's UA-2 tagging attaches two small CSS stylesheets as *associated files* (they carry the HTML mapping for lists and math). PDF/A-4 base requires every embedded file to itself be PDF/A, so those stylesheets trip rule 6.9-3. The **`f`** conformance level is defined precisely to permit arbitrary embedded files, so `a-4f` is the correct declaration — it is not a weaker claim about tagging or color.
+
+Adding `pdfstandard=a-4f` is also what pulls in the sRGB output intent and the PDF/A identification schema automatically; no `colorprofiles` package call is needed.
+
 For more detail, inspect the PDF catalog directly:
 
 ```bash
@@ -226,6 +281,7 @@ Tagging is activated in the `\DocumentMetadata` block at the very top of each `.
 ```latex
 \DocumentMetadata{
   pdfstandard=ua-2,
+  pdfstandard=a-4f,
   pdfversion=2.0,
   lang=en-US,
   testphase={phase-III, math, table, firstaid, sec, title}  % <- this activates tagging
