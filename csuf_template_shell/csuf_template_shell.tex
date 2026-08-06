@@ -157,7 +157,7 @@
     \IfFileExists{\CSUFLogoPath}{%
       \includegraphics[width=2.75in, alt={\CSUFLogoAltText}]{\CSUFLogoPath}\par
       \vspace{0.75em}
-    }{}
+    }{\GenericWarning{}{CSUF syllabus template: \CSUFLogoPath\space not found -- header logo omitted}}
     {\LARGE \@title\par}
     \vspace{0.25em}
     {\large \@date\par}

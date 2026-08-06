@@ -128,9 +128,14 @@ Public Administration Theory} % Course title
 % ========== CSUF HEADER (OPTIONAL) ==========
 \maketitle
 
-\begin{center}
-    \includegraphics[width=2.75in, alt={Cal State Fullerton wordmark}]{csuf_logo.png}
-\end{center}
+% The \IfFileExists guard lets the file compile when csuf_logo.png is absent --
+% e.g. if someone downloads only the .tex. A warning is emitted rather than
+% failing silently, so a missing wordmark is still noticed.
+\IfFileExists{csuf_logo.png}{%
+  \begin{center}
+      \includegraphics[width=2.75in, alt={Cal State Fullerton wordmark}]{csuf_logo.png}
+  \end{center}
+}{\GenericWarning{}{CSUF syllabus template: csuf_logo.png not found -- header logo omitted}}
 
 
 % ========== SECTION 1: FACULTY INFORMATION ==========
